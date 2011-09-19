@@ -1,0 +1,505 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/kimili-flash-embed\n"
+"POT-Creation-Date: 2009-10-12 20:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin/config.php:61
+msgid "Tag Generator"
+msgstr ""
+
+#: admin/config.php:63
+msgid "Asterisk (<span class=\"req\">*</span>) indicates required field"
+msgstr ""
+
+#: admin/config.php:65
+msgid "SWFObject Configuration"
+msgstr ""
+
+#: admin/config.php:68
+msgid "Publish method"
+msgstr ""
+
+#: admin/config.php:72 admin/config.php:79 kml_flashembed.php:687
+msgid "Static publishing"
+msgstr ""
+
+#: admin/config.php:73 admin/config.php:86 kml_flashembed.php:694
+msgid "Dynamic publishing"
+msgstr ""
+
+#: admin/config.php:75 admin/config.php:118 kml_flashembed.php:685
+msgid "what is this?"
+msgstr ""
+
+#: admin/config.php:80 admin/config.php:87 kml_flashembed.php:688
+#: kml_flashembed.php:695
+msgid "Description"
+msgstr ""
+
+#: admin/config.php:81 kml_flashembed.php:689
+msgid ""
+"Embed Flash content and alternative content using standards compliant "
+"markup, and use unobtrusive JavaScript to resolve the issues that markup "
+"alone cannot solve."
+msgstr ""
+
+#: admin/config.php:82 admin/config.php:89 kml_flashembed.php:690
+#: kml_flashembed.php:697
+msgid "Pros"
+msgstr ""
+
+#: admin/config.php:83 kml_flashembed.php:691
+msgid ""
+"The embedding of Flash content does not rely on JavaScript and the actual "
+"authoring of standards compliant markup is promoted."
+msgstr ""
+
+#: admin/config.php:84 admin/config.php:91 kml_flashembed.php:692
+#: kml_flashembed.php:699
+msgid "Cons"
+msgstr ""
+
+#: admin/config.php:85 kml_flashembed.php:693
+msgid ""
+"Does not solve 'click-to-activate' mechanisms in Internet Explorer 6+ and "
+"Opera 9+."
+msgstr ""
+
+#: admin/config.php:88 kml_flashembed.php:696
+msgid ""
+"Create alternative content using standards compliant markup and embed Flash "
+"content with unobtrusive JavaScript."
+msgstr ""
+
+#: admin/config.php:90 kml_flashembed.php:698
+msgid ""
+"Avoids 'click-to-activate' mechanisms in Internet Explorer 6+ and Opera 9+."
+msgstr ""
+
+#: admin/config.php:92 kml_flashembed.php:700
+msgid ""
+"The embedding of Flash content relies on JavaScript, so if you have the "
+"Flash plug-in installed, but have JavaScript disabled or use a browser that "
+"doesn't support JavaScript, you will not be able to see your Flash content, "
+"however you will see alternative content instead. Flash content will also "
+"not be shown on a device like Sony PSP, which has very poor JavaScript "
+"support, and automated tools like RSS readers are not able to pick up Flash "
+"content."
+msgstr ""
+
+#: admin/config.php:95 kml_flashembed.php:706
+msgid "Flash version consists of major, minor and release version"
+msgstr ""
+
+#: admin/config.php:95 kml_flashembed.php:706
+msgid "Flash Version"
+msgstr ""
+
+#: admin/config.php:106 kml_flashembed.php:716
+msgid "Check checkbox to activate express install functionality on your swf."
+msgstr ""
+
+#: admin/config.php:106 kml_flashembed.php:716
+msgid "Adobe Express Install"
+msgstr ""
+
+#: admin/config.php:114
+msgid "HTML container ID"
+msgstr ""
+
+#: admin/config.php:121
+msgid ""
+"Specifies the id attribute of the HTML container element that will be "
+"replaced with Flash content if enough JavaScript and Flash support is "
+"available."
+msgstr ""
+
+#: admin/config.php:122
+msgid ""
+"This HTML container will be generated automatically and will embed your "
+"alternative HTML content as defined in the HTML section."
+msgstr ""
+
+#: admin/config.php:123
+msgid ""
+"If you don't define an ID here, KFE will randomly generate an ID for you."
+msgstr ""
+
+#: admin/config.php:130
+msgid "SWF definition"
+msgstr ""
+
+#: admin/config.php:133 kml_flashembed.php:729
+msgid "The relative or absolute path to your Flash content .swf file"
+msgstr ""
+
+#: admin/config.php:133 kml_flashembed.php:729
+msgid "Flash (.swf)"
+msgstr ""
+
+#: admin/config.php:140 kml_flashembed.php:733
+msgid "Width &times; height (unit)"
+msgstr ""
+
+#: admin/config.php:140 kml_flashembed.php:733
+msgid "Dimensions"
+msgstr ""
+
+#: admin/config.php:147 kml_flashembed.php:738
+msgid "pixels"
+msgstr ""
+
+#: admin/config.php:148 kml_flashembed.php:739
+msgid "percentage"
+msgstr ""
+
+#: admin/config.php:153
+msgid "HTML object element attributes"
+msgstr ""
+
+#: admin/config.php:153 kml_flashembed.php:745
+msgid "Attributes"
+msgstr ""
+
+#: admin/config.php:155 kml_flashembed.php:749
+msgid ""
+"Uniquely identifies the Flash movie so that it can be referenced using a "
+"scripting language or by CSS"
+msgstr ""
+
+#: admin/config.php:155 kml_flashembed.php:749
+msgid "Flash content ID"
+msgstr ""
+
+#: admin/config.php:163 kml_flashembed.php:753
+msgid ""
+"Classifies the Flash movie so that it can be referenced using a scripting "
+"language or by CSS"
+msgstr ""
+
+#: admin/config.php:171 kml_flashembed.php:757
+msgid ""
+"HTML alignment of the object element. If this attribute is omitted, it by "
+"default centers the movie and crops edges if the browser window is smaller "
+"than the movie. NOTE: Using this attribute is not valid in XHTML 1.0 Strict."
+msgstr ""
+
+#: admin/config.php:175 admin/config.php:191 admin/config.php:201
+#: admin/config.php:213 admin/config.php:223 admin/config.php:239
+#: admin/config.php:251 admin/config.php:269 admin/config.php:290
+#: admin/config.php:300 admin/config.php:312 admin/config.php:322
+#: admin/config.php:334 admin/config.php:345 kml_flashembed.php:760
+#: kml_flashembed.php:779 kml_flashembed.php:789 kml_flashembed.php:799
+#: kml_flashembed.php:809 kml_flashembed.php:823 kml_flashembed.php:835
+#: kml_flashembed.php:851 kml_flashembed.php:868 kml_flashembed.php:878
+#: kml_flashembed.php:888 kml_flashembed.php:898 kml_flashembed.php:908
+#: kml_flashembed.php:919
+msgid "Choose"
+msgstr ""
+
+#: admin/config.php:184
+msgid "HTML object element nested param elements"
+msgstr ""
+
+#: admin/config.php:184 kml_flashembed.php:771
+msgid "Parameters"
+msgstr ""
+
+#: admin/config.php:187 kml_flashembed.php:776
+msgid ""
+"Specifies whether the movie begins playing immediately on loading in the "
+"browser. The default value is true if this attribute is omitted."
+msgstr ""
+
+#: admin/config.php:197 kml_flashembed.php:786
+msgid ""
+"Specifies whether the movie repeats indefinitely or stops when it reaches "
+"the last frame. The default value is true if this attribute is omitted"
+msgstr ""
+
+#: admin/config.php:209 kml_flashembed.php:796
+msgid ""
+"Shows a shortcut menu when users right-click (Windows) or control-click "
+"(Macintosh) the SWF file. To show only About Flash in the shortcut menu, "
+"deselect this option. By default, this option is set to true."
+msgstr ""
+
+#: admin/config.php:219 kml_flashembed.php:806
+msgid ""
+"Specifies the trade-off between processing time and appearance. The default "
+"value is 'high' if this attribute is omitted."
+msgstr ""
+
+#: admin/config.php:235 kml_flashembed.php:820
+msgid ""
+"Specifies scaling, aspect ratio, borders, distortion and cropping for if you "
+"have changed the document's original width and height."
+msgstr ""
+
+#: admin/config.php:247 kml_flashembed.php:832
+msgid ""
+"Specifies where the content is placed within the application window and how "
+"it is cropped."
+msgstr ""
+
+#: admin/config.php:265 kml_flashembed.php:848
+msgid ""
+"Sets the Window Mode property of the Flash movie for transparency, layering, "
+"and positioning in the browser. The default value is 'window' if this "
+"attribute is omitted."
+msgstr ""
+
+#: admin/config.php:278 kml_flashembed.php:861
+msgid ""
+"Hexadecimal RGB value in the format #RRGGBB, which specifies the background "
+"color of the movie, which will override the background color setting "
+"specified in the Flash file."
+msgstr ""
+
+#: admin/config.php:286 kml_flashembed.php:865
+msgid ""
+"Specifies whether static text objects that the Device Font option has not "
+"been selected for will be drawn using device fonts anyway, if the necessary "
+"fonts are available from the operating system."
+msgstr ""
+
+#: admin/config.php:296 kml_flashembed.php:875
+msgid ""
+"Specifies whether users are allowed to use the Tab key to move keyboard "
+"focus out of a Flash movie and into the surrounding HTML (or the browser, if "
+"there is nothing focusable in the HTML following the Flash movie). The "
+"default value is true if this attribute is omitted."
+msgstr ""
+
+#: admin/config.php:308 kml_flashembed.php:885
+msgid ""
+"Specifies whether the browser should start Java when loading the Flash "
+"Player for the first time. The default value is false if this attribute is "
+"omitted. If you use JavaScript and Flash on the same page, Java must be "
+"running for the FSCommand to work."
+msgstr ""
+
+#: admin/config.php:318 kml_flashembed.php:895
+msgid ""
+"Enables full-screen mode. The default value is false if this attribute is "
+"omitted. You must have version 9,0,28,0 or greater of Flash Player installed "
+"to use full-screen mode."
+msgstr ""
+
+#: admin/config.php:330 kml_flashembed.php:905
+msgid ""
+"Controls the ability to perform outbound scripting from within a Flash SWF. "
+"The default value is 'always' if this attribute is omitted."
+msgstr ""
+
+#: admin/config.php:341 kml_flashembed.php:916
+msgid ""
+"Controls a SWF file's access to network functionality. The default value is "
+"'all' if this attribute is omitted."
+msgstr ""
+
+#: admin/config.php:354 kml_flashembed.php:927
+msgid ""
+"Specifies the base directory or URL used to resolve all relative path "
+"statements in the Flash Player movie. This attribute is helpful when your "
+"Flash Player movies are kept in a different directory from your other files."
+msgstr ""
+
+#: admin/config.php:361 kml_flashembed.php:931
+msgid ""
+"Method to pass variables to a Flash movie. You need to separate individual "
+"name/variable pairs with a semicolon (i.e. name=John Doe ; count=3)."
+msgstr ""
+
+#: admin/config.php:368 admin/config.php:410
+msgid "more"
+msgstr ""
+
+#: admin/config.php:373
+msgid "Alternative Content"
+msgstr ""
+
+#: admin/config.php:376
+msgid "Alternative content"
+msgstr ""
+
+#: admin/config.php:377 kml_flashembed.php:944 kml_flashembed.php:977
+#: kml_flashembed.php:997
+msgid "what is this"
+msgstr ""
+
+#: admin/config.php:381
+msgid ""
+"The object element allows you to nest alternative HTML content inside of it, "
+"which will be displayed if Flash is not installed or supported. \n"
+"\t\t\t\t\t\tThis content will also be picked up by search engines, making it "
+"a great tool for creating search-engine-friendly content."
+msgstr ""
+
+#: admin/config.php:384 kml_flashembed.php:950
+msgid "Summarized, you should use alternative content for the following:"
+msgstr ""
+
+#: admin/config.php:386 kml_flashembed.php:952
+msgid ""
+"When you like to create content that is accessible for people who browse the "
+"Web without plugins"
+msgstr ""
+
+#: admin/config.php:387 kml_flashembed.php:953
+msgid "When you like to create search-engine-friendly content"
+msgstr ""
+
+#: admin/config.php:388 kml_flashembed.php:954
+msgid ""
+"To tell visitors that they can have a richer user experience by downloading "
+"the Flash plugin"
+msgstr ""
+
+#: admin/config.php:399
+msgid "Generate"
+msgstr ""
+
+#: admin/config.php:411
+msgid "less"
+msgstr ""
+
+#: admin/config.php:414
+msgid ""
+"Kimili is not defined. This generator isn't going to put a KFE tag in your "
+"code."
+msgstr ""
+
+#: kml_flashembed.php:501
+msgid "Kimili Flash Embed Options Updated."
+msgstr ""
+
+#: kml_flashembed.php:674
+msgid "Kimili Flash Embed Preferences"
+msgstr ""
+
+#: kml_flashembed.php:676
+msgid "SWFObject Configuration Defaults"
+msgstr ""
+
+#: kml_flashembed.php:680
+msgid "Publish Method"
+msgstr ""
+
+#: kml_flashembed.php:682
+msgid "Static Publishing"
+msgstr ""
+
+#: kml_flashembed.php:683
+msgid "Dynamic Publishing"
+msgstr ""
+
+#: kml_flashembed.php:719 kml_flashembed.php:967 kml_flashembed.php:994
+msgid "No"
+msgstr ""
+
+#: kml_flashembed.php:720 kml_flashembed.php:968 kml_flashembed.php:995
+msgid "Yes"
+msgstr ""
+
+#: kml_flashembed.php:725
+msgid "SWF Definition Defaults"
+msgstr ""
+
+#: kml_flashembed.php:753
+msgid "class"
+msgstr ""
+
+#: kml_flashembed.php:936
+msgid "Alternative Content Default"
+msgstr ""
+
+#: kml_flashembed.php:940
+msgid "Alternate Content"
+msgstr ""
+
+#: kml_flashembed.php:947
+msgid ""
+"The object element allows you to nest alternative HTML content inside of it, "
+"which will be displayed if Flash is not installed or supported. \n"
+"\t\t\t\t\t\t\tThis content will also be picked up by search engines, making "
+"it a great tool for creating search-engine-friendly content."
+msgstr ""
+
+#: kml_flashembed.php:961
+msgid "Javascript Options"
+msgstr ""
+
+#: kml_flashembed.php:965
+msgid "Create a reference to SWFObject.js?"
+msgstr ""
+
+#: kml_flashembed.php:972
+msgid "Where do you want to reference SWFObject.js from?"
+msgstr ""
+
+#: kml_flashembed.php:974 kml_flashembed.php:982
+msgid "Google Ajax Library"
+msgstr ""
+
+#: kml_flashembed.php:975 kml_flashembed.php:985
+msgid "Internal"
+msgstr ""
+
+#: kml_flashembed.php:980
+msgid ""
+"If you choose to use Kimili Flash Embed to create a reference to swfobject."
+"js (which is necessary for KFE to function properly), you have two options "
+"from where to reference the file:"
+msgstr ""
+
+#: kml_flashembed.php:983
+msgid ""
+"The Google Ajax Library is a content distribution network the most popular "
+"open source JavaScript libraries, including SWFObject. Google hosts these "
+"libraries, correctly sets cache headers, and stays up to date with the most "
+"recent release versions."
+msgstr ""
+
+#: kml_flashembed.php:984
+msgid ""
+"Choosing this option offers fast, reliable access to the SWFObject code. It "
+"also increases the chances that your users may already have SWFObject cached "
+"in their browsers if they have visited other sites that also utilize the "
+"Google hosted copy of SWFObject, making your site load even faster."
+msgstr ""
+
+#: kml_flashembed.php:986
+msgid ""
+"If you'd rather not rely on an external service to serve SWFObject to your "
+"users, you can choose to reference a copy of SWFObject which comes bundles "
+"with Kimili Flash Embed so it is served from the same server as the rest of "
+"your website."
+msgstr ""
+
+#: kml_flashembed.php:992
+msgid "Do you want to use SWFObject's autohide function?"
+msgstr ""
+
+#: kml_flashembed.php:999
+msgid ""
+"By default, SWFObject temporarily hides your SWF or alternative content "
+"until the library has decided which content to display. This option allows "
+"you to disable that behavior."
+msgstr ""
+
+#: kml_flashembed.php:1007
+msgid "Update Options"
+msgstr ""
