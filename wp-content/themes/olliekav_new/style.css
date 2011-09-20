@@ -285,56 +285,57 @@ body {
 
 /* line 29, _/stylesheets/style.scss */
 #main {
+  margin: 0 auto;
   overflow: hidden;
   padding: 0 20px;
 }
 
-/* line 36, _/stylesheets/style.scss */
+/* line 37, _/stylesheets/style.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-/* line 39, _/stylesheets/style.scss */
+/* line 40, _/stylesheets/style.scss */
 h1 {
   font-size: 4.133em;
 }
 
-/* line 42, _/stylesheets/style.scss */
+/* line 43, _/stylesheets/style.scss */
 h2 {
   font-size: 2.133em;
 }
 
 /* Links */
-/* line 47, _/stylesheets/style.scss */
+/* line 48, _/stylesheets/style.scss */
 a:hover, a:active {
   outline: none;
 }
 
-/* line 50, _/stylesheets/style.scss */
+/* line 51, _/stylesheets/style.scss */
 a, a:active {
   color: #50a99f;
   cursor: pointer;
   text-decoration: none;
 }
 
-/* line 56, _/stylesheets/style.scss */
+/* line 57, _/stylesheets/style.scss */
 a:visited,
 a:hover {
-  color: #50a99f;
+  color: #226f66;
   text-decoration: none;
 }
 
-/* line 63, _/stylesheets/style.scss */
+/* line 64, _/stylesheets/style.scss */
 #header {
   padding: 0 20px;
 }
 
-/* line 66, _/stylesheets/style.scss */
+/* line 67, _/stylesheets/style.scss */
 #header {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   overflow: hidden;
 }
-/* line 69, _/stylesheets/style.scss */
+/* line 70, _/stylesheets/style.scss */
 #header > div {
   border-bottom: 1px solid #e6e6e6;
   margin: 0 auto 1.5em auto;
@@ -343,75 +344,74 @@ a:hover {
   padding: 1.5em 0;
   width: 100%;
 }
-/* line 77, _/stylesheets/style.scss */
+/* line 78, _/stylesheets/style.scss */
 #header > div > h1 {
   font-size: 1em;
 }
-/* line 82, _/stylesheets/style.scss */
+/* line 83, _/stylesheets/style.scss */
 #header > div > h1,
 #header > div > p,
 #header > div > nav {
   float: left;
   margin-right: 4px;
 }
-/* line 86, _/stylesheets/style.scss */
+/* line 87, _/stylesheets/style.scss */
 #header span {
   color: #cccccc;
   display: inline-block;
   margin: 0 3px 0 5px;
 }
-/* line 91, _/stylesheets/style.scss */
+/* line 92, _/stylesheets/style.scss */
 #header ul {
   float: left;
   margin: 0;
 }
-/* line 94, _/stylesheets/style.scss */
+/* line 95, _/stylesheets/style.scss */
 #header ul > li {
   display: inline;
   float: left;
 }
-/* line 98, _/stylesheets/style.scss */
+/* line 99, _/stylesheets/style.scss */
 #header ul > li > span,
 #header ul > li > a > span {
   color: #cccccc;
 }
 
-/* line 107, _/stylesheets/style.scss */
+/* line 108, _/stylesheets/style.scss */
 #footer {
   clear: both;
 }
 
-/* line 113, _/stylesheets/style.scss */
+/* line 114, _/stylesheets/style.scss */
 #latest_work {
   margin: 0 auto;
   max-width: 1140px;
   width: 100%;
 }
-/* line 117, _/stylesheets/style.scss */
+/* line 118, _/stylesheets/style.scss */
 #latest_work > article {
   float: left;
-  margin: 0 5% 1.5em 0;
+  margin: 0 5% 0 0;
   position: relative;
   width: 30%;
 }
-/* line 123, _/stylesheets/style.scss */
+/* line 124, _/stylesheets/style.scss */
 #latest_work > article.last {
   margin-right: 0;
 }
-/* line 126, _/stylesheets/style.scss */
+/* line 127, _/stylesheets/style.scss */
 #latest_work > article img {
   display: block;
   width: 100%;
 }
-/* line 130, _/stylesheets/style.scss */
+/* line 131, _/stylesheets/style.scss */
 #latest_work > article > a {
   border: 1px solid #e6e6e6;
   display: block;
 }
-/* line 134, _/stylesheets/style.scss */
+/* line 135, _/stylesheets/style.scss */
 #latest_work > article > div {
   background: rgba(80, 169, 159, 0.9);
-  border: 1px solid #50a99f;
   display: none;
 }
 /* line 139, _/stylesheets/style.scss */
@@ -428,4 +428,8 @@ a:hover {
   left: 0;
   width: 100%;
   z-index: 100;
+}
+/* line 152, _/stylesheets/style.scss */
+#latest_work > article:hover > a {
+  border: 1px solid #226f66;
 }
