@@ -1,0 +1,160 @@
+// olliekav.com v3 (c)2011 olliekav.com ---------------------------------------------------------
+
+$grey_line:#e6e6e6;
+$mid_grey:#ccc;
+$light_grey:#f2f2f2;
+$green:#50a99f;
+$dark_green:#226f66;
+$dark_grey:#201f1f;
+$white:#ffffff;
+$spacing:1.5em;
+
+@import "partials/html5reset";
+
+
+// Base structure -------------------------------------------------------------------------------
+
+html {
+  height:100%;
+  width:100%;
+}
+
+body {
+  background:$white;
+  color:$dark_grey;
+  font-size:93.8%;
+  font-family:ff-netto-web-1, ff-netto-web-2, Helvetica, arial, sans serif;
+  line-height:1.5;
+}
+#main {
+	margin:0 auto;
+  overflow:hidden;
+  padding:0 20px;
+}
+
+// Typograhy and links styles -------------------------------------------------------------------
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight:normal;
+}
+h1 {
+  font-size:4.133em;
+}
+h2 {
+  font-size:2.133em;
+}
+
+/* Links */
+a:hover, a:active { 
+  outline: none; 
+}
+a, a:active { 
+  color:rgba($green,1);
+  cursor:pointer;
+  text-decoration:none; 
+}
+a:visited,
+a:hover { 
+  color:$dark_green;
+  text-decoration:none; 
+}
+
+// Header ---------------------------------------------------------------------------------------
+
+#header {
+  padding:0 20px;
+}
+#header {
+  margin-bottom:1em;
+  overflow:hidden;
+  > div {
+    border-bottom:1px solid $grey_line;
+    margin:0 auto $spacing auto;
+    max-width:1140px;
+    overflow:hidden;
+    padding:$spacing 0;
+    width:100%;
+  }
+  > div > h1 {
+    font-size:1em;
+  }
+  > div > h1,
+  > div >  p,
+  > div >  nav {
+    float:left;
+    margin-right:4px;
+  }
+  span {
+    color:$mid_grey;
+    display:inline-block;
+    margin:0 3px 0 5px;
+  }
+  ul {
+    float:left;
+    margin:0;
+    > li {
+      display:inline;
+      float:left;
+      > span,
+      > a > span {
+        color:$mid_grey;
+      }
+    }
+  }
+}
+
+// Footer ---------------------------------------------------------------------------------------
+
+#footer {
+  clear:both;
+}
+
+// Homepage -------------------------------------------------------------------------------------
+
+#latest_work {
+	margin:0 auto;
+	max-width:1140px;
+	width:100%;
+  > article {
+    float:left;
+		margin:0 5% 0 0;
+		position:relative;
+		width:30%;
+  }
+  > article.last {
+    margin-right:0;
+  }
+  > article img {
+    display:block;
+    width:100%;
+  }
+  > article > a {
+    border:1px solid $grey_line;
+    display:block;
+  }
+  > article > div {
+    background:rgba($green, 0.9);
+    display:none;
+  }
+  > article > div > h2 {
+    margin:$spacing;
+  }
+  > article:hover > div {
+    color:$white;
+    display:block;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:100;
+  }
+	> article:hover > a {
+		border:1px solid $dark_green;
+	}
+}
+
+// Print and media queries ----------------------------------------------------------------------
+
+//@import "partials/print";
+//@import "partials/media";

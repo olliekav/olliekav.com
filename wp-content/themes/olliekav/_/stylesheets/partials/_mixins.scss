@@ -1,0 +1,48 @@
+//****************************************************************
+//      Fonts
+//****************************************************************
+
+@mixin font-12($mb: 1.5)
+  font-size: 1.2em
+  line-height: 1.5em
+  margin-bottom: $mb
+  
+@mixin font-14($mb: 1.2857em)
+  font-size: 1.4em
+  line-height: 1.2857em
+  margin-bottom: $mb
+
+@mixin font-18($mb: 1.0em)
+  font-size: 1.8em
+  line-height: 1.0em
+  margin-bottom: $mb  
+  
+@mixin font-21($mb: 1.7142em)
+  font-size: 2.1em
+  line-height: 1.7142em
+  margin-bottom: $mb  
+
+@mixin font-24($mb: 0.75em)
+  font-size: 2.4em
+  line-height: 1.5em
+  margin-bottom: $mb
+  
+@mixin font-36($mb: 0.5em)
+  font-size: 3.6em
+  line-height: 1.0em
+  margin-bottom: $mb  
+  
+@mixin font-48($mb: 0.375em)
+  font-size: 4.8em
+  line-height: 1.125
+  margin-bottom: $mb  
+  
+@mixin font-60($mb: 0.3em)
+  font-size: 6.0em
+  line-height: 1.2em
+  margin-bottom: $mb
+    
+@mixin font-72($mb: 0.25em)
+  font-size: 7.2em
+  line-height: 1.0em
+  margin-bottom: $mb
