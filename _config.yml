@@ -1,10 +1,10 @@
-# Use henrik-jekyll that has the haml/sass extension for this site.
 sass: true
 haml: true
+auto: true
+
+markdown: rdiscount
+pygments: true
+exclude: Gemfile*, Rakefile, config.rb, Gemfile.lock
 
 post_defaults: 
   layout: post
-  
-source:      .
-destination: ./_site
-plugins:     ./_plugins
