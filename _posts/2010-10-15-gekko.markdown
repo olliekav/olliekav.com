@@ -1,0 +1,12 @@
+--- 
+date: 2010-10-15 14:31:44 +0100
+layout: post
+title: Gekko
+wordpress_id: 899
+wordpress_url: http://www.olliekav.com/?p=899
+categories: 
+  title: Portfolio
+  slug: portfolio
+  autoslug: portfolio
+---
+![](http://www.olliekav.com/wp-content/uploads/gekko-one.jpg "gekko-one")![](http://www.olliekav.com/wp-content/uploads/gekko-two.jpg "gekko-two")![](http://www.olliekav.com/wp-content/uploads/gekko-site.jpg "gekko-site")

@@ -1,0 +1,14 @@
+--- 
+date: 2009-10-12 16:47:47 +0100
+layout: post
+title: Zoopy.com
+wordpress_id: 391
+wordpress_url: http://dev.olliekav.com/?p=391
+categories: 
+  title: Portfolio
+  slug: portfolio
+  autoslug: portfolio
+---
+![zoopy-framed](http://www.olliekav.com/wp-content/uploads/zoopy-framed.jpg "zoopy-framed")
+A collaborative design with [www.cowafrica.com](http://www.cowafrica.com) and [www.zoopy.com](http://www.zoopy.com) for their Framed Video campaign. I was responsible for joint Design, the UI, HTML & CSS.
+![zoopy-changeonething](http://www.olliekav.com/wp-content/uploads/zoopy-changeonething.jpg "zoopy-changeonething")![zoopy-logo](http://www.olliekav.com/wp-content/uploads/zoopy-logo.jpg "zoopy-logo")

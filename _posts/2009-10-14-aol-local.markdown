@@ -1,0 +1,12 @@
+--- 
+date: 2009-10-14 02:18:54 +0100
+layout: post
+title: AOL Local
+wordpress_id: 683
+wordpress_url: http://dev.olliekav.com/?p=683
+categories: 
+  title: Portfolio
+  slug: portfolio
+  autoslug: portfolio
+---
+![aol-local](http://www.olliekav.com/wp-content/uploads/aol-local.jpg "aol-local")

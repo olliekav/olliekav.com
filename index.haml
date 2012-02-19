@@ -5,3 +5,13 @@ title: Ollie Kavanagh
 
 %h1
   Hello World
+
+%ul.posts
+  == {% for post in site.posts %}
+  %li
+    %span
+      == {{ post.date | date_to_string }} 
+      %a{:href => "{{ post.url }}"}
+        == {{ post.title }}
+  == {% endfor %}
+      

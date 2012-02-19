@@ -1,0 +1,20 @@
+--- 
+date: 2008-04-29 04:36:21 +0100
+layout: post
+title: Semantically built lists, who needs divs????
+wordpress_id: 53
+wordpress_url: http://www.olliekav.com/?p=53
+categories: 
+  title: web standards
+  slug: web-standards
+  autoslug: web-standards
+---
+![Win a trip to New York with TouchLocal](http://www.olliekav.com/wp-content/uploads/2008/04/new-york.gif "new-york")I thought I would go over the design for this page and how the Step-by-step guide to writing a review was built.<!--more-->We went through a few iterations for this design before coming up with the final design shown below. The idea process was to show a step by step introduction to writing a review and confirmation of this, with some information about the competition.![TouchLocal Landing Page](http://www.olliekav.com/wp-content/uploads/2008/04/new-york-large.gif "new-york-large")I wanted to build this as semantically correct as possible with as little markup, so lets focus on the step by step list and how I did this. It would be easy to slip into div soup here and have columns and floats and just go completely overboard with mark up but at the end of the day it's jut a list right? So let's build it around an unordered list, my initial markup looked like this (bear in mind this is in ruby).``-  &lt;%= image_tag "competition/step1-image.gif", :alt=&gt;""%&gt;## Search for a business
+Search for a business to review using the who/what/where above.
+-  &lt;%= image_tag "competition/step2-image.gif", :alt=&gt;""%&gt;## Select the business you would like to review
+From the business search results.
+-  &lt;%= image_tag "competition/step3-image.gif", :alt=&gt;""%&gt;## Write your review
+Using the form on the business profile page, remember to add your rating, your review title and your review.
+-  &lt;%= image_tag "competition/step4-image.gif"%&gt;## Check your email
+You will receive an email to confirm your review and complete your registration process. _If you’re already registered your review will appear immediately!_
+``So we have an id for each list item, this will enable us to give a specific background numbered image for each list item, next we add our image in for each list item, notice this does not need a class or id, for my titles I am using a h2 then a paragraph tag for the body copy, pretty meaningful markup.So thats all we need on the html, now we get down to the CSS, and this is where it gets fun. Here is the full CSS markup and then I'll run through each item.``li {position:relative;text-align: left;height:11em;padding-left:55px;}li#step1 {background:url(/images/competition/step1.gif) no-repeat 5px 7px;}li#step2 {background:url(/images/competition/step2.gif) no-repeat 5px 7px;}li#step3 {background:url(/images/competition/step3.gif) no-repeat 5px 7px;}li#step4 {background:url(/images/competition/step4.gif) no-repeat 5px 7px;}li img {position:absolute;left:280px;}li h2,li p {width:230px;}li h2 {font-family:georgia, times new roman, arial, sans serif;color:#3e3e3e;font-size:1.4em;padding-top:20px;line-height:1.2em;}li p {margin-top:20px;}``So step by step down, first we set the li styles, position:relative; for our following absolutely positioned items to follow, a height based in em's so we can expand it when the text goes larger, the padding-left so we can see the number images down the left hand side. Next I'll give the background image styles and positioning for each step, relating to the id I set for each li in the HTML.The next step is where we give it almost faux columns, the img has absolute position relative to its parent li, set the amount we want left of the li. Now we can style the h2 and p selectors to a fixed with to give the effect of another column, finally you can style your text styles how you want.There you have a it, a list of items styled to give a column effect, all semantically correct and straight forward mark-up. The page goes live today so as soon as it is up I will make the source files available.The page is up here now to view [http://www.touchlocal.com/home/competition](http://www.touchlocal.com/home/competition)

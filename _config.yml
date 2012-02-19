@@ -8,3 +8,5 @@ exclude: Gemfile*, Rakefile, config.rb, Gemfile.lock
 
 post_defaults: 
   layout: post
+
+permalink: /journal/:year/:month/:title.html
