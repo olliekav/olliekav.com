@@ -1,7 +1,5 @@
-source 'http://rubygems.org'
+source "http://rubygems.org"
 
-gem 'jekyll'
-gem 'haml'
-gem 'sass'
-gem 'rake'
-gem 'RedCloth'
+gem "middleman", "~>2.0.14"
+gem "haml-coderay"
+gem "coffee-filter"
