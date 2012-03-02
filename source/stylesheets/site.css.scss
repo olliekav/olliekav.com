@@ -1,4 +1,10 @@
+// Copyright olliekav.com 2012 -----------------------------------------------------------------
+
+// Import our other sass partials --------------------------------------------------------------
+
 @import "compass";
+
+// Set up our variables ------------------------------------------------------------------------
 
 $link-color:         #0388a6;
 $link-hover-color:   #009ce0;
@@ -7,9 +13,9 @@ $link-active-color:  false;
 $link-visited-color: false;
 
 $font-color:  #2a2a2a;
-$font-family: sans-serif;
-$base-font-size:   12px;
-$base-line-height: 18px;
+$font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2", georgia, times, serif;
+$base-font-size:   13px;
+$base-line-height: 21px;
 
 $total-cols: 12;
 $col-width: 4em;
@@ -18,15 +24,18 @@ $side-gutter-width: $gutter-width;
 
 @include global-reset;
 
-body {
-  font-family: $font-family;
-  color: $font-color; 
-}
+// Base typography styles ----------------------------------------------------------------------
 
 a {
   @include link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color);
 }
 
+// Base layout styles --------------------------------------------------------------------------
+
+body {
+  font-family: $font-family;
+  color:$font-color; 
+}
 #main {
   padding: 50px;
 }
