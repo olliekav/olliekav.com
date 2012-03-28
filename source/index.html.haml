@@ -1,5 +1,17 @@
 - content_for :head do
   %title Homepage
 
-%h1
-  Hi
+.content
+  %ul#portfolio_list
+    %li.portfolio_item
+      .span_6
+        Test
+      .span_3
+        %h2 RodeoGames
+        .meta
+          Design, HTML, CSS, JQuery 
+          %span //
+          Client: 
+          =link_to("Kyan.com", "http://kyan.com")
+        %p Portfolio item description
+        

@@ -1,0 +1,154 @@
+// SASS items shared across all stylesheets ------------------------------------------------
+
+// Colours ---------------------------------------------------------------------------------
+
+$base_color:#81d3d8;
+$dark_grey:#363736;
+$mid_grey:#5a5b5a;
+$dotted_line:#c7c7c7;
+$light_grey:#eaeaea;
+$white:#ffffff;
+
+// Font stacks -----------------------------------------------------------------------------
+
+$meta_serif:"ff-meta-serif-web-pro-1", "ff-meta-serif-web-pro-2", Georgia,"Times New Roman",serif ;
+$proxima_condensed:"proxima-nova-sc-osf-ext-cond-1","proxima-nova-sc-osf-ext-cond-2", 'Helvetica Neue', Helvetica, arial, sans-serif ;
+
+// Font sizes ------------------------------------------------------------------------------
+
+$font_11px:0.846em;
+$font_13px:1em;
+$font_15px:1.154em;
+$font_18px:1.385em;
+$font_22px:1.692em;
+$font_24px:1.846em;
+$font_26px:2em;
+$font_28px:2.154em;
+$font_32px:2.462em;
+
+// Set up our mixins -------------------------------------------------------------------------
+
+// Border radius
+@mixin border-radius($radius) {
+  border-radius:$radius;
+  -moz-border-radius:$radius;
+  -webkit-border-radius:$radius;
+}
+@mixin border-radii($topleft, $topright, $bottomright, $bottomleft) {
+	border-top-left-radius: $topleft;
+	border-top-right-radius: $topright;
+	border-bottom-right-radius: $bottomright;
+	border-bottom-left-radius: $bottomleft;
+	-webkit-border-top-left-radius: $topleft;
+	-webkit-border-top-right-radius: $topright;
+	-webkit-border-bottom-right-radius: $bottomright;
+	-webkit-border-bottom-left-radius: $bottomleft;
+	-moz-border-radius-topleft: $topleft;
+	-moz-border-radius-topright: $topright;
+	-moz-border-radius-bottomright: $bottomright;
+	-moz-border-radius-bottomleft: $bottomleft;
+}
+
+// Box shadow
+@mixin box-shadow($shadow-1,
+  $shadow-2: false, $shadow-3: false,
+  $shadow-4: false, $shadow-5: false,
+  $shadow-6: false, $shadow-7: false,
+  $shadow-8: false, $shadow-9: false) {
+
+  $full: $shadow-1;
+  $shadows: $shadow-2, $shadow-3,
+            $shadow-4, $shadow-5,
+            $shadow-6, $shadow-7,
+            $shadow-8, $shadow-9;
+
+  @each $shadow in $shadows {
+    @if $shadow {
+      $full: $full, $shadow;
+    }
+  }
+  -webkit-box-shadow: $full;
+  -moz-box-shadow: $full;
+  -o-box-shadow: $full;
+  box-shadow: $full;
+}
+
+// Gradient fills
+@mixin gradient-fill($color1, $color2) {
+  background-color: $color2;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from($color1), to($color2));
+  background-image: -moz-linear-gradient(top, $color1, $color2);
+  background-image: -ms-linear-gradient(top, $color1, $color2);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $color1), color-stop(100%, $color2));
+  background-image: -webkit-linear-gradient(top, $color1, $color2);
+  background-image: -o-linear-gradient(top, $color1, $color2);
+  background-image: linear-gradient(top, $color1, $color2);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$color1}', endColorstr='#{$color2}', GradientType=0);
+}
+
+// Transitions
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+	-moz-transition: $transition;
+ 	-ms-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+
+// Box sizing
+@mixin box-sizing($sizing-type) {
+  -moz-box-sizing:$sizing-type;
+  -webkit-box-sizing:$sizing-type;
+  box-sizing:$sizing-type;
+}
+
+// Background-clip
+@mixin background-clip($sizing-type) {
+  -moz-background-clip:$sizing-type;
+  -webkit-background-clip:$sizing-type;
+  background-clip:$sizing-type;
+} 
+
+// Opacity
+@mixin opacity($opacity: 100) {
+	filter: alpha(opacity=#{$opacity});
+	-khtml-opacity: $opacity / 100;
+	-moz-opacity: $opacity / 100;
+	opacity: $opacity / 100;
+}
+
+// Custom functions ------------------------------------------------------------------------
+
+@function tint($color, $percent){
+  @return mix(white, $color, $percent);
+}
+
+@function shade($color, $percent){
+  @return mix(black, $color, $percent);
+}
+
+// Columns ----------------------------------------------------------------------------------
+
+@mixin span($num, $gutter_pc, $gutter_px, $padding, $max_columns) {
+  border:0px solid rgba(0,0,0,0);
+  border-left-width:$gutter_px;
+  margin-left:$gutter_pc;
+  float:left;
+  padding:$padding;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  background-clip:padding-box !important;
+  -moz-background-clip:padding-box !important;
+  -webkit-background-clip:padding-box !important;
+  $one_col: (100% - ($gutter_pc * ($max_columns - 1))) / $max_columns;
+  width:($one_col * $num) + ($gutter_pc * ($num - 1));
+}
+@mixin span_first {
+   margin-left:0;
+}
+$max_columns: 9;
+$padding: 0 1.5%;
+$gutter_px: 0;
+$gutter_pc: 2%;

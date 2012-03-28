@@ -2,40 +2,212 @@
 
 // Import our other sass partials --------------------------------------------------------------
 
-@import "compass";
-
-// Set up our variables ------------------------------------------------------------------------
-
-$link-color:         #0388a6;
-$link-hover-color:   #009ce0;
-$link-focus-color:   false;
-$link-active-color:  false;
-$link-visited-color: false;
-
-$font-color:  #2a2a2a;
-$font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2", georgia, times, serif;
-$base-font-size:   13px;
-$base-line-height: 21px;
-
-$total-cols: 12;
-$col-width: 4em;
-$gutter-width: 1em;
-$side-gutter-width: $gutter-width;
-
-@include global-reset;
+@import "partials/common";
+@import "partials/reset";
 
 // Base typography styles ----------------------------------------------------------------------
 
-a {
-  @include link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color);
+body {
+  color:$mid_grey;
+  font:93.8%/1.6 $meta_serif;
+  *font-size:small;
+}
+h1,h2,h3,h4,h5,h6 {
+  color:$dark_grey;
+  font-family:$proxima_condensed;
+}
+h1 {
+  font-size:3.6em;
+  font-weight:100;
+  margin-bottom:0.5em;
+  letter-spacing:-0.5px;
+  line-height:1.2;
+}
+h2 {
+  font-size:3.6em;
+  font-weight:100;
+  margin-bottom:0.2em;
+  letter-spacing:-0.5px;
+  line-height:1;
+}
+h3 {
+  font-size:$font_26px;
+  font-weight:100;
+  margin-bottom:0.5em;
+}
+h4 {
+  font-size:$font_18px;
+  font-weight:400;
+  margin-bottom:0.5em;
+}
+p {
+  margin:0 0 1.5em 0;
+}
+ul, ol {
+  margin:0 0 1.5em 1.2em;
+}
+ul > li,
+ol > li {
+  margin-bottom:1.5em;
+}
+ul {
+  list-style:disc;
+}
+ol { 
+  list-style-type:decimal;
+}
+nav ul, nav li { 
+  margin:0;
+  list-style:none;
+  list-style-image:none;
+}
+
+// Links
+
+a:hover, a:active { 
+  outline: none; 
+}
+a, a:active { 
+  color:$base_color;
+  cursor:pointer;
+  text-decoration:none;
+}
+a:hover { 
+  color:shade($base_color,30%);
+  text-decoration:none; 
 }
 
 // Base layout styles --------------------------------------------------------------------------
 
-body {
-  font-family: $font-family;
-  color:$font-color; 
+html{
+  background-color:$white;
+  height:101%;
 }
 #main {
-  padding: 50px;
+  background-color:#F7F6F0;
+  padding:90px 0 0;
+}
+.content {
+  max-width:1200px;
+  margin:0 auto;
+  overflow:hidden;
+}
+
+// Columns
+
+.span_1 {
+  @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_2{
+  @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_3 {
+  @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_4 {
+  @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_5 {
+  @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_6 {
+  @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_7 {
+  @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_8 {
+  @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_9 {
+  @include span(9, $gutter_pc, $gutter_px, $padding, $max_columns);
+}
+.span_1:first-child,
+.span_2:first-child,
+.span_3:first-child,
+.span_4:first-child,
+.span_5:first-child,
+.span_6:first-child,
+.span_7:first-child,
+.span_8:first-child,
+.span_9:first-child {
+  @include span_first;
+}
+
+// Header styles -------------------------------------------------------------------------------
+
+#header {
+  background-color:$base_color;
+  margin-bottom:1.5em;
+  overflow:hidden;
+  padding:20px;
+  position:fixed;
+  width:100%;
+  @include box-sizing(border-box);
+  a {
+    color:$white;
+    &:hover {
+      color:$dark_grey;
+    }
+  }
+  .content {
+    > span {
+    color:shade($base_color,10%);
+    }
+    > h1 {
+      display:inline;
+      font-family:$meta_serif;
+      font-size:$font_13px;
+      font-weight:normal;
+    }
+    nav {
+      position:absolute;
+      right:20px;
+      top:20px;
+      > ul {
+        display:inline;
+        margin:0;
+        > li {
+          display:inline;
+          margin-left:20px;
+          &:first-child {
+            margin-left:0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Footer styles ---------------------------------------------------------------------------
+
+#footer {
+  background-color:$white;
+  margin:0 auto;
+  padding-top:1.5em;
+  width:100%;
+}
+
+// Homepage styles -------------------------------------------------------------------------
+
+#portfolio_list {
+  margin:0;
+  > .portfolio_item {
+    list-style:none;
+    overflow:hidden;
+    .meta {
+      border-top:1px dashed $dotted_line;
+      border-bottom:1px dashed $dotted_line;
+      color:$dotted_line;
+      font-size:$font_11px;
+      line-height:normal;
+      margin-bottom:1em;
+      overflow:hidden;
+      padding:0.5em 0 0.4em;
+      text-transform:uppercase;
+      > span {
+        color:$light_grey;
+      }
+    }
+  }
 }

@@ -11,13 +11,13 @@
   = stylesheet_link_tag "site.css"
 
 %body#olliekav{ :class => page_classes }
-  %header
+  %header#header
     = partial "header"
   
   #main{ :role => 'main' }
     = yield
 
-  %footer
+  %footer#footer
     = partial "footer"
   
   %script{ :src => '//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js' }
