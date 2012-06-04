@@ -1,28 +1,42 @@
 !!! 5
-/[if lt IE 7]<html class="no-js ie6" lang="en">
-/[if IE 7]<html class="no-js ie7" lang="en">
-/[if IE 8]<html class="no-js ie8" lang="en">
-/[if (gte IE 9)|!(IE)]<!--><html class="no-js" lang="en">
-%head
-  = yield_content :head
-  %meta{ :charset => "utf-8" }
-  %meta{ :content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }
-  %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1.0' }
-  = stylesheet_link_tag "site.css"
+!= conditional_html(:lang => 'en') do
+  %head
+    = yield_content :head
+    %meta{ :charset => "utf-8" }
+    %meta{ :content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }
+    %meta{ :name => 'description', :content => 'Graphic/Web designer working for kyan.com. Liverpool supporter and DJ of fine underground music.' }
+    %meta{ :name => 'viewport', :content => 'width=device-width' }
+    %link{ href: '/images/favicon.ico', rel: 'shortcut icon' }/
+    = stylesheet_link_tag "/stylesheets/site.css"
 
-%body#olliekav{ :class => page_classes }
-  %header#header
+    /[if lt IE 9] 
+      %script{ :src => '/javascripts/html5shiv.js' } 
+
+  %body#olliekav{ :class => "page_" + page_classes }
+    
     = partial "header"
-  
-  #main{ :role => 'main' }
-    = yield
+    
+    %section#main{ :role => 'main' }
+      .container
+        = yield
 
-  %footer#footer
-    = partial "footer"
-  
-  %script{ :src => '//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js' }
-  %script{ :src => "//use.typekit.com/fmq2ofq.js" }
-  %script
-    try{Typekit.load();}catch(e){}
-  %script
-    window.jQuery || document.write("<script src='javascripts/jquery-1.7.1.min'>\x3C/script>")
+      = partial "footer"
+    
+    //%script{ :src => '//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js' }
+    %script{ :src => "//use.typekit.com/igh2azw.js" }
+    %script{ :type => "application/x-javascript" }
+      function hideURLbar(){ window.scrollTo(0,1); }
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    %script
+      try{Typekit.load();}catch(e){}
+    %script
+      var _gaq = [['_setAccount', 'UA-3660187-2'], ['_trackPageview']];
+      (function(d, t) {
+      var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+      g.async = true;
+      g.src = '//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g, s);
+      })(document, 'script');
+    //%script
+    //  window.jQuery || document.write("<script src='javascripts/jquery-1.7.1.min'>\x3C/script>")

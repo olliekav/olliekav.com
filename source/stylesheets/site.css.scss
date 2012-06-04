@@ -9,23 +9,23 @@
 
 body {
   color:$mid_grey;
-  font:93.8%/1.6 $meta_serif;
+  font:125%/1.6 $meta_serif;
   *font-size:small;
+  font-weight:500;
 }
 h1,h2,h3,h4,h5,h6 {
   color:$dark_grey;
-  font-family:$atrament;
-  font-weight:400;
-  text-transform:uppercase;
+  font-weight:500;
 }
 h1 {
-  font-size:3.6em;
+  font-size:3.5em;
   margin-bottom:0.5em;
   letter-spacing:-0.5px;
   line-height:1.2;
+  text-align:center;
 }
 h2 {
-  font-size:3.6em;
+  font-size:2.7em;
   margin-bottom:0.2em;
   letter-spacing:-0.5px;
   line-height:1;
@@ -62,108 +62,180 @@ nav ul, nav li {
 
 // Links
 
-a:hover, a:active { 
+a:hover, a:active {
+  border-bottom:2px solid shade($base_color,30%); 
   outline: none; 
 }
 a, a:active { 
   color:$base_color;
   cursor:pointer;
   text-decoration:none;
+  @include transition(0.3s ease all);
 }
 a:hover { 
   color:shade($base_color,30%);
   text-decoration:none; 
 }
+a:link  { 
+  -webkit-tap-highlight-color:$base_color;
+}
+.button {
+  background-color:$base_color;
+  color:$white;
+  display:inline-block;
+  font-family:$proxima;
+  height:50px;
+  line-height:50px;
+  margin-bottom:2em;
+  padding:0 20px;
+  position:relative;
+  text-transform:uppercase;
+  z-index:100;
+  @include border-radius(5px);
+  @include transition(0.3s ease background-color);
+  &:hover {
+    background-color:$dark_grey;
+    border:0;
+    color:$white;
+  }
+}
+
+// Typekit loading elements --------------------------------------------------------------------
+
+.wf-loading h1, 
+.wf-loading h2, 
+.wf-loading h3, 
+.wf-loading p,
+.wf-loading .button,
+.wf-loading .button>span {
+  opacity: 0;
+}
+.ie.wf-loading h1, 
+.ie.wf-loading h2, 
+.ie.wf-loading h3, 
+.ie.wf-loading p {
+  visibility:hidden;
+}
+.wf-active h1, 
+.wf-active h2, 
+.wf-active h3, 
+.wf-active p, 
+.wf-active nav li,
+.wf-active .button>span {
+  opacity: 1;
+  visibility: visible;
+  @include transition(opacity 0.24s ease-in-out);
+}
+.wf-active .button {
+  opacity: 1;
+  visibility: visible;
+}
 
 // Base layout styles --------------------------------------------------------------------------
 
-html{
+html {
   background-color:$white;
   height:101%;
+  width:100%;
+}
+body {
+  height:100%;
+  width:100%;
 }
 #main {
   background-color:$white;
-  padding:90px 15px 15px;
   margin:0 auto;
-  max-width:1050px;
+  padding:0 30px;
+  > .container {
+    margin:0 auto;
+    max-width:1200px;
+  }
 }
-.content {
-  max-width:1080px;
-  clear:both;
-  margin:0 0 0 -2.778%;
-  list-style:none; /* So we can make grids out of lists. */
-  overflow:hidden; /* Clear the floats */
-  width:auto;
-}
-
-// Columns
-
-[class^="col_"]{
-  float:left;
-  margin:0 2.778% 0 0;
-}
-.content [class^="col_"]{
-  margin:0 0 0 2.778%;
-}
-.col_1{ width:5.556% }
-.col_2{ width:13.889% }
-.col_3{ width:22.222% }
-.col_4{ width:30.556% }
-.col_5{ width:38.889% }
-.col_6{ width:47.222% }
-.col_7{ width:55.556% }
-.col_8{ width:63.889% }
-.col_9{ width:72.222% }
-.col_10{ width:80.556% }
-.col_11{ width:88.889% }
-.col_12{ width:97.222%; margin:0; }
 
 // Header styles -------------------------------------------------------------------------------
 
 #header {
   background-color:$white;
-  border-bottom:1px dotted $dotted_line;
-  font-family:$atrament;
-  font-weight:300;
-  font-size:$font_18px;
-  margin-bottom:1.5em;
   overflow:hidden;
-  padding:15px;
-  position:fixed;
-  text-transform:uppercase;
+  text-align:center;
   width:100%;
-  @include box-sizing(border-box);
   a {
     color:$base_color;
     &:hover {
       color:$mid_grey;
     }
   }
-  .content {
-    > span {
+  > #logo {
+    background:url(/images/ok_logo.png) no-repeat 0 -125px;
+    height:125px;
+    display:block;
+    margin:60px auto;
+    position:relative;
+    text-indent:-9999px;
+    width:125px;
+    z-index:3;
+    @include transition(none);
+    &:hover {
+      background-position:0 -250px;
+      border:0;
+    }
+  }
+  > span {
     color:tint($base_color,80%);
-    }
-    > h1 {
-      color:$mid_grey;
+  }
+  nav {
+    position:absolute;
+    left:50%;
+    margin-left:-200px;
+    top:110px;
+    z-index:2;
+    width:400px;
+    > ul {
       display:inline;
-      font-size:inherit;
-      font-weight:300;
-    }
-    nav {
-      position:absolute;
-      right:20px;
-      top:15px;
-      > ul {
+      margin:0;
+      > li {
         display:inline;
-        margin:0;
-        > li {
-          display:inline;
-          margin-left:20px;
-          &:first-child {
-            margin-left:0;
+        font-family:$proxima;
+        font-size:$font_15px;
+        font-weight:400;
+        letter-spacing:2px;
+        text-transform:uppercase;
+        &.music {
+          margin-left:200px;
+        }
+        > a.active {
+          color:$dark_grey;
+          text-decoration:line-through;
+          &:hover {
+            border:0;
           }
         }
       }
+    }
+  }
+}
+
+.page_index #header {
+  background:url(/images/body_background.jpg) no-repeat fixed center top;
+  height:450px;
+  left:0;
+  position:fixed;
+  top:0;
+  z-index:1;
+  > h1 {
+    color:$white;
+  }
+  #logo {
+    background-position:0 0;
+    &:hover {
+      background-position:0 -250px;
+      border:0;
+    }
+  }
+  nav > ul > li > a {
+    color:$white;
+    &:hover {
+      color:$base_color;
     }
   }
 }
@@ -172,41 +244,435 @@ html{
 
 #footer {
   background-color:$white;
-  margin:0 auto;
-  padding-top:1.5em;
+  color:$grey_line;
+  margin:35px auto;
+  overflow:hidden;
+  padding:20px 0 65px;
+  text-align:center;
+  max-width:600px;
   width:100%;
 }
 
 // Homepage styles -------------------------------------------------------------------------
 
+.page_index > #main {
+  position:relative;
+  top:449px;
+  z-index:4;
+}
+
 #portfolio_list {
-  margin:0;
+  margin:0 auto;
+  width:100%;
   > .portfolio_item {
     list-style:none;
-    overflow:hidden;
+    margin-bottom:60px;
+    padding:65px 30px 0;
+    position:relative;
+    text-align:center;
     .meta {
-      border-top:1px dotted $dotted_line;
-      border-bottom:1px dotted $dotted_line;
-      color:$dotted_line;
-      font-size:$font_11px;
+      color:$light_grey_text;
+      font-family:$proxima;
+      font-size:$font_15px;
+      font-weight:400;
+      letter-spacing:1px;
       line-height:normal;
-      margin-bottom:1em;
-      overflow:hidden;
+      margin-bottom:2em;
       padding:0.5em 0 0.4em;
       text-transform:uppercase;
       > span {
-        color:$light_grey;
+        color:$grey_line;
       }
     }
-    > .col_8 img {
-      height:auto;
-      width:100%;
+    > .monitor_wrapper {
+      background:$white url(/images/monitor_stand.png) no-repeat 50% 100%;
+      padding-bottom:98px;
+      > .monitor {
+      background-color:$white;
+      border:1px solid $grey_line;
+      margin:0 80px 10px;
+      padding:40px;
+      position:relative;
+      @include border-radius(20px);
+      > .content {
+        background-color:$light_grey;
+        border:1px solid $grey_line;
+        position:relative;
+        @include border-radius(3px);
+        > img {
+          display:block;
+          margin:0 auto;
+          max-width:492px;
+          width:100%;
+        }
+      }
+      > .camera {
+        background-color:$dark_grey;
+        height:10px;
+        left:50%;
+        position:absolute;
+        top:15px;
+        width:10px;
+        @include border-radius(5px);
+      }
+    }
+    }
+    > .iphone {
+      background-color:$white;
+      border:1px solid $grey_line;
+      bottom:0;
+      padding:83px 19px;
+      position:absolute;
+      right:20px;
+      width:212px;
+      z-index:10;
+      @include border-radius(20px);
+      > .content {
+        background-color:$light_grey;
+        border:1px solid $grey_line;
+        width:212px;
+        > img {
+          display:block;
+          width:100%;
+        }
+      }
+      > .home {
+        border:1px solid $grey_line;
+        bottom:20px;
+        height:45px;
+        left:50%;
+        margin-left:-23px;
+        position:absolute;
+        width:44px;
+        @include border-radius(25px);
+        > .circle {
+          border:1px solid $grey_line;
+          display:block;
+          margin:12px auto 0;
+          height:17px;
+          width:17px;
+          @include border-radius(3px);
+        }
+      }
+      > .camera {
+        border:1px solid $grey_line;
+        height:13px;
+        left:70px;
+        position:absolute;
+        top:35px;
+        width:13px;
+        @include border-radius(7px);
+      }
+      .speaker {
+        border:1px solid $grey_line;
+        height:13px;
+        left:50%;
+        margin-left:-25px;
+        position:absolute;
+        top:35px;
+        width:48px;
+        @include border-radius(7px);
+      }
+    }
+    > .logos {
+      margin-top:80px;
+      max-width:100%;
+    }
+    .icons {
+      margin-top:50px;
+      max-width:100%;
+    }
+    &.alfredapp {
+      .monitor > .content {
+        background:url(/images/portfolio/alfredapp_screen_1_back.jpg) no-repeat center top;
+      }
+      padding-bottom:0;
+    }
+    &.rodeo {
+      .monitor > .content {
+        background:url(/images/portfolio/rodeo_screen_1_back.jpg) no-repeat center top;
+      }
+    }
+    &.hiphopquoted {
+      .monitor > .content {
+        background:url(/images/portfolio/hiphopquoted_screen_1_back.jpg) repeat-x center top;
+      }
+    }
+    &.altonconvent {
+      .monitor > .content {
+        background:url(/images/portfolio/altonconvent_screen_1_back.jpg) repeat-x center top;
+      }
+    }
+    &.staffyapp {
+      .monitor > .content {
+        background:url(/images/portfolio/staffyapp_screen_1_back.jpg) repeat-x center top;
+      }
+    }
+    &.contentgroup {
+      .monitor > .content {
+        background:url(/images/portfolio/contentgroup_screen_1_back.jpg) repeat-x center top;
+      }
     }
   }
 }
 
-.duper {
-  font-family:"ff-duper-web-pro-1","ff-duper-web-pro-2",sans-serif;
-  font-size:400px;
-  font-weight:bold;
+// Music pages --------------------------------------------------------
+
+.page_music {
+  > #main {
+    max-width:600px;
+    h2 {
+    text-align:center;
+    }
+    .set {
+      margin-bottom:3em;
+      > iframe {
+        margin-bottom:2.5em;
+      }
+    }
+  }
+}
+
+// About page ---------------------------------------------------------
+
+.page_about {
+  > #main {
+    max-width:600px;
+  }
+}
+
+// Error pages --------------------------------------------------------
+
+.page_404 > #main {
+  text-align:center;
+}
+
+// IE Fixes -----------------------------------------------------------
+
+.ie {
+  #main,#header {
+    margin:0 auto;
+    padding:0;
+    width:100%;
+    > .container {
+      margin:0 auto;
+      width:960px;
+    }
+  }
+  .page_about,.page_music {
+    > #main {
+      > .container {
+        width:600px;
+      }
+    }
+  }
+  #portfolio_list > .portfolio_item > .monitor_wrapper > .monitor {
+    > .content > img {
+      width:492px;
+    }
+  }
+}
+
+// Media queries -------------------------------------------------------
+
+@media handheld, only screen and (max-width:900px) {
+  #portfolio_list {
+    > .portfolio_item {
+      > .monitor_wrapper {
+        > .monitor {
+          margin:0;
+        }
+      }
+    }
+  }
+}
+
+@media handheld, only screen and (max-width:890px) {
+  #portfolio_list {
+    > .portfolio_item {
+      > .iphone {
+        left:0;
+        margin:35px auto;
+        position:relative;
+      }
+    }
+  }
+}
+
+@media handheld, only screen and (max-width:500px) {
+  h2 {
+    font-size:1.8em;
+  }
+  h3 {
+    font-size:$font_26px;
+  }
+  #header {
+    width:100%;
+    > nav {
+      margin-left:-150px;
+      width:300px;
+      > ul {
+        > li {
+          &.music {
+            margin-left:160px;
+          }
+        }
+      }
+    }
+    > #logo {
+      margin-bottom:60px;
+    }
+  }
+  #main > .container {
+    max-width:100%;
+    width:100%;
+  }
+  .page_index > #header {
+    height:417px;
+    > h1 {
+      font-size:2.1em;
+      margin:0 20px;
+    }
+  }
+  .page_index > #main {
+    position:relative;
+    top:418px;
+    z-index:4;
+  }
+  #portfolio_list {
+    width:100%;
+    > .portfolio_item {
+      margin-bottom:0;
+      padding:40px 0;
+      > .monitor_wrapper {
+        background-size:200px;
+        padding-bottom:68px;
+        > .monitor {
+          margin:0;
+          padding:30px;
+        }
+      }
+      > .iphone {
+        left:0;
+        margin:35px auto;
+        position:relative;
+      }
+    }
+  }
+  .page_about,.page_music {
+    > #main {
+      padding-top:40px;
+      max-width:100%;
+    }
+  }
+  #footer {
+    max-width:100%;
+    width:100%;
+  }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) {
+  #header > h1 {
+    margin:0 auto;
+    width:70%;
+  }
+  #portfolio_list {
+    > .portfolio_item {
+      > .iphone {
+        margin:0;
+        position:absolute;
+        left:0;
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust:none;
+  }
+  h2 {
+    font-size:1.8em;
+  }
+  h3 {
+    font-size:$font_26px;
+  }
+  #header {
+    width:100%;
+    > nav {
+      margin-left:-150px;
+      width:300px;
+      > ul {
+        > li {
+          &.music {
+            margin-left:160px;
+          }
+        }
+      }
+    }
+    > #logo {
+      margin-bottom:60px;
+    }
+  }
+  #main > .container {
+    max-width:100%;
+    width:100%;
+  }
+  .page_index > #header {
+    height:417px;
+    > h1 {
+      font-size:2.1em;
+      margin:0 20px;
+    }
+  }
+  .page_index > #main {
+    position:relative;
+    top:0;
+    margin-top:416px;
+    z-index:4;
+  }
+  #portfolio_list {
+    width:100%;
+    > .portfolio_item {
+      margin-bottom:0;
+      padding:40px 0;
+      > .monitor_wrapper {
+        background-size:200px;
+        padding-bottom:68px;
+        > .monitor {
+          margin:0;
+          padding:30px;
+        }
+      }
+      > .iphone {
+        left:0;
+        margin:35px auto;
+        position:relative;
+        width:150px;
+        > .content {
+          width:150px;
+        }
+        > .camera {
+          left:40px;
+        }
+      }
+    }
+  }
+  .page_about,.page_music {
+    > #main {
+      padding-top:40px;
+      max-width:100%;
+    }
+  }
+  #footer {
+    max-width:100%;
+    width:100%;
+  }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  #header > #logo  { 
+    background-image:url(/images/ok_logo_x2.png);
+    background-size:125px;
+  }
 }

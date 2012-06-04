@@ -26,7 +26,9 @@ require 'haml-coderay'
 require 'coffee-filter'
 
 # Automatic image dimensions on image_tag helper
-activate :automatic_image_sizes
+# activate :automatic_image_sizes
+
+activate :directory_indexes
 
 ###
 # Page command
@@ -55,11 +57,16 @@ activate :automatic_image_sizes
 ###
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def conditional_html(options={}, &blk)
+    attrs = options.map { |(k, v)| " #{h k}=\"#{h v}\"" }.join('')
+    [ "<!--[if lt IE 9]>                 <html#{attrs} class=\"ie\"> <![endif]-->",
+      "<!--[if (gte IE 9)|!(IE)]><!-->   <html#{attrs}> <!--<![endif]-->",
+      capture_haml(&blk).strip,
+      "</html>"
+    ].join("\n")
+  end
+end
 
 # Change the CSS directory
 # set :css_dir, "alternative_css_directory"
@@ -84,7 +91,11 @@ configure :build do
   # Use relative URLs
   activate :relative_assets
   
-  activate :blog
+  # activate :blog
+
+  #set :blog_permalink, "blog/:year/:title.html"
+  #set :blog_layout_engine, "haml"
+  #set :blog_taglink, "categories/:tag.html"
   
   # Compress PNGs after build
   # First: gem install middleman-smusher

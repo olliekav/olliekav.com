@@ -1,14 +1,11 @@
-.content
+%header#header
 
-  =link_to("olliekav.com", "/") 
+  =link_to("olliekav.com", "/", :id => "logo")
 
-  %span //
-
-  %h1 web designer and front end developer
+  -if page_classes == 'index' 
+    %h1 I design and build cool stuff.
 
   %nav 
     %ul
-      %li=link_to("home", "/")
-      %li=link_to("blog", "")
-      %li=link_to("music", "")
-      %li=link_to("contact", "")
+      %li=link_to("about", "/about", :class => ('active' if page_classes == 'about'))
+      %li.music=link_to("music", "/music", :class => ('active' if page_classes == 'music'))

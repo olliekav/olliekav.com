@@ -2,31 +2,31 @@
 
 // Colours ---------------------------------------------------------------------------------
 
-$base_color:#81d3d8;
-$beige:#F7F6F0;
+$base_color:#41d1c6;
+$light_grey_text:#b3b3b2;
 $mid_grey:#5a5b5a;
-$dark_grey:#3e3e3e;
-$dotted_line:#d7d4c4;
+$dark_grey:#343435;
+$grey_line:#cccccc;
 $light_grey:#eaeaea;
 $white:#ffffff;
 
 // Font stacks -----------------------------------------------------------------------------
 
-$meta_serif:"ff-meta-serif-web-pro-1", "ff-meta-serif-web-pro-2", Georgia,"Times New Roman",serif ;
-$proxima_condensed:"proxima-nova-sc-osf-ext-cond-1","proxima-nova-sc-osf-ext-cond-2", 'Helvetica Neue', Helvetica, arial, sans-serif ;
-$atrament:"atrament-web-1","atrament-web-2", 'Helvetica Neue', Helvetica, arial, sans-serif ;
+$meta_serif:"ff-meta-serif-web-pro", Georgia,"Times New Roman",serif ;
+$basic_gothic:"ff-basic-gothic-web-pro", 'Helvetica Neue', Helvetica, arial, sans-serif ;
+$proxima:"proxima-nova", 'Helvetica Neue', Helvetica, arial, sans-serif;
 
 // Font sizes ------------------------------------------------------------------------------
 
-$font_11px:0.846em;
-$font_13px:1em;
-$font_15px:1.154em;
-$font_18px:1.385em;
-$font_22px:1.692em;
-$font_24px:1.846em;
-$font_26px:2em;
-$font_28px:2.154em;
-$font_32px:2.462em;
+$font_11px:0.550em;
+$font_13px:0.650em;
+$font_15px:0.750em;
+$font_18px:0.900em;
+$font_22px:1.100em;
+$font_24px:1.200em;
+$font_26px:1.3em;
+$font_28px:1.4em;
+$font_32px:1.6em;
 
 // Set up our mixins -------------------------------------------------------------------------
 
@@ -35,20 +35,7 @@ $font_32px:2.462em;
   border-radius:$radius;
   -moz-border-radius:$radius;
   -webkit-border-radius:$radius;
-}
-@mixin border-radii($topleft, $topright, $bottomright, $bottomleft) {
-	border-top-left-radius: $topleft;
-	border-top-right-radius: $topright;
-	border-bottom-right-radius: $bottomright;
-	border-bottom-left-radius: $bottomleft;
-	-webkit-border-top-left-radius: $topleft;
-	-webkit-border-top-right-radius: $topright;
-	-webkit-border-bottom-right-radius: $bottomright;
-	-webkit-border-bottom-left-radius: $bottomleft;
-	-moz-border-radius-topleft: $topleft;
-	-moz-border-radius-topright: $topright;
-	-moz-border-radius-bottomright: $bottomright;
-	-moz-border-radius-bottomleft: $bottomleft;
+  behavior: url(../javascripts/PIE.htc);
 }
 
 // Box shadow
@@ -129,28 +116,3 @@ $font_32px:2.462em;
 @function shade($color, $percent){
   @return mix(black, $color, $percent);
 }
-
-// Columns ----------------------------------------------------------------------------------
-
-@mixin span($num, $gutter_pc, $gutter_px, $padding, $max_columns) {
-  border:0px solid rgba(0,0,0,0);
-  border-left-width:$gutter_px;
-  margin-left:$gutter_pc;
-  float:left;
-  padding:$padding;
-  box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  background-clip:padding-box !important;
-  -moz-background-clip:padding-box !important;
-  -webkit-background-clip:padding-box !important;
-  $one_col: (100% - ($gutter_pc * ($max_columns - 1))) / $max_columns;
-  width:($one_col * $num) + ($gutter_pc * ($num - 1));
-}
-@mixin span_first {
-   margin-left:0;
-}
-$max_columns: 9;
-$padding: 0 1.5%;
-$gutter_px: 0;
-$gutter_pc: 2%;
