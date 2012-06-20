@@ -407,6 +407,9 @@ body {
       .monitor > .content {
         background:url(/images/portfolio/staffyapp_screen_1_back.jpg) repeat-x center top;
       }
+      .iphone {
+        bottom:570px;
+      }
     }
     &.contentgroup {
       .monitor > .content {
@@ -491,6 +494,7 @@ body {
   #portfolio_list {
     > .portfolio_item {
       > .iphone {
+        bottom:0 !important;
         left:0;
         margin:35px auto;
         position:relative;
