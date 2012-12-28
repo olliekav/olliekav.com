@@ -63,7 +63,7 @@ nav ul, nav li {
 // Links
 
 a:hover, a:active {
-  border-bottom:2px solid shade($base_color,30%); 
+  //border-bottom:2px solid shade($base_color,30%); 
   outline: none; 
 }
 a, a:active { 
@@ -203,11 +203,13 @@ body {
         &.music {
           margin-left:200px;
         }
-        > a.active {
-          color:$dark_grey;
-          text-decoration:line-through;
+        a {
           &:hover {
-            border:0;
+            text-decoration:line-through;
+          }
+          &.active {
+            color:$dark_grey;
+            text-decoration:line-through;
           }
         }
       }
@@ -295,8 +297,10 @@ body {
       position:relative;
       @include border-radius(20px);
       > .content {
-        background-color:$light_grey;
         border:1px solid $grey_line;
+        height:0;
+        padding-bottom:55%;
+        max-width:898px;
         position:relative;
         @include border-radius(3px);
         > img {
@@ -382,30 +386,49 @@ body {
       margin-top:50px;
       max-width:100%;
     }
+    &.dress2kill {
+      .monitor > .content {
+        background:url(/images/portfolio/dress2kill_screen.jpg) no-repeat center top;
+        background-size:cover;
+      }
+      padding-bottom:0;
+    }
+    &.backpage {
+      .monitor > .content {
+        background:url(/images/portfolio/backpage_screen.jpg) no-repeat center top;
+        background-size:cover;
+      }
+      padding-bottom:0;
+    }
     &.alfredapp {
       .monitor > .content {
-        background:url(/images/portfolio/alfredapp_screen_1_back.jpg) no-repeat center top;
+        background:url(/images/portfolio/alfredapp_screen.jpg) no-repeat center top;
+        background-size:cover;
       }
       padding-bottom:0;
     }
     &.rodeo {
       .monitor > .content {
-        background:url(/images/portfolio/rodeo_screen_1_back.jpg) no-repeat center top;
+        background:url(/images/portfolio/rodeo_screen.jpg) no-repeat center top;
+        background-size:cover;
       }
     }
     &.hiphopquoted {
       .monitor > .content {
-        background:url(/images/portfolio/hiphopquoted_screen_1_back.jpg) repeat-x center top;
+        background:url(/images/portfolio/hiphopquoted_screen.jpg) no-repeat center top;
+        background-size:cover;
       }
     }
     &.altonconvent {
       .monitor > .content {
-        background:url(/images/portfolio/altonconvent_screen_1_back.jpg) repeat-x center top;
+        background:url(/images/portfolio/altonconvent_screen.jpg) no-repeat center top;
+        background-size:cover;
       }
     }
     &.staffyapp {
       .monitor > .content {
-        background:url(/images/portfolio/staffyapp_screen_1_back.jpg) repeat-x center top;
+        background:url(/images/portfolio/staffyapp_screen.jpg) no-repeat center top;
+        background-size:cover;
       }
       .iphone {
         bottom:248px;
@@ -413,7 +436,20 @@ body {
     }
     &.contentgroup {
       .monitor > .content {
-        background:url(/images/portfolio/contentgroup_screen_1_back.jpg) repeat-x center top;
+        background:url(/images/portfolio/contentgroup_screen.jpg) repeat-x center top;
+        background-size:cover;
+      }
+    }
+    &.cube {
+      .monitor > .content {
+        background:url(/images/portfolio/cube_screen.jpg) repeat-x center top;
+        background-size:cover;
+      }
+    }
+    &.qmee {
+      .monitor > .content {
+        background:url(/images/portfolio/qmee_screen.jpg) repeat-x center top;
+        background-size:cover;
       }
     }
   }
@@ -554,6 +590,9 @@ body {
         > .monitor {
           margin:0;
           padding:30px;
+          > .content {
+            padding-bottom:230px;
+          }
         }
       }
       > .iphone {
