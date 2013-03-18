@@ -83,7 +83,8 @@ a:link  {
   background-color:$base_color;
   color:$white;
   display:inline-block;
-  font-family:$proxima;
+  font-family:$brandon;
+  font-weight:700;
   height:50px;
   line-height:50px;
   margin-bottom:2em;
@@ -195,9 +196,9 @@ body {
       margin:0;
       > li {
         display:inline;
-        font-family:$proxima;
+        font-family:$brandon;
         font-size:$font_15px;
-        font-weight:400;
+        font-weight:700;
         letter-spacing:2px;
         text-transform:uppercase;
         &.music {
@@ -274,9 +275,9 @@ body {
     text-align:center;
     .meta {
       color:$light_grey_text;
-      font-family:$proxima;
+      font-family:$brandon;
       font-size:$font_15px;
-      font-weight:400;
+      font-weight:700;
       letter-spacing:1px;
       line-height:normal;
       margin-bottom:2em;
@@ -314,6 +315,7 @@ body {
         background-color:$dark_grey;
         height:10px;
         left:50%;
+        margin-left:-5px;
         position:absolute;
         top:15px;
         width:10px;
@@ -404,6 +406,9 @@ body {
       .monitor > .content {
         background:url(/images/portfolio/alfredapp_screen.jpg) no-repeat center top;
         background-size:cover;
+      }
+      .iphone {
+        bottom:1124px;
       }
       padding-bottom:0;
     }
@@ -680,11 +685,17 @@ body {
       margin-bottom:0;
       padding:40px 0;
       > .monitor_wrapper {
-        background-size:200px;
-        padding-bottom:68px;
+        background-size:150px;
+        padding-bottom:48px;
         > .monitor {
           margin:0;
-          padding:30px;
+          padding:20px;
+          > .content {
+            padding-bottom: 80%;
+          }
+          > .camera {
+            top:6px;
+          }
         }
       }
       > .iphone {

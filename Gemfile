@@ -1,5 +1,5 @@
 source "http://rubygems.org"
 
-gem "middleman", "~>2.0.14"
-gem "haml-coderay"
+gem "middleman", "~>3.0.9"
 gem "coffee-filter"
+gem "haml-coderay"
