@@ -1,11 +1,11 @@
 %header#header
 
-  =link_to("olliekav.com", "/", :id => "logo")
+  =link_to("<span>olliekav.com</span>", "/", {:id => "logo", "aria-hidden" => "true", "data-icon" => "&#xe002;"})
 
   -if page_classes == 'index' 
     %h1 I design and build cool stuff.
 
   %nav 
     %ul
-      %li=link_to("about", "/about", :class => ('active' if page_classes == 'about'))
-      %li.music=link_to("music", "/music", :class => ('active' if page_classes == 'music'))
+      %li=link_to("about", "/about", :class => ('active' if page_classes === 'about about_index'))
+      %li.music=link_to("music", "/music", :class => ('active' if page_classes == 'music music_index'))

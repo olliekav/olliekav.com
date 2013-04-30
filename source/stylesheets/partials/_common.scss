@@ -10,6 +10,29 @@ $grey_line:#cccccc;
 $light_grey:#eaeaea;
 $white:#ffffff;
 
+// Fonts -----------------------------------------------------------------------------------
+
+@font-face {
+  font-family: 'olliekav';
+  src:url('../fonts/olliekav.eot');
+  src:url('../fonts/olliekav.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/olliekav.woff') format('woff'),
+    url('../fonts/olliekav.ttf') format('truetype'),
+    url('../fonts/olliekav.svg#olliekav') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[data-icon]:before {
+  font-family: 'olliekav';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
 // Font stacks -----------------------------------------------------------------------------
 
 $meta_serif:"ff-meta-serif-web-pro", Georgia,"Times New Roman",serif ;

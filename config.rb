@@ -34,6 +34,8 @@ activate :directory_indexes
 # Page command
 ###
 
+#active_nav = {:class => "active"}
+
 # Per-page layout changes:
 # 
 # With no layout
@@ -58,6 +60,7 @@ activate :directory_indexes
 
 # Methods defined in the helpers block are available in templates
 helpers do
+
   def conditional_html(options={}, &blk)
     attrs = options.map { |(k, v)| " #{h k}=\"#{h v}\"" }.join('')
     [ "<!--[if lt IE 9]>                 <html#{attrs} class=\"ie\"> <![endif]-->",
@@ -66,6 +69,11 @@ helpers do
       "</html>"
     ].join("\n")
   end
+
+  def nav_active(page)
+    @page_id == page ? {:class => "active"} : {}
+  end
+
 end
 
 # Change the CSS directory
