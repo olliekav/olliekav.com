@@ -2,8 +2,8 @@
 
   =link_to("<span>olliekav.com</span>", "/", {:id => "logo", "aria-hidden" => "true", "data-icon" => "&#xe002;"})
 
-  -if page_classes == 'index' 
-    %h1 I design and build cool stuff.
+  %h1
+    = yield_content :title
 
   %nav 
     %ul
