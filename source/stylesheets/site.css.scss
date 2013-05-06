@@ -170,12 +170,14 @@ body {
   > h1 {
     color:$white;
     margin-bottom:1em;
+    padding:0 20px;
   }
   > #logo {
     color:$white;
     display:inline-block;
     font-size:6.5em;
-    margin:0.3em auto 0;
+    line-height:1;
+    margin:0.5em auto 0.3em;
     position:relative;
     z-index:3;
     &:hover {
@@ -533,37 +535,13 @@ body {
     font-size:$font_26px;
   }
   #header {
-    width:100%;
-    > nav {
-      margin-left:-150px;
-      width:300px;
-      > ul {
-        > li {
-          &.music {
-            margin-left:160px;
-          }
-        }
-      }
-    }
-    > #logo {
-      margin-bottom:60px;
+    > h1 {
+      font-size:2.6em;
     }
   }
   #main > .container {
     max-width:100%;
     width:100%;
-  }
-  .page_index > #header {
-    height:417px;
-    > h1 {
-      font-size:2.1em;
-      margin:0 20px;
-    }
-  }
-  .page_index > #main {
-    position:relative;
-    top:418px;
-    z-index:4;
   }
   #portfolio_list {
     width:100%;
@@ -628,7 +606,11 @@ body {
     font-size:$font_26px;
   }
   #header {
+    margin-bottom: 2.5em;
     width:100%;
+    > h1 {
+      font-size:2.1em;
+    }
     > nav {
       margin-left:-150px;
       width:300px;
@@ -640,26 +622,10 @@ body {
         }
       }
     }
-    > #logo {
-      margin-bottom:60px;
-    }
   }
   #main > .container {
     max-width:100%;
     width:100%;
-  }
-  .page_index > #header {
-    height:417px;
-    > h1 {
-      font-size:2.1em;
-      margin:0 20px;
-    }
-  }
-  .page_index > #main {
-    position:relative;
-    top:0;
-    margin-top:416px;
-    z-index:4;
   }
   #portfolio_list {
     width:100%;
@@ -703,12 +669,5 @@ body {
   #footer {
     max-width:100%;
     width:100%;
-  }
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2) {
-  #header > #logo  { 
-    background-image:url(/images/ok_logo_x2.png);
-    background-size:125px;
   }
 }
