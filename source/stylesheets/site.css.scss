@@ -256,6 +256,9 @@ body {
     &:first-child {
       padding-top:0;
     }
+    > h3 {
+      color:darken($light_grey_text, 30%);
+    }
     .meta {
       color:$light_grey_text;
       font-family:$brandon;
@@ -371,23 +374,16 @@ body {
       margin-top:50px;
       max-width:100%;
     }
-    &.dress2kill {
-      .monitor > .content {
-        background:url(/images/portfolio/dress2kill_screen.jpg) no-repeat center top;
-        background-size:cover;
-      }
-      padding-bottom:0;
-    }
     &.backpage {
       .monitor > .content {
-        background:url(/images/portfolio/backpage_screen.jpg) no-repeat center top;
+        background:url(/images/portfolio/backpage_screen_v2.jpg) no-repeat center top;
         background-size:cover;
       }
       padding-bottom:0;
     }
     &.alfredapp {
       .monitor > .content {
-        background:url(/images/portfolio/alfredapp_screen.jpg) no-repeat center top;
+        background:url(/images/portfolio/alfredapp_screen_v2.jpg) no-repeat center top;
         background-size:cover;
       }
       .iphone {
@@ -409,22 +405,7 @@ body {
     }
     &.altonconvent {
       .monitor > .content {
-        background:url(/images/portfolio/altonconvent_screen.jpg) no-repeat center top;
-        background-size:cover;
-      }
-    }
-    &.staffyapp {
-      .monitor > .content {
-        background:url(/images/portfolio/staffyapp_screen.jpg) no-repeat center top;
-        background-size:cover;
-      }
-      .iphone {
-        bottom:248px;
-      }
-    }
-    &.contentgroup {
-      .monitor > .content {
-        background:url(/images/portfolio/contentgroup_screen.jpg) repeat-x center top;
+        background:url(/images/portfolio/altonconvent_screen_v2.jpg) no-repeat center top;
         background-size:cover;
       }
     }
@@ -436,7 +417,37 @@ body {
     }
     &.qmee {
       .monitor > .content {
-        background:url(/images/portfolio/qmee_screen.jpg) repeat-x center top;
+        background:url(/images/portfolio/qmee_screen_v2.jpg) repeat-x center top;
+        background-size:cover;
+      }
+    }
+    &.rebellion {
+      .monitor > .content {
+        background:url(/images/portfolio/rebellion_screen.jpg) repeat-x center top;
+        background-size:cover;
+      }
+    }
+    &.workplace {
+      .monitor > .content {
+        background:url(/images/portfolio/workplace_screen.jpg) repeat-x center top;
+        background-size:cover;
+      }
+    }
+    &.cloudprofiler {
+      .monitor > .content {
+        background:url(/images/portfolio/cloudprofiler_screen.jpg) repeat-x center top;
+        background-size:cover;
+      }
+    }
+    &.talis {
+      .monitor > .content {
+        background:url(/images/portfolio/talis_screen.jpg) repeat-x center top;
+        background-size:cover;
+      }
+    }
+    &.otr {
+      .monitor > .content {
+        background:url(/images/portfolio/otr_screen.jpg) repeat-x center top;
         background-size:cover;
       }
     }
