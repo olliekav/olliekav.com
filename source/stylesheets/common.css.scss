@@ -1,0 +1,210 @@
+// SASS setup items
+
+// Colors
+
+$dark-grey: #222222;
+$mint: #41d1c6;
+$white: #fff;
+
+
+// Fonts
+
+@font-face {
+  font-family: 'social';
+  src: url('../fonts/social/social.eot?3947581');
+  src: url('../fonts/social/social.eot?3947581#iefix') format('embedded-opentype'),
+       url('../fonts/social/social.woff?3947581') format('woff'),
+       url('../fonts/social/social.ttf?3947581') format('truetype'),
+       url('../fonts/social/social.svg?3947581#social') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "social";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+}
+.icon-facebook:before { content: '\e800'; } /* '' */
+.icon-twitter-bird:before { content: '\e801'; } /* '' */
+.icon-github:before { content: '\e802'; } /* '' */
+.icon-googleplus-rect:before { content: '\e803'; } /* '' */
+
+$ff-din-round: 'DIN Round Pro', 'Helvetica Neue', 'Arial', sans-serif;
+
+// Mixins
+
+// Color schemes
+
+@mixin colour-scheme($color, $button, $lighten) {
+
+  $feat_color: $color !default;
+
+  @if $lighten {
+    $feat_color: lighten($color, 20%);
+  }
+
+  a {
+    color: $color;
+    &:hover {
+      color: darken($color, 5%);
+    }
+  }
+  nav, header {
+    a {
+      color: #fff;
+      &.active,
+      &:hover {
+        color: $feat_color;
+      }
+    }
+  }
+  .intro:first-of-type:first-letter, blockquote {
+    color: $color;
+  }
+  #logo {
+    .logo-left {
+      fill: #fff;
+      @include transition(fill 0.1s linear);
+    }
+    .logo-right {
+      fill: $feat_color;
+      @include transition(fill 0.1s linear);
+    }
+  }
+  #footer {
+    a {
+      color: $color;
+      &:hover {
+        color: $dark-grey;
+      }
+    }
+  }
+  .content,
+  //.featured,
+  .client-header {
+    background-color: $color;
+    @include transition(background 0.1s linear);
+    h1, h2 , h3 {
+      color: $feat_color;
+      @include transition(fill 0.1s linear);
+    }
+    color: #fff;
+    a {
+      color: #fff;
+      &:hover {
+        color: $feat_color;
+      }
+    }
+    .button {
+      background-color: rgba(darken($color, 5%), 0.5);
+      &:hover {
+        background-color: rgba(darken($color, 5%), 1);
+        color: #fff;
+      }
+    }
+  }
+  .work-nav {
+    a {
+      background-color: darken($color, 5%);
+      background-color: rgba(darken($color, 5%), 0.5);
+      &:hover {
+        background-color: rgba(darken($color, 5%), 1);
+        color: #fff;
+      }
+    }
+  }
+  @if $button {
+    .button {
+      background-color: $color;
+      color: #fff;
+      &:hover {
+        background-color: darken($color, 5%);
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Box sizing
+@mixin box-sizing($sizing-type) {
+  -moz-box-sizing:$sizing-type;
+  -webkit-box-sizing:$sizing-type;
+  box-sizing:$sizing-type;
+}
+
+// Transitions
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+// Gradients
+@mixin gradient-directional($startColor: #555, $endColor: #333, $deg: 45deg) {
+  background-color: $endColor;
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient($deg, $startColor, $endColor); // FF 3.6+
+  background-image: -ms-linear-gradient($deg, $startColor, $endColor); // IE10
+  background-image: -webkit-linear-gradient($deg, $startColor, $endColor); // Safari 5.1+, Chrome 10+
+  background-image: -o-linear-gradient($deg, $startColor, $endColor); // Opera 11.10
+  background-image: linear-gradient($deg, $startColor, $endColor); // The standard
+}
+
+// Extends
+
+// @extend %clearfix;
+%clearfix {
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+    zoom: 1;
+  }
+}
+
+// @extend %header-shadow;
+%header-shadow {
+  &:after {
+    bottom: 0;
+    content: '';
+    height: 30px;
+    left: 0;
+    opacity: 0.1;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    @include gradient-directional(#000, transparent, 0);
+  }
+}
+
+// @extend %first-letter
+%first-letter {
+  &:first-letter {
+    float: left;
+    line-height: 0.55;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 14px 0.2em 0 0;
+  }
+}
+
+// @extend %vertical-align
+%vertical-align {
+  position: relative;
+  top: 48%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

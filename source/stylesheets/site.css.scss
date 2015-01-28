@@ -1,684 +1,91 @@
-// Copyright olliekav.com 2012 -----------------------------------------------------------------
+@charset "utf-8";
 
-// Import our other sass partials --------------------------------------------------------------
+@import "common";
+@import "normalize";
+@import "gridset";
 
-@import "partials/common";
-@import "partials/reset";
-
-// Base typography styles ----------------------------------------------------------------------
-
-body {
-  color:$mid_grey;
-  font:125%/1.6 $meta_serif;
-  *font-size:small;
-  font-weight:500;
-}
-h1,h2,h3,h4,h5,h6 {
-  color:$dark_grey;
-  font-weight:500;
-}
-h1 {
-  font-size:3.5em;
-  margin-bottom:0.5em;
-  letter-spacing:-0.5px;
-  line-height:1.2;
-  text-align:center;
-}
-h2 {
-  font-size:2.7em;
-  margin-bottom:0.2em;
-  letter-spacing:-0.5px;
-  line-height:1;
-}
-h3 {
-  font-size:$font_26px;
-  margin-bottom:0.5em;
-}
-h4 {
-  font-size:$font_18px;
-  margin-bottom:0.5em;
-}
-p {
-  margin:0 0 1.5em 0;
-}
-ul, ol {
-  margin:0 0 1.5em 1.2em;
-}
-ul > li,
-ol > li {
-  margin-bottom:1.5em;
-}
-ul {
-  list-style:disc;
-}
-ol { 
-  list-style-type:decimal;
-}
-nav ul, nav li { 
-  margin:0;
-  list-style:none;
-  list-style-image:none;
-}
-
-// Links
-
-a:hover, a:active {
-  //border-bottom:2px solid shade($base_color,30%); 
-  outline: none; 
-}
-a, a:active { 
-  color:$base_color;
-  cursor:pointer;
-  text-decoration:none;
-  @include transition(0.2s ease all);
-}
-a:hover { 
-  color:shade($base_color,30%);
-  text-decoration:none; 
-}
-a:link  { 
-  -webkit-tap-highlight-color:$base_color;
-}
-.button {
-  background-color:$base_color;
-  color:$white;
-  display:inline-block;
-  font-family:$brandon;
-  font-weight:700;
-  height:50px;
-  line-height:50px;
-  margin-bottom:2em;
-  padding:0 20px;
-  position:relative;
-  text-transform:uppercase;
-  z-index:100;
-  @include border-radius(5px);
-  @include transition(0.2s ease background-color);
-  &:hover {
-    background-color:$dark_grey;
-    border:0;
-    color:$white;
-  }
-}
-
-// Typekit loading elements --------------------------------------------------------------------
-
-.wf-loading h1, 
-.wf-loading h2, 
-.wf-loading h3, 
-.wf-loading p,
-.wf-loading .button,
-.wf-loading .button>span {
-  opacity: 0;
-}
-.ie.wf-loading h1, 
-.ie.wf-loading h2, 
-.ie.wf-loading h3, 
-.ie.wf-loading p {
-  visibility:hidden;
-}
-.wf-active h1, 
-.wf-active h2, 
-.wf-active h3, 
-.wf-active p, 
-.wf-active nav li,
-.wf-active .button>span {
-  opacity: 1;
-  visibility: visible;
-  @include transition(opacity 0.24s ease-in-out);
-}
-.wf-active .button {
-  opacity: 1;
-  visibility: visible;
-}
-
-// Base layout styles --------------------------------------------------------------------------
+// Basic layout setup
 
 html {
-  background-color:$white;
-  height:101%;
-  width:100%;
-}
-body {
   height:100%;
   width:100%;
 }
-#main {
-  background-color:$white;
-  margin:0 auto;
-  padding:0 30px;
-  > .container {
-    margin:0 auto;
-    max-width:1200px;
+body {
+  background-color: #fff;
+  color: $dark-grey;
+  font: 300 150%/1.5 $ff-din-round;
+  //padding: 4%;
+  position: relative;
+  width:100%;
+  @include box-sizing(border-box);
+  @extend %clearfix;
+}
+img {
+  max-width: 100%;
+}
+section {
+  padding-top: 4em;
+}
+
+// Typography
+
+h1,h2,h3,h4 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 18vw;
+  letter-spacing: -5px;
+  line-height: 0.9;
+  margin: 0 0 0.5em -1.5%;
+}
+
+// Links 
+
+// Links
+
+a {
+  color: $white;
+  text-decoration: none;
+  @include transition(color 0.1s linear);
+  &:hover {
+    color: $dark-grey;
   }
 }
 
-// Header styles -------------------------------------------------------------------------------
+// Header styles 
 
 #header {
-  background-color:$base_color;
-  margin-bottom: 4.5em;
-  overflow:hidden;
-  text-align:center;
-  width:100%;
-  a {
-    color:$base_color;
-    &:hover {
-      color:$mid_grey;
-    }
+  .logo {
+    width: 100%;
   }
-  > h1 {
-    color:$white;
-    margin-bottom:1em;
-    padding:0 20px;
-  }
-  > #logo {
-    color:$white;
-    display:inline-block;
-    font-size:6.5em;
-    line-height:1;
-    margin:0.5em auto 0.3em;
-    position:relative;
-    z-index:3;
-    &:hover {
-      color:$dark_grey;
-    }
-    > span {
-      display:none;
-    } 
-  }
-  nav {
-    position:absolute;
-    left:50%;
-    margin-left:-200px;
-    top:110px;
-    z-index:2;
-    width:400px;
-    > ul {
-      display:inline;
-      margin:0;
-      > li {
-        display:inline;
-        font-family:$brandon;
-        font-size:$font_15px;
-        font-weight:700;
-        letter-spacing:2px;
-        text-transform:uppercase;
-        &.music {
-          margin-left:200px;
-        }
-        a {
-          color:$white;
-          &:hover,&.active {
-            color:$dark_grey;
-            text-decoration:line-through;
-          }
-        }
-      }
+}
+#navigation {
+  font-weight: 400;
+  text-align: center;
+  ul {
+    margin: 1em 0 0;
+    padding: 0;
+    > li {
+      list-style: none;
     }
   }
 }
 
-// Footer styles ---------------------------------------------------------------------------
+// Footer styles
 
-#footer {
-  background-color:$white;
-  color:$grey_line;
-  margin:35px auto;
-  overflow:hidden;
-  padding:20px 0 65px;
-  text-align:center;
-  max-width:620px;
-  width:100%;
-  li {
-    display:inline;
-    font-size:3.1em;
-    margin-right:0.5em;
+// Homepage
+
+.page-index {
+  background-color: $mint;
+  color: #fff;
+}
+#home {
+  h1 {
     span {
-      display:none;
+      display: block;
     }
-    &:last-child {
-      margin-right:0;
-    }
-  }
-}
-
-// Homepage styles -------------------------------------------------------------------------
-#portfolio_list {
-  margin:0 auto;
-  width:100%;
-  > .portfolio_item {
-    list-style:none;
-    margin-bottom:60px;
-    padding:65px 30px 0;
-    position:relative;
-    text-align:center;
-    &:first-child {
-      padding-top:0;
-    }
-    > h3 {
-      color:darken($light_grey_text, 30%);
-    }
-    .meta {
-      color:$light_grey_text;
-      font-family:$brandon;
-      font-size:$font_15px;
-      font-weight:700;
-      letter-spacing:1px;
-      line-height:normal;
-      margin-bottom:2em;
-      padding:0.5em 0 0.4em;
-      text-transform:uppercase;
-      > span {
-        color:$grey_line;
-      }
-    }
-    > .monitor_wrapper {
-      background:$white url(/images/monitor_stand.png) no-repeat 50% 100%;
-      padding-bottom:98px;
-      > .monitor {
-      background-color:$white;
-      border:1px solid $grey_line;
-      margin:0 80px 10px;
-      padding:40px;
-      position:relative;
-      @include border-radius(20px);
-      > .content {
-        border:1px solid $grey_line;
-        height:0;
-        padding-bottom:55%;
-        max-width:898px;
-        position:relative;
-        @include border-radius(3px);
-        > img {
-          display:block;
-          margin:0 auto;
-          max-width:492px;
-          width:100%;
-        }
-      }
-      > .camera {
-        background-color:$dark_grey;
-        height:10px;
-        left:50%;
-        margin-left:-5px;
-        position:absolute;
-        top:15px;
-        width:10px;
-        @include border-radius(5px);
-      }
-    }
-    }
-    > .iphone {
-      background-color:$white;
-      border:1px solid $grey_line;
-      bottom:0;
-      padding:83px 19px;
-      position:absolute;
-      right:20px;
-      width:212px;
-      z-index:10;
-      @include border-radius(20px);
-      > .content {
-        background-color:$light_grey;
-        border:1px solid $grey_line;
-        width:212px;
-        > img {
-          display:block;
-          width:100%;
-        }
-      }
-      > .home {
-        border:1px solid $grey_line;
-        bottom:20px;
-        height:45px;
-        left:50%;
-        margin-left:-23px;
-        position:absolute;
-        width:44px;
-        @include border-radius(25px);
-        > .circle {
-          border:1px solid $grey_line;
-          display:block;
-          margin:12px auto 0;
-          height:17px;
-          width:17px;
-          @include border-radius(3px);
-        }
-      }
-      > .camera {
-        border:1px solid $grey_line;
-        height:13px;
-        left:70px;
-        position:absolute;
-        top:35px;
-        width:13px;
-        @include border-radius(7px);
-      }
-      .speaker {
-        border:1px solid $grey_line;
-        height:13px;
-        left:50%;
-        margin-left:-25px;
-        position:absolute;
-        top:35px;
-        width:48px;
-        @include border-radius(7px);
-      }
-    }
-    > .logos {
-      margin-top:80px;
-      max-width:100%;
-    }
-    .icons {
-      margin-top:50px;
-      max-width:100%;
-    }
-    &.backpage {
-      .monitor > .content {
-        background:url(/images/portfolio/backpage_screen_v2.jpg) no-repeat center top;
-        background-size:cover;
-      }
-      padding-bottom:0;
-    }
-    &.alfredapp {
-      .monitor > .content {
-        background:url(/images/portfolio/alfredapp_screen_v2.jpg) no-repeat center top;
-        background-size:cover;
-      }
-      .iphone {
-        bottom:1124px;
-      }
-      padding-bottom:0;
-    }
-    &.rodeo {
-      .monitor > .content {
-        background:url(/images/portfolio/rodeo_screen.jpg) no-repeat center top;
-        background-size:cover;
-      }
-    }
-    &.hiphopquoted {
-      .monitor > .content {
-        background:url(/images/portfolio/hiphopquoted_screen.jpg) no-repeat center top;
-        background-size:cover;
-      }
-    }
-    &.altonconvent {
-      .monitor > .content {
-        background:url(/images/portfolio/altonconvent_screen_v2.jpg) no-repeat center top;
-        background-size:cover;
-      }
-    }
-    &.cube {
-      .monitor > .content {
-        background:url(/images/portfolio/cube_screen.jpg) repeat-x center top;
-        background-size:cover;
-      }
-    }
-    &.qmee {
-      .monitor > .content {
-        background:url(/images/portfolio/qmee_screen_v2.jpg) repeat-x center top;
-        background-size:cover;
-      }
-    }
-    &.rebellion {
-      .monitor > .content {
-        background:url(/images/portfolio/rebellion_screen.jpg) repeat-x center top;
-        background-size:cover;
-      }
-    }
-    &.workplace {
-      .monitor > .content {
-        background:url(/images/portfolio/workplace_screen.jpg) repeat-x center top;
-        background-size:cover;
-      }
-    }
-    &.cloudprofiler {
-      .monitor > .content {
-        background:url(/images/portfolio/cloudprofiler_screen.jpg) repeat-x center top;
-        background-size:cover;
-      }
-    }
-    &.talis {
-      .monitor > .content {
-        background:url(/images/portfolio/talis_screen.jpg) repeat-x center top;
-        background-size:cover;
-      }
-    }
-    &.otr {
-      .monitor > .content {
-        background:url(/images/portfolio/otr_screen.jpg) repeat-x center top;
-        background-size:cover;
-      }
-    }
-  }
-}
-
-// Music pages --------------------------------------------------------
-
-.page_music {
-  > #main {
-    max-width:600px;
-    h2 {
-    text-align:center;
-    }
-    .set {
-      margin-bottom:3em;
-      > iframe {
-        margin-bottom:2.5em;
-      }
-    }
-  }
-}
-
-// About page ---------------------------------------------------------
-
-.page_about {
-  > #main {
-    max-width:600px;
-  }
-}
-
-// Error pages --------------------------------------------------------
-
-.page_404 > #main {
-  text-align:center;
-}
-
-// IE Fixes -----------------------------------------------------------
-
-.ie {
-  #main,#header {
-    margin:0 auto;
-    padding:0;
-    width:100%;
-    > .container {
-      margin:0 auto;
-      width:960px;
-    }
-  }
-  .page_about,.page_music {
-    > #main {
-      > .container {
-        width:600px;
-      }
-    }
-  }
-  #portfolio_list > .portfolio_item > .monitor_wrapper > .monitor {
-    > .content > img {
-      width:492px;
-    }
-  }
-}
-
-// Media queries -------------------------------------------------------
-
-@media handheld, only screen and (max-width:900px) {
-  #portfolio_list {
-    > .portfolio_item {
-      > .monitor_wrapper {
-        > .monitor {
-          margin:0;
-        }
-      }
-    }
-  }
-}
-
-@media handheld, only screen and (max-width:890px) {
-  #portfolio_list {
-    > .portfolio_item {
-      > .iphone {
-        bottom:0 !important;
-        left:0;
-        margin:35px auto;
-        position:relative;
-      }
-    }
-  }
-}
-
-@media handheld, only screen and (max-width:500px) {
-  h2 {
-    font-size:1.8em;
-  }
-  h3 {
-    font-size:$font_26px;
-  }
-  #header {
-    > h1 {
-      font-size:2.6em;
-    }
-  }
-  #main > .container {
-    max-width:100%;
-    width:100%;
-  }
-  #portfolio_list {
-    width:100%;
-    > .portfolio_item {
-      margin-bottom:0;
-      padding:40px 0;
-      > .monitor_wrapper {
-        background-size:200px;
-        padding-bottom:68px;
-        > .monitor {
-          margin:0;
-          padding:30px;
-          > .content {
-            padding-bottom:230px;
-          }
-        }
-      }
-      > .iphone {
-        left:0;
-        margin:35px auto;
-        position:relative;
-      }
-    }
-  }
-  .page_about,.page_music {
-    > #main {
-      padding-top:40px;
-      max-width:100%;
-    }
-  }
-  #footer {
-    max-width:100%;
-    width:100%;
-  }
-}
-
-@media all and (device-width: 768px) and (device-height: 1024px) {
-  #header > h1 {
-    margin-left:auto;
-    margin-right:auto;
-    width:70%;
-  }
-  #portfolio_list {
-    > .portfolio_item {
-      > .iphone {
-        margin:4.5em auto 0;
-        position:relative;
-        left:0;
-      }
-    }
-  }
-}
-
-@media screen and (max-device-width: 480px) {
-  body {
-    -webkit-text-size-adjust:none;
-  }
-  h2 {
-    font-size:1.8em;
-  }
-  h3 {
-    font-size:$font_26px;
-  }
-  #header {
-    margin-bottom: 2.5em;
-    width:100%;
-    > h1 {
-      font-size:2.1em;
-    }
-    > nav {
-      margin-left:-150px;
-      width:300px;
-      > ul {
-        > li {
-          &.music {
-            margin-left:160px;
-          }
-        }
-      }
-    }
-  }
-  #main > .container {
-    max-width:100%;
-    width:100%;
-  }
-  #portfolio_list {
-    width:100%;
-    > .portfolio_item {
-      margin-bottom:0;
-      padding:40px 0;
-      > .monitor_wrapper {
-        background-size:150px;
-        padding-bottom:48px;
-        > .monitor {
-          margin:0;
-          padding:20px;
-          > .content {
-            padding-bottom: 80%;
-          }
-          > .camera {
-            top:6px;
-          }
-        }
-      }
-      > .iphone {
-        left:0;
-        margin:35px auto;
-        position:relative;
-        width:150px;
-        > .content {
-          width:150px;
-        }
-        > .camera {
-          left:40px;
-        }
-      }
-    }
-  }
-  .page_about,.page_music {
-    > #main {
-      padding-top:40px;
-      max-width:100%;
-    }
-  }
-  #footer {
-    max-width:100%;
-    width:100%;
   }
 }
