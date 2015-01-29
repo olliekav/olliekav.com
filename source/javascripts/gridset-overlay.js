@@ -151,7 +151,7 @@ gs = {
 	
 	buildgrid: function (area, j, showgrid) {
 		
-		var set = JSON.parse('{"id":"32205","name":"olliekav.com","grids":{"o":{"name":"Re-design","prefix":"o","rangeMin":"none","rangeMax":"1250","columns":{"o1":{"name":"o1","unit":null,"percent":12,"px":150},"o2":{"name":"o2","unit":null,"percent":24,"px":300},"o3":{"name":"o3","unit":null,"percent":16,"px":200},"o4":{"name":"o4","unit":null,"percent":12,"px":150},"o5":{"name":"o5","unit":null,"percent":20,"px":250}},"gutter":{"unit":null,"px":50,"percent":4},"ratio":{"name":"1","value":null}}},"prefixes":{"index":["o"]}}'),
+		var set = JSON.parse('{"id":"32205","name":"olliekav.com","grids":{"o":{"name":"Site","prefix":"o","rangeMin":"none","rangeMax":"1350","columns":{"o1":{"name":"o1","unit":null,"percent":18.51851851,"px":250},"o2":{"name":"o2","unit":null,"percent":18.51851851,"px":250},"o3":{"name":"o3","unit":null,"percent":14.81481481,"px":200},"o4":{"name":"o4","unit":null,"percent":11.11111111,"px":150},"o5":{"name":"o5","unit":null,"percent":18.51851851,"px":250}},"gutter":{"unit":null,"px":49.95,"percent":3.7},"ratio":{"name":"1","value":null}}},"prefixes":{"index":["o"]}}'),
 		
 				gridwrap = document.createElement('div'),
 				gridinner = (showgrid) ? '<div class="gridwrap"><div class="gridoverlay">' : '<div class="gridwrap"><div class="gridoverlay wrapper">',

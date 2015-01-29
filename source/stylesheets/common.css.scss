@@ -6,6 +6,15 @@ $dark-grey: #222222;
 $mint: #41d1c6;
 $white: #fff;
 
+$alfred-color: #5c1f87;
+$rebellion-color: #c20000;
+$alton-convent-color: #003f77;
+$mumbu-color: #00bff1;
+$on-target-color: #0c4e70;
+$workplace-color: #98c707;
+$backpage-color: #9bcb5d;
+$cloud-color: #212529;
+$hip-hop-color: #ff004f;
 
 // Fonts
 
@@ -45,94 +54,52 @@ $ff-din-round: 'DIN Round Pro', 'Helvetica Neue', 'Arial', sans-serif;
 
 // Color schemes
 
-@mixin colour-scheme($color, $button, $lighten) {
+@mixin colour-scheme($color) {
 
-  $feat_color: $color !default;
+  // $hover_color: $color !default;
 
-  @if $lighten {
-    $feat_color: lighten($color, 20%);
-  }
+  // @if $lighten {
+  //   $hover_color: lighten($color, 10%);
+  // } @else {
+  //   $hover_color: darken($feat_color, 10%);
+  // }
 
+  background-color: $color;
   a {
-    color: $color;
+    color: darken($color, 10%);
     &:hover {
-      color: darken($color, 5%);
+      color: darken($color, 15%);
     }
   }
-  nav, header {
-    a {
-      color: #fff;
-      &.active,
-      &:hover {
-        color: $feat_color;
-      }
+  #header {
+    a:hover {
+      color: darken($color, 10%);
     }
   }
-  .intro:first-of-type:first-letter, blockquote {
-    color: $color;
-  }
-  #logo {
-    .logo-left {
-      fill: #fff;
-      @include transition(fill 0.1s linear);
-    }
-    .logo-right {
-      fill: $feat_color;
-      @include transition(fill 0.1s linear);
+  #logo:hover {
+    path {
+      fill: darken($color, 5%);
     }
   }
-  #footer {
-    a {
-      color: $color;
-      &:hover {
-        color: $dark-grey;
-      }
-    }
+  h1 {
+    color: darken($color, 5%);
   }
-  .content,
-  //.featured,
-  .client-header {
-    background-color: $color;
-    @include transition(background 0.1s linear);
-    h1, h2 , h3 {
-      color: $feat_color;
-      @include transition(fill 0.1s linear);
-    }
+  //@if $button {
+  .button {
+    background-color: darken($color, 5%);
     color: #fff;
-    a {
+    &:hover {
+      background-color: darken($color, 8%);
       color: #fff;
-      &:hover {
-        color: $feat_color;
-      }
-    }
-    .button {
-      background-color: rgba(darken($color, 5%), 0.5);
-      &:hover {
-        background-color: rgba(darken($color, 5%), 1);
-        color: #fff;
-      }
     }
   }
-  .work-nav {
-    a {
-      background-color: darken($color, 5%);
-      background-color: rgba(darken($color, 5%), 0.5);
-      &:hover {
-        background-color: rgba(darken($color, 5%), 1);
-        color: #fff;
-      }
+  ///}
+  .image.screen {
+    img {
+      box-shadow: 0 0 10px rgba(darken($color, 30%), 0.5);
     }
   }
-  @if $button {
-    .button {
-      background-color: $color;
-      color: #fff;
-      &:hover {
-        background-color: darken($color, 5%);
-        color: #fff;
-      }
-    }
-  }
+  
 }
 
 // Box sizing

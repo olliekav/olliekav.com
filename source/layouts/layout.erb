@@ -15,7 +15,7 @@
   </head>
   <body id="olliekav" class="<%= custom_page_classes %>">
     <%= partial "header" %>
-    <main id="main" role="main" class="o2-o5">
+    <main id="main" role="main">
       <%= yield %>
     </main>
     <%= partial "footer" %>
@@ -31,5 +31,10 @@
         s.parentNode.insertBefore(g, s);
       })(document, 'script');
     </script>
+    <style>
+      .gridsetoverlaywrap {
+        opacity: 0.2;
+      }
+    </style>
   </body>
 </html>

@@ -2,7 +2,7 @@
 
 @import "common";
 @import "normalize";
-@import "gridset";
+@import "o_gridset";
 
 // Basic layout setup
 
@@ -12,19 +12,36 @@ html {
 }
 body {
   background-color: #fff;
-  color: $dark-grey;
+  color: $white;
   font: 300 150%/1.5 $ff-din-round;
-  //padding: 4%;
   position: relative;
   width:100%;
   @include box-sizing(border-box);
   @extend %clearfix;
 }
+main {
+  @include gs-span(o,2,5);
+}
+section {
+  padding: 4em 0;
+}
+.row {
+  @extend %clearfix;
+}
 img {
   max-width: 100%;
 }
-section {
-  padding-top: 4em;
+figure {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  //background-color: #e1e1e1;
+  border: 0;
+  clear:both;
+  height: 0;
+  margin: 0;
+  width: 100%;
 }
 
 // Typography
@@ -34,17 +51,31 @@ h1,h2,h3,h4 {
   margin: 0;
   padding: 0;
 }
-
 h1 {
   font-size: 18vw;
   letter-spacing: -5px;
   line-height: 0.9;
-  margin: 0 0 0.5em -1.5%;
+  margin: 0 0 0.5em 0;
+}
+h2 {
+  font-size: 1.750em;
+  line-height: 0.5;
+  margin-bottom: 0.5em;
+}
+h3 {
+  font-size: 1.417em;
+  margin-bottom: 0.5em;
+}
+ul,ol {
+  margin: 0 0 1.5em 1.1em;
+  padding: 0;
+}
+li {
+  margin: 0 0 0.3em;
+  padding: 0;
 }
 
 // Links 
-
-// Links
 
 a {
   color: $white;
@@ -55,11 +86,57 @@ a {
   }
 }
 
+.button {
+  background-color: $dark-grey;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-family: $ff-din-round;
+  font-weight: 300;
+  margin: 0 auto;
+  padding:0.6em 1em;
+  text-align: center;
+  @include box-sizing(border-box);
+  -webkit-appearance: none;
+  width: 100%;
+  &:hover {
+    background-color: darken($dark-grey, 10%);
+    color: #fff;
+    @include transition(background-color 0.1s linear);
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 1em;
+    width: 100%;
+  }
+}
+
 // Header styles 
 
 #header {
-  .logo {
-    width: 100%;
+  height: 100%;
+  left: 0;
+  padding: 3.7%;
+  position: fixed;
+  top: 0;
+  @include gs-span(o,1);
+  @include box-sizing(border-box);
+  a {
+    color: $white;
+    @include transition(color 0.1s linear);
+    &:hover {
+      color: darken($mint, 10%);
+    }
+  }
+}
+#logo {
+  path {
+    fill: $white;
+    @include transition(fill 0.05s linear);
+  }
+  &:hover {
+    path {
+      fill: darken($mint, 10%);
+    }
   }
 }
 #navigation {
@@ -79,13 +156,137 @@ a {
 // Homepage
 
 .page-index {
-  background-color: $mint;
-  color: #fff;
+  @include colour-scheme($mint);
 }
 #home {
   h1 {
+    color: #fff;
     span {
       display: block;
     }
   }
+}
+
+// Work page 
+
+.work_index {
+  @include colour-scheme($dark-grey);
+  height: 100%;
+  > main {
+    height: 100%;
+    margin-left: 18.51852%;
+    width: 81.48148%;
+  }
+}
+#work-list {
+  align-content: stretch;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  article {
+    background-color: $mint;
+    display: flex;
+    flex: 0 0 33.33333333%;
+    flex-direction: column;
+    justify-content: center;
+    &.alfred-app {
+      background-color: $alfred-color;
+    }
+    &.rebellion-games {
+      background-color: $rebellion-color;
+    }
+    &.alton-convent-school {
+      background-color: $alton-convent-color;
+    }
+    &.mumbu-app {
+      background-color: $mumbu-color;
+    }
+    &.on-target-recruitment {
+      background-color: $on-target-color;
+    }
+    &.workplace-concepts {
+      background-color: $workplace-color;
+    }
+    &.backpage-football {
+      background-color: $backpage-color;
+    }
+    &.cloud-profiler {
+      background-color: $cloud-color;
+    }
+    &.hip-hop-quoted {
+      background-color: $hip-hop-color;
+    }
+  }
+}
+
+// Work template
+
+.work-item {
+  padding-top: 20%;
+  h1 {
+    position: fixed;
+    z-index: -1;
+  }
+}
+.project {
+  padding-top: 15%;
+  @include gs-span(o,3,4,(2,5));
+}
+.services {
+  padding-top: 25%;
+  @include gs-span(o,5,false,(2,5));
+  ul {
+    font-size: 0.8em;
+  }
+}
+.image {
+  margin-top: 5em;
+  &.full {
+    width: 100%;
+  }
+  &.col-1 {
+    @include gs-span(o,5,false,(2,5));
+  }
+  &.col-2 {
+    @include gs-span(o,2,4,(2,5));
+  }
+  &.col-3 {
+    @include gs-span(o,2,4,(2,5));
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+// Set up colours for individual clients
+
+.alfred-app {
+  @include colour-scheme($alfred-color);
+}
+.rebellion-games {
+  @include colour-scheme($rebellion-color);
+}
+.alton-convent-school {
+  @include colour-scheme($alton-convent-color);
+}
+.mumbu-app {
+  @include colour-scheme($mumbu-color);
+}
+.on-target-recruitment {
+  @include colour-scheme($on-target-color);
+}
+.workplace-concepts {
+  @include colour-scheme($workplace-color);
+}
+.backpage-football {
+  @include colour-scheme($backpage-color);
+}
+.cloud-profiler {
+  @include colour-scheme($cloud-color);
+}
+.hip-hop-quoted {
+  @include colour-scheme($hip-hop-color);
 }

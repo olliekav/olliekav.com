@@ -1,0 +1,48 @@
+<% content_for(:title, client.name) %>
+<% content_for(:description, Nokogiri::HTML(client.intro(115)).text) %>
+<% content_for(:page_class, client.url) %>
+
+<section class="work work-item">
+
+  <h1><%= client.name %></h1>
+
+  <div class="row">
+    <% if client.intro %>
+      <div class="project">
+        <h2>The project</h2>
+        <p><%= client.intro %></p>
+      </div>
+    <% end %>
+
+    <% if client.services %>
+      <div class="services">
+        <h3>Services</h3>
+        <ul>
+          <% client.services.each_with_index do |item, index| %>
+            <li><%= item %></li>
+          <% end %>
+        </ul>
+        <%= link_to("Live project", client.link, class: "button") %>
+      </div>
+    <% end %>
+  </div>
+
+  <% if client.images %>
+    <div class="gallery">
+      <% client.images.each_with_index do |item, index| %>
+        <%# if index == 2 && client.testimonial %>
+          <%#= partial "client_blockquote", :locals => {:client => client, featured: false}  %>
+        <%# end %>
+        <% if item.image.css_class == 'full' %>
+          <hr>
+        <% end %>
+        <figure class="image <%= item.image.css_class %>">
+          <%= image_tag("#{client.image_path}/#{item.image.name}", alt: "") %>
+        </figure>
+      <% end %>
+    </div>
+  <% end %>
+
+  <hr>
+
+</section>

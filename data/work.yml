@@ -1,0 +1,196 @@
+clients:
+  - name: Alfred App
+    weight: 1
+    url: alfred-app
+    link: http://alfredapp.com
+    intro: "For this project, Ollie was approached by Andrew and Vero Pepperell, a talented developer and marketing team, to create the original design and branding for a quicklauncher that simplifies and speeds up your workflow. Its launch went viral (thanks to web designers and other mac users who love all things beautiful) and has been successful ever since. Alfred App is your computer&#8217;s butler: it is a highly rated and popular quick launcher for OSX that is being used by tens of thousands of Apple users worldwide."
+    testimonial:
+    cite:
+    services: 
+      - 'Branding & logo design'
+      - Web design
+      - Responsive build
+      - Marketing materials
+      - Iconography
+      - OSX Application design
+    logo: 
+    images: 
+      - image: 
+          name: alfred-logos.png
+          css_class: full
+      - image: 
+          name: alfred-site-1.jpg
+          css_class: col-3 screen
+      - image: 
+          name: alfred-site-1-small.jpg
+          css_class: col-1 screen
+      - image: 
+          name: alfred-icons.png
+          css_class: full
+      - image: 
+          name: alfred-mobile.png
+          css_class: full
+      - image: 
+          name: alfred-remote-1.jpg
+          css_class: col-3 screen
+      - image: 
+          name: alfred-remote-1-small.jpg
+          css_class: col-1 screen
+  - name: Rebellion Games
+    weight: 2
+    url: rebellion-games
+    link: http://www.rebellion.co.uk/
+    intro: "For this project, Ollie was approached by Andrew and Vero Pepperell, a talented developer and marketing team, to create the original design and branding for a quicklauncher that simplifies and speeds up your workflow. Its launch went viral (thanks to web designers and other mac users who love all things beautiful) and has been successful ever since. Alfred App is your computer&#8217;s butler: it is a highly rated and popular quick launcher for OSX that is being used by tens of thousands of Apple users worldwide."
+    testimonial:
+    cite:
+    services: 
+      - Web design
+      - For <a href="http://kyan.com">Kyan</a>
+    logo: 
+    images: 
+      - image: 
+          name: alfred-logos.png
+          css_class: full
+      - image: 
+          name: alfred-site-1.jpg
+          css_class: col-3 screen
+  - name: Alton Convent School
+    weight: 3
+    url: alton-convent-school
+    link: http://altonconvent.org.uk
+    intro: "For this project, Ollie was approached by Andrew and Vero Pepperell, a talented developer and marketing team, to create the original design and branding for a quicklauncher that simplifies and speeds up your workflow. Its launch went viral (thanks to web designers and other mac users who love all things beautiful) and has been successful ever since. Alfred App is your computer&#8217;s butler: it is a highly rated and popular quick launcher for OSX that is being used by tens of thousands of Apple users worldwide."
+    testimonial:
+    cite:
+    services: 
+      - Web design
+      - Responsive build
+      - Marketing materials
+      - Wordpress back-end
+    logo: 
+    images: 
+      - image: 
+          name: alfred-logos.png
+          css_class: full
+      - image: 
+          name: alfred-site-1.jpg
+          css_class: col-3 screen
+  - name: Mumbu
+    weight: 4
+    url: mumbu-app
+    link: http://mumbu.com
+    intro: "For this project, Ollie was approached by Andrew and Vero Pepperell, a talented developer and marketing team, to create the original design and branding for a quicklauncher that simplifies and speeds up your workflow. Its launch went viral (thanks to web designers and other mac users who love all things beautiful) and has been successful ever since. Alfred App is your computer&#8217;s butler: it is a highly rated and popular quick launcher for OSX that is being used by tens of thousands of Apple users worldwide."
+    testimonial:
+    cite:
+    services: 
+      - Web design
+      - Application design
+      - Responsive build
+      - Marketing materials
+      - Iconography
+      - For <a href="http://kyan.com">Kyan</a>
+    logo: 
+    images: 
+      - image: 
+          name: alfred-logos.png
+          css_class: full
+      - image: 
+          name: alfred-site-1.jpg
+          css_class: col-3 screen
+  - name: On-Target Recruitment
+    weight: 5
+    url: on-target-recruitment
+    link: http://www.otrsales.co.uk/
+    intro: "For this project, Ollie was approached by Andrew and Vero Pepperell, a talented developer and marketing team, to create the original design and branding for a quicklauncher that simplifies and speeds up your workflow. Its launch went viral (thanks to web designers and other mac users who love all things beautiful) and has been successful ever since. Alfred App is your computer&#8217;s butler: it is a highly rated and popular quick launcher for OSX that is being used by tens of thousands of Apple users worldwide."
+    testimonial:
+    cite:
+    services: 
+      - Web design
+      - For <a href="http://kyan.com">Kyan</a>
+    logo: 
+    images: 
+      - image: 
+          name: alfred-logos.png
+          css_class: full
+      - image: 
+          name: alfred-site-1.jpg
+          css_class: col-3 screen
+  - name: Workplace Concepts
+    weight: 6
+    url: workplace-concepts
+    link: http://alfredapp.com
+    intro: "For this project, Ollie was approached by Andrew and Vero Pepperell, a talented developer and marketing team, to create the original design and branding for a quicklauncher that simplifies and speeds up your workflow. Its launch went viral (thanks to web designers and other mac users who love all things beautiful) and has been successful ever since. Alfred App is your computer&#8217;s butler: it is a highly rated and popular quick launcher for OSX that is being used by tens of thousands of Apple users worldwide."
+    testimonial:
+    cite:
+    services: 
+      - Web design
+      - Responsive build
+      - Rails back-end
+      - For <a href="http://kyan.com">Kyan</a>
+    logo: 
+    images: 
+      - image: 
+          name: alfred-logos.png
+          css_class: full
+      - image: 
+          name: alfred-site-1.jpg
+          css_class: col-3 screen
+  - name: Backpage Football
+    weight: 7
+    url: backpage-football
+    link: http://backpagefootball.com/
+    intro: "For this project, Ollie was approached by Andrew and Vero Pepperell, a talented developer and marketing team, to create the original design and branding for a quicklauncher that simplifies and speeds up your workflow. Its launch went viral (thanks to web designers and other mac users who love all things beautiful) and has been successful ever since. Alfred App is your computer&#8217;s butler: it is a highly rated and popular quick launcher for OSX that is being used by tens of thousands of Apple users worldwide."
+    testimonial:
+    cite:
+    services: 
+      - 'Branding & logo design'
+      - Web design
+      - Responsive build
+      - Marketing materials
+      - Wordpress back-end
+    logo: 
+    images: 
+      - image: 
+          name: alfred-logos.png
+          css_class: full
+      - image: 
+          name: alfred-site-1.jpg
+          css_class: col-3 screen
+  - name: Cloud Profiler
+    weight: 8
+    url: cloud-profiler
+    link: http://www.cloudprofiler.com/
+    intro: "For this project, Ollie was approached by Andrew and Vero Pepperell, a talented developer and marketing team, to create the original design and branding for a quicklauncher that simplifies and speeds up your workflow. Its launch went viral (thanks to web designers and other mac users who love all things beautiful) and has been successful ever since. Alfred App is your computer&#8217;s butler: it is a highly rated and popular quick launcher for OSX that is being used by tens of thousands of Apple users worldwide."
+    testimonial:
+    cite:
+    services: 
+      - Web Design
+      - Application design
+      - For <a href="http://kyan.com">Kyan</a>
+    logo: 
+    images: 
+      - image: 
+          name: alfred-logos.png
+          css_class: full
+      - image: 
+          name: alfred-site-1.jpg
+          css_class: col-3 screen
+  - name: Hip-Hop Quoted
+    weight: 9
+    url: hip-hop-quoted
+    link: http://hiphopquoted.com
+    intro: "For this project, Ollie was approached by Andrew and Vero Pepperell, a talented developer and marketing team, to create the original design and branding for a quicklauncher that simplifies and speeds up your workflow. Its launch went viral (thanks to web designers and other mac users who love all things beautiful) and has been successful ever since. Alfred App is your computer&#8217;s butler: it is a highly rated and popular quick launcher for OSX that is being used by tens of thousands of Apple users worldwide."
+    testimonial:
+    cite:
+    services: 
+      - 'Branding & logo design'
+      - Web design
+      - Responsive build
+      - Art direction
+    logo: 
+    images: 
+      - image: 
+          name: alfred-logos.png
+          css_class: full
+      - image: 
+          name: alfred-site-1.jpg
+          css_class: col-3 screen
