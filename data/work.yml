@@ -175,11 +175,31 @@ clients:
       - image: 
           name: workplace-site-4.jpg
           css_class: col-2-2 screen
-  - name: On-Target Recruitment
+  - name: Babble INK
     weight: 7
+    url: babble-ink
+    link: http://inventences.com/
+    intro: "BabbleINK is a games company that is the brainchild of artist Joshua Whiskey. He came to <a href='http://kyan.com'>Kyan</a> with some rough ideas for two cryptic wordgames based on the same board game. We took his existing branding and created a fun, colourful interface while also solving a lot of complex UI issues around game mechanics."
+    testimonial:
+    cite:
+    services: 
+      - Game UI Design
+      - Web design
+      - Responsive build
+      - Project management
+    logo: logo.svg
+    images: 
+      - image: 
+          name: babbleink-site-1.jpg
+          css_class: col-2-1 screen
+      - image: 
+          name: babbleink-site-2.jpg
+          css_class: col-2-2 screen
+  - name: On-Target Recruitment
+    weight: 8
     url: on-target-recruitment
     link: http://www.otrsales.co.uk/
-    intro: "For this project, Ollie was approached by Andrew and Vero Pepperell, a talented developer and marketing team, to create the original design and branding for a quicklauncher that simplifies and speeds up your workflow. Its launch went viral (thanks to web designers and other mac users who love all things beautiful) and has been successful ever since. Alfred App is your computer&#8217;s butler: it is a highly rated and popular quick launcher for OSX that is being used by tens of thousands of Apple users worldwide."
+    intro: "The recruitment industry can be quite a stale place design wise but On-Target wanted to change this. THey needed to convey a lot of information and thousands of job listings in a simple but impactful way. I created a clean user interface that solved the navigation problems they had with the old site. Backed by a powerful CMS On-Target have been able to expand rapidly using the new website as a platform."
     testimonial:
     cite:
     services: 
@@ -188,37 +208,46 @@ clients:
     logo: logo.svg
     images: 
       - image: 
-          name: alfred-logos.png
+          name: ontarget-site-1.jpg
+          css_class: col-3 screen
+      - image: 
+          name: ontarget-site-2.jpg
+          css_class: col-1 screen
+      - image: 
+          name: ontarget-mobile.png
           css_class: full
       - image: 
-          name: alfred-site-1.jpg
-          css_class: col-3 screen
-  - name: Backpage Football
-    weight: 8
-    url: backpage-football
-    link: http://backpagefootball.com/
-    intro: "For this project, Ollie was approached by Andrew and Vero Pepperell, a talented developer and marketing team, to create the original design and branding for a quicklauncher that simplifies and speeds up your workflow. Its launch went viral (thanks to web designers and other mac users who love all things beautiful) and has been successful ever since. Alfred App is your computer&#8217;s butler: it is a highly rated and popular quick launcher for OSX that is being used by tens of thousands of Apple users worldwide."
-    testimonial:
-    cite:
-    services: 
-      - 'Branding & logo design'
-      - Web design
-      - Responsive build
-      - Marketing materials
-      - Wordpress back-end
-    logo: logo.svg
-    images: 
+          name: ontarget-site-3.jpg
+          css_class: col-2-1 screen
       - image: 
-          name: alfred-logos.png
-          css_class: full
-      - image: 
-          name: alfred-site-1.jpg
-          css_class: col-3 screen
+          name: ontarget-site-4.jpg
+          css_class: col-2-2 screen
+  # - name: Backpage Football
+  #   weight: 8
+  #   url: backpage-football
+  #   link: http://backpagefootball.com/
+  #   intro: "For this project, Ollie was approached by Andrew and Vero Pepperell, a talented developer and marketing team, to create the original design and branding for a quicklauncher that simplifies and speeds up your workflow. Its launch went viral (thanks to web designers and other mac users who love all things beautiful) and has been successful ever since. Alfred App is your computer&#8217;s butler: it is a highly rated and popular quick launcher for OSX that is being used by tens of thousands of Apple users worldwide."
+  #   testimonial:
+  #   cite:
+  #   services: 
+  #     - 'Branding & logo design'
+  #     - Web design
+  #     - Responsive build
+  #     - Marketing materials
+  #     - Wordpress back-end
+  #   logo: logo.svg
+  #   images: 
+  #     - image: 
+  #         name: alfred-logos.png
+  #         css_class: full
+  #     - image: 
+  #         name: alfred-site-1.jpg
+  #         css_class: col-3 screen
   - name: Hip-Hop Quoted
     weight: 9
     url: hip-hop-quoted
     link: http://hiphopquoted.com
-    intro: "For this project, Ollie was approached by Andrew and Vero Pepperell, a talented developer and marketing team, to create the original design and branding for a quicklauncher that simplifies and speeds up your workflow. Its launch went viral (thanks to web designers and other mac users who love all things beautiful) and has been successful ever since. Alfred App is your computer&#8217;s butler: it is a highly rated and popular quick launcher for OSX that is being used by tens of thousands of Apple users worldwide."
+    intro: "Hip-Hop Quoted is a personal project to explore the intersection between Web layouts, typography and art-direction using some of my favourite Hip-Hop Quotes. It has been featured on numerous CSS award galleries and well receievd amongst the design community. I still actively look after it after recently rebuilding it to be fully responsive and refactoring all the HTML and CSS."
     testimonial:
     cite:
     services: 
@@ -229,8 +258,17 @@ clients:
     logo: logo.svg
     images: 
       - image: 
-          name: alfred-logos.png
+          name: hip-hop-quoted-site-1.jpg
+          css_class: col-2-1 screen
+      - image: 
+          name: hip-hop-quoted-site-3.jpg
+          css_class: col-2-2 screen
+      - image: 
+          name: hip-hop-quoted-mobile.png
           css_class: full
       - image: 
-          name: alfred-site-1.jpg
-          css_class: col-3 screen
+          name: hip-hop-quoted-site-2.jpg
+          css_class: col-2-1 screen
+      - image: 
+          name: hip-hop-quoted-site-4.jpg
+          css_class: col-2-2 screen

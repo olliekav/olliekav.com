@@ -216,7 +216,7 @@ a {
       &.rebellion-games {
         background-color: $rebellion-color;
         &:hover {
-          background-color: darken($rebellion-color, 5%);
+          background-color: darken($rebellion-color, 3%);
         }
         img {
           margin: 0 auto;
@@ -226,7 +226,7 @@ a {
       &.alton-convent-school {
         background-color: $alton-convent-color;
         &:hover {
-          background-color: darken($alton-convent-color, 5%);
+          background-color: darken($alton-convent-color, 3%);
         }
         img {
           margin: 0 auto;
@@ -236,7 +236,7 @@ a {
       &.mumbu-app {
         background-color: $mumbu-color;
         &:hover {
-          background-color: darken($mumbu-color, 5%);
+          background-color: darken($mumbu-color, 3%);
         }
         img {
           margin: 0 auto;
@@ -246,7 +246,7 @@ a {
       &.on-target-recruitment {
         background-color: $on-target-color;
         &:hover {
-          background-color: darken($on-target-color, 5%);
+          background-color: darken($on-target-color, 3%);
         }
         img {
           margin: 0 auto;
@@ -256,7 +256,7 @@ a {
       &.workplace-concepts {
         background-color: $workplace-color;
         &:hover {
-          background-color: darken($workplace-color, 5%);
+          background-color: darken($workplace-color, 3%);
         }
         img {
           margin: 0 auto;
@@ -266,7 +266,7 @@ a {
       &.backpage-football {
         background-color: $backpage-color;
         &:hover {
-          background-color: darken($backpage-color, 5%);
+          background-color: darken($backpage-color, 3%);
         }
         img {
           margin: 0 auto;
@@ -276,7 +276,7 @@ a {
       &.cloud-profiler {
         background-color: $cloud-color;
         &:hover {
-          background-color: darken($cloud-color, 5%);
+          background-color: darken($cloud-color, 3%);
         }
         img {
           margin: 0 auto;
@@ -286,7 +286,7 @@ a {
       &.hip-hop-quoted {
         background-color: $hip-hop-color;
         &:hover {
-          background-color: darken($hip-hop-color, 5%);
+          background-color: darken($hip-hop-color, 3%);
         }
         img {
           margin: 0 auto;
@@ -296,11 +296,21 @@ a {
       &.become-uk {
         background-color: $becomeuk-color;
         &:hover {
-          background-color: darken($becomeuk-color, 5%);
+          background-color: darken($becomeuk-color, 3%);
         }
         img {
           margin: 0 auto;
           width: 35%;
+        }
+      }
+      &.babble-ink {
+        background-color: $babbleink-color;
+        &:hover {
+          background-color: darken($babbleink-color, 3%);
+        }
+        img {
+          margin: 0 auto;
+          width: 27%;
         }
       }
     }
@@ -321,7 +331,7 @@ a {
   @include gs-span(o,3,4,(2,5));
 }
 .services {
-  padding-top: 25%;
+  padding-top: 15%;
   @include gs-span(o,5,false,(2,5));
   ul {
     font-size: 0.8em;
@@ -381,6 +391,9 @@ a {
 }
 .hip-hop-quoted {
   @include colour-scheme($hip-hop-color);
+}
+.babble-ink {
+  @include colour-scheme($babbleink-color);
 }
 
 // About page

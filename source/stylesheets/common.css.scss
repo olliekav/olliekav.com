@@ -16,6 +16,7 @@ $backpage-color: #9bcb5d;
 $cloud-color: #212529;
 $hip-hop-color: #ff004f;
 $becomeuk-color: #E93C95;
+$babbleink-color: #009897;
 
 // Fonts
 
@@ -83,7 +84,7 @@ $ff-din-round: 'DIN Round Pro', 'Helvetica Neue', 'Arial', sans-serif;
     }
   }
   h1 {
-    color: darken($color, 5%);
+    color: darken($color, 3%);
   }
   //@if $button {
   .button {
