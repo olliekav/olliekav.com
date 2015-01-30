@@ -1,0 +1,76 @@
+<% content_for(:title, "Music") %>
+<% content_for(:description, "") %>
+
+<% content_for :javascript do %>
+  <script>
+    (function() {
+      var script = document.createElement("script");
+
+      script.type = "text/javascript";
+      script.async = true;
+      script.src = "//sd.toneden.io/production/toneden.loader.js"
+
+      var entry = document.getElementsByTagName("script")[0];
+      entry.parentNode.insertBefore(script, entry);
+    }());
+
+    ToneDenReady = window.ToneDenReady || [];
+    ToneDenReady.push(function() {
+      // Modify the dom and urls parameters to position
+      // your player and select tracks/sets/artists to play.
+      ToneDen.player.create({
+        dom: "#player-1",
+        urls: [
+            "https://soundcloud.com/olliekav/ollie-k-dnb-mix-270513"
+        ]
+      });
+      ToneDen.player.create({
+        dom: "#player-2",
+        urls: [
+            "https://soundcloud.com/olliekav/ollie-k-drum-bass-mix-2000"
+        ]
+      });
+      ToneDen.player.create({
+        dom: "#player-3",
+        urls: [
+            "https://soundcloud.com/olliekav/drum-and-bass-mix-2005"
+        ]
+      });
+      ToneDen.player.create({
+        dom: "#player-4",
+        urls: [
+            "https://soundcloud.com/olliekav/olliek-mixjune04"
+        ]
+      });
+      ToneDen.player.create({
+        dom: "#player-5",
+        urls: [
+            "https://soundcloud.com/olliekav/ollie-k-house-techno-mix-21-02"
+        ]
+      });
+      ToneDen.player.create({
+        dom: "#player-6",
+        urls: [
+            "https://soundcloud.com/olliekav/ollie-k-house-techno-mix-19-05"
+        ]
+      });
+      ToneDen.player.create({
+        dom: "#player-7",
+        urls: [
+            "https://soundcloud.com/olliekav/house-techno-mix-12-12-08"
+        ]
+      });
+    });
+  </script>
+<% end %>
+
+<section class="music">
+  <h1>Music</h1>
+  <div id="player-1" class="media-player"></div>
+  <div id="player-2" class="media-player"></div>
+  <div id="player-3" class="media-player"></div>
+  <div id="player-4" class="media-player"></div>
+  <div id="player-5" class="media-player"></div>
+  <div id="player-6" class="media-player"></div>
+  <div id="player-7" class="media-player"></div>
+</section>

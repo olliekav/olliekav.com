@@ -56,6 +56,7 @@ h1 {
   letter-spacing: -5px;
   line-height: 0.9;
   margin: 0 0 0.5em 0;
+  //@extend %hyphenate
 }
 h2 {
   font-size: 1.750em;
@@ -180,43 +181,128 @@ a {
 }
 #work-list {
   align-content: stretch;
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
   height: 100%;
   min-height: 100%;
+  justify-content: center;
   padding: 0;
   article {
     background-color: $mint;
     display: flex;
+    height: 33.333333333%;
     flex: 0 0 33.33333333%;
     flex-direction: column;
-    justify-content: center;
-    &.alfred-app {
-      background-color: $alfred-color;
+    text-align: center;
+    h2 {
+      display: none;
     }
-    &.rebellion-games {
-      background-color: $rebellion-color;
-    }
-    &.alton-convent-school {
-      background-color: $alton-convent-color;
-    }
-    &.mumbu-app {
-      background-color: $mumbu-color;
-    }
-    &.on-target-recruitment {
-      background-color: $on-target-color;
-    }
-    &.workplace-concepts {
-      background-color: $workplace-color;
-    }
-    &.backpage-football {
-      background-color: $backpage-color;
-    }
-    &.cloud-profiler {
-      background-color: $cloud-color;
-    }
-    &.hip-hop-quoted {
-      background-color: $hip-hop-color;
+    a {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      @include transition(background-color 0.1s linear);
+      &.alfred-app {
+        background-color: $alfred-color;
+        &:hover {
+          background-color: darken($alfred-color, 3%);
+        }
+        img {
+          margin: 0 auto;
+          width: 50%;
+        }
+      }
+      &.rebellion-games {
+        background-color: $rebellion-color;
+        &:hover {
+          background-color: darken($rebellion-color, 5%);
+        }
+        img {
+          margin: 0 auto;
+          width: 70%;
+        }
+      }
+      &.alton-convent-school {
+        background-color: $alton-convent-color;
+        &:hover {
+          background-color: darken($alton-convent-color, 5%);
+        }
+        img {
+          margin: 0 auto;
+          width: 35%;
+        }
+      }
+      &.mumbu-app {
+        background-color: $mumbu-color;
+        &:hover {
+          background-color: darken($mumbu-color, 5%);
+        }
+        img {
+          margin: 0 auto;
+          width: 45%;
+        }
+      }
+      &.on-target-recruitment {
+        background-color: $on-target-color;
+        &:hover {
+          background-color: darken($on-target-color, 5%);
+        }
+        img {
+          margin: 0 auto;
+          width: 40%;
+        }
+      }
+      &.workplace-concepts {
+        background-color: $workplace-color;
+        &:hover {
+          background-color: darken($workplace-color, 5%);
+        }
+        img {
+          margin: 0 auto;
+          width: 50%;
+        }
+      }
+      &.backpage-football {
+        background-color: $backpage-color;
+        &:hover {
+          background-color: darken($backpage-color, 5%);
+        }
+        img {
+          margin: 0 auto;
+          width: 50%;
+        }
+      }
+      &.cloud-profiler {
+        background-color: $cloud-color;
+        &:hover {
+          background-color: darken($cloud-color, 5%);
+        }
+        img {
+          margin: 0 auto;
+          width: 55%;
+        }
+      }
+      &.hip-hop-quoted {
+        background-color: $hip-hop-color;
+        &:hover {
+          background-color: darken($hip-hop-color, 5%);
+        }
+        img {
+          margin: 0 auto;
+          width: 35%;
+        }
+      }
+      &.become-uk {
+        background-color: $becomeuk-color;
+        &:hover {
+          background-color: darken($becomeuk-color, 5%);
+        }
+        img {
+          margin: 0 auto;
+          width: 35%;
+        }
+      }
     }
   }
 }
@@ -249,11 +335,14 @@ a {
   &.col-1 {
     @include gs-span(o,5,false,(2,5));
   }
-  &.col-2 {
-    @include gs-span(o,2,4,(2,5));
-  }
   &.col-3 {
     @include gs-span(o,2,4,(2,5));
+  }
+  &.col-2-1 {
+    @include gs-span(o,2,3,(2,5));
+  }
+  &.col-2-2 {
+    @include gs-span(o,4,5,(2,5));
   }
   img {
     display: block;
@@ -284,9 +373,80 @@ a {
 .backpage-football {
   @include colour-scheme($backpage-color);
 }
+.become-uk {
+  @include colour-scheme($becomeuk-color);
+}
 .cloud-profiler {
   @include colour-scheme($cloud-color);
 }
 .hip-hop-quoted {
   @include colour-scheme($hip-hop-color);
+}
+
+// About page
+
+.page-about {
+  @include colour-scheme($mint);
+  .about-me {
+    padding-top: 20%;
+    @extend %clearfix;
+  }
+  h1 {
+    position: fixed;
+    z-index: -1;
+  }
+  .col-1 {
+    @include gs-span(o,2,3,(2,5));
+  }
+  .col-2 {
+    @include gs-span(o,4,5,(2,5));
+  }
+}
+
+// Music page
+
+.page-music {
+  @include colour-scheme($mint);
+  h1 {
+    opacity: 0;
+    position: fixed;
+    z-index: -1;
+  }
+}
+.music {
+  padding: 3.7% 0;
+}
+.media-player {
+  margin-bottom: 1em;
+}
+.td.player.light,
+.td.player.light div, 
+.td.player.light ul,
+.td.player.light .follow-link {
+  background-color: transparent;
+  border-color: darken($mint, 10%) !important;
+  color: $white;
+}
+.td.player.light .slider>.track {
+  background-color: darken($mint, 10%);
+}
+.td.player.light .slider>.highlight-track {
+  border: 0;
+  background-color: $white;
+}
+.td.player.light .info a, 
+.td.player.light .mini-song-info a,
+.td.player.light .follow-link {
+  color: $white;
+}
+.td.player.light .waveform path {
+  stroke: $white;
+}
+.td.player.light .buy-link:hover, 
+.td.player.light .follow-link:hover {
+  background-color: transparent;
+  color: darken($mint, 20%);
+}
+.td.player.light .slider>.dragger {
+  background-color: darken($mint, 30%);
 }

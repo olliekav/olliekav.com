@@ -33,12 +33,15 @@
         <%# if index == 2 && client.testimonial %>
           <%#= partial "client_blockquote", :locals => {:client => client, featured: false}  %>
         <%# end %>
-        <% if item.image.css_class == 'full' %>
+        <% if item.image.css_class.include? "full" %>
           <hr>
         <% end %>
         <figure class="image <%= item.image.css_class %>">
-          <%= image_tag("#{client.image_path}/#{item.image.name}", alt: "") %>
+          <%= image_tag("work/#{client.url}/#{item.image.name}", alt: "") %>
         </figure>
+        <% if item.image.css_class.include? "break" %>
+          <hr>
+        <% end %>
       <% end %>
     </div>
   <% end %>

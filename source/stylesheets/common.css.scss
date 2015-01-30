@@ -15,6 +15,7 @@ $workplace-color: #98c707;
 $backpage-color: #9bcb5d;
 $cloud-color: #212529;
 $hip-hop-color: #ff004f;
+$becomeuk-color: #E93C95;
 
 // Fonts
 
@@ -66,13 +67,13 @@ $ff-din-round: 'DIN Round Pro', 'Helvetica Neue', 'Arial', sans-serif;
 
   background-color: $color;
   a {
-    color: darken($color, 10%);
+    color: $dark-grey;
     &:hover {
       color: darken($color, 15%);
     }
   }
   #header {
-    a:hover {
+    a:hover, a.active {
       color: darken($color, 10%);
     }
   }
@@ -174,4 +175,14 @@ $ff-din-round: 'DIN Round Pro', 'Helvetica Neue', 'Arial', sans-serif;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+// @extend %hyphenate
+%hyphenate {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
