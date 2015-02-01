@@ -141,11 +141,20 @@ clients:
     logo: logo.svg
     images: 
       - image: 
-          name: alfred-logos.png
-          css_class: full
+          name: mumbu-site-1.jpg
+          css_class: col-2-1 screen
       - image: 
-          name: alfred-site-1.jpg
-          css_class: col-3 screen
+          name: mumbu-site-2.jpg
+          css_class: col-2-2 screen
+      - image: 
+          name: mumbu-site-3.jpg
+          css_class: full screen
+      - image: 
+          name: mumbu-site-4.jpg
+          css_class: col-2-1 screen
+      - image: 
+          name: mumbu-site-5.jpg
+          css_class: col-2-2 screen
   - name: Workplace Concepts
     weight: 6
     url: workplace-concepts
@@ -199,7 +208,7 @@ clients:
     weight: 8
     url: on-target-recruitment
     link: http://www.otrsales.co.uk/
-    intro: "The recruitment industry can be quite a stale place design wise but On-Target wanted to change this. THey needed to convey a lot of information and thousands of job listings in a simple but impactful way. I created a clean user interface that solved the navigation problems they had with the old site. Backed by a powerful CMS On-Target have been able to expand rapidly using the new website as a platform."
+    intro: "The recruitment industry can be quite a stale place design wise but On-Target wanted to change this. They needed to convey a lot of information and thousands of job listings in a simple but impactful way. I created a clean user interface that solved the navigation problems they had with the old site. Backed by a powerful CMS On-Target have been able to expand rapidly using the new website as a platform."
     testimonial:
     cite:
     services: 
@@ -247,7 +256,7 @@ clients:
     weight: 9
     url: hip-hop-quoted
     link: http://hiphopquoted.com
-    intro: "Hip-Hop Quoted is a personal project to explore the intersection between Web layouts, typography and art-direction using some of my favourite Hip-Hop Quotes. It has been featured on numerous CSS award galleries and well receievd amongst the design community. I still actively look after it after recently rebuilding it to be fully responsive and refactoring all the HTML and CSS."
+    intro: "Hip-Hop Quoted is a personal project to explore the intersection between Web layouts, typography and art-direction using some of my favourite Hip-Hop Quotes. It has been featured on numerous CSS award galleries and well received amongst the design community. I still actively look it after recently rebuilding it to be fully responsive and refactoring all the HTML and CSS."
     testimonial:
     cite:
     services: 
@@ -257,6 +266,9 @@ clients:
       - Art direction
     logo: logo.svg
     images: 
+      - image: 
+          name: hip-hop-quoted-logo.png
+          css_class: full
       - image: 
           name: hip-hop-quoted-site-1.jpg
           css_class: col-2-1 screen

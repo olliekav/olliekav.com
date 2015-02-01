@@ -1,5 +1,7 @@
 <!doctype html>
-<html>
+<!--[if IE 8 ]><html lang="en" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <title><%= page_title %></title>
@@ -8,6 +10,8 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="/images/favicon.ico" rel="shortcut icon"></link>
+    <script src="//use.typekit.net/gmc4yrr.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
     <%= stylesheet_link_tag "site" %>
     <!--[if lt IE 9]>
       <%= javascript_include_tag("html5shiv.min.js") %>
@@ -18,7 +22,6 @@
     <main id="main" role="main">
       <%= yield %>
     </main>
-    <%= partial "footer" %>
     <%= javascript_include_tag "gridset-overlay",  "application" %>
     <%= yield_content :javascript %>
     <script>

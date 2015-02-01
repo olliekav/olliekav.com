@@ -97,6 +97,13 @@ helpers do
   def page(path)
     current_page.path == path
   end
+  # Content tag blocks breaking
+  def FixedContentHelper
+    def content_tag(name, content, options, &block)
+      content = content.join('') if content.respond_to?(:each)
+      super(name, content, options, &block)
+    end
+  end
 end
 
 activate :directory_indexes

@@ -14,7 +14,7 @@ $on-target-color: #0c4e70;
 $workplace-color: #98c707;
 $backpage-color: #9bcb5d;
 $cloud-color: #212529;
-$hip-hop-color: #ff004f;
+$hip-hop-color: #27272a;
 $becomeuk-color: #E93C95;
 $babbleink-color: #009897;
 
@@ -22,14 +22,25 @@ $babbleink-color: #009897;
 
 @font-face {
   font-family: 'social';
-  src: url('../fonts/social/social.eot?3947581');
-  src: url('../fonts/social/social.eot?3947581#iefix') format('embedded-opentype'),
-       url('../fonts/social/social.woff?3947581') format('woff'),
-       url('../fonts/social/social.ttf?3947581') format('truetype'),
-       url('../fonts/social/social.svg?3947581#social') format('svg');
+  src: url('../fonts/social/social.eot?89839386');
+  src: url('../fonts/social/social.eot?89839386#iefix') format('embedded-opentype'),
+       url('../fonts/social/social.woff?89839386') format('woff'),
+       url('../fonts/social/social.ttf?89839386') format('truetype'),
+       url('../fonts/social/social.svg?89839386#social') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'social';
+    src: url('../font/social.svg?89839386#social') format('svg');
+  }
+}
+*/
+ 
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "social";
   font-style: normal;
@@ -45,12 +56,12 @@ $babbleink-color: #009897;
   line-height: 1em;
   margin-left: .2em;
 }
-.icon-facebook:before { content: '\e800'; } /* '' */
-.icon-twitter-bird:before { content: '\e801'; } /* '' */
-.icon-github:before { content: '\e802'; } /* '' */
-.icon-googleplus-rect:before { content: '\e803'; } /* '' */
+ 
+.icon-soundcloud-1:before { content: '\e801'; } /* '' */
+.icon-github-circled:before { content: '\e802'; } /* '' */
+.icon-twitter-1:before { content: '\e805'; } /* '' */
 
-$ff-din-round: 'DIN Round Pro', 'Helvetica Neue', 'Arial', sans-serif;
+$ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', sans-serif;
 
 // Mixins
 
@@ -84,7 +95,31 @@ $ff-din-round: 'DIN Round Pro', 'Helvetica Neue', 'Arial', sans-serif;
     }
   }
   h1 {
-    color: darken($color, 3%);
+    color: darken($color, 2.5%);
+  }
+  // .social-icons {
+  //   li {
+  //     a {
+  //       //border: 4px solid $white;
+  //       &:hover {
+  //         //border-color: darken($color, 10%);
+  //       }
+  //     }
+  //   }
+  // }
+  .work-nav {
+    a {
+      color: $white;
+      path {
+        fill: $white;
+      }
+    }
+    a:hover {
+      color: darken($color, 15%);
+      path {
+        fill: darken($color, 15%);
+      }
+    }
   }
   //@if $button {
   .button {
@@ -101,7 +136,9 @@ $ff-din-round: 'DIN Round Pro', 'Helvetica Neue', 'Arial', sans-serif;
       box-shadow: 0 0 10px rgba(darken($color, 30%), 0.5);
     }
   }
-  
+  .work-nav {
+    background-color: rgba(darken($color, 5%), 0.9);
+  }
 }
 
 // Box sizing
@@ -130,6 +167,33 @@ $ff-din-round: 'DIN Round Pro', 'Helvetica Neue', 'Arial', sans-serif;
   background-image: -o-linear-gradient($deg, $startColor, $endColor); // Opera 11.10
   background-image: linear-gradient($deg, $startColor, $endColor); // The standard
 }
+
+// Flexbox
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+// .wrapper {
+//   @include flexbox();
+// }
+
+// .item {
+//   @include flex(1 200px);
+//   @include order(2);
+// }
 
 // Extends
 
