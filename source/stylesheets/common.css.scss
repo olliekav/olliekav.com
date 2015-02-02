@@ -89,7 +89,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
       color: darken($color, 10%);
     }
   }
-  #logo:hover {
+  .logo:hover {
     path {
       fill: darken($color, 5%);
     }
@@ -154,6 +154,15 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   -moz-transition: $transition;
   -ms-transition: $transition;
   -o-transition: $transition;
+  transition: $transition;
+}
+
+// Transforms
+@mixin transform($transition...) {
+  -webkit-transform: $transition;
+  -moz-transform: $transition;
+  -ms-transform: $transition;
+  -o-transform: $transition;
   transition: $transition;
 }
 

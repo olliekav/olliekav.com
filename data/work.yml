@@ -199,6 +199,18 @@ clients:
     logo: logo.svg
     images: 
       - image: 
+          name: babbleink-ipad-1.png
+          css_class: full
+      - image: 
+          name: babbleink-ipad-2.png
+          css_class: full
+      - image: 
+          name: babbleink-ipad-3.png
+          css_class: full
+      - image: 
+          name: babbleink-ipad-4.png
+          css_class: full
+      - image: 
           name: babbleink-site-1.jpg
           css_class: col-2-1 screen
       - image: 

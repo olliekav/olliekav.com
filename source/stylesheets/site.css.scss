@@ -8,31 +8,26 @@
 
 html {
   height:100%;
-  width:100%;
+  width: 100%;
 }
 body {
   background-color: #fff;
   color: $white;
   font: 400 150%/1.5 $ff-din-round;
-  left: 0;
   position: relative;
   width:100%;
   @include box-sizing(border-box);
-  @include transition(left 0.1s linear);
   @extend %clearfix;
+  -webkit-backface-visibility: hidden;
   @media screen and (max-width: 900px) {
     font-size: 125%;
-  }
-  @media screen and (max-width: 500px) {
-    &.resp {
-      left: gs-width(o, 1, 3, false, true);
-      overflow-x: hidden;
-    }
   }
 }
 main {
   @include gs-span(o,2,5);
   position: relative;
+  @include transform(translate3d(0,0,0));
+  @include transition(transform 0.2s linear);
   @media screen and (max-width: 500px) {
     padding: 10%;
     @include box-sizing(border-box);
@@ -41,8 +36,20 @@ main {
     width: 100%;
   }
 }
+@media screen and (max-width: 500px) {
+  .resp {
+    main {
+      @include transform(translate3d(gs-width(o, 1, 3, false, true),0,0));
+      position: fixed;
+      top: 0;
+      overflow-y: hidden;
+    }
+  }
+}
 section {
+  @include box-sizing(border-box);
   padding: 4em 0;
+  width: 100%;
 }
 .row {
   @extend %clearfix;
@@ -141,10 +148,11 @@ a {
   position: fixed;
   top: 0;
   width: gs-width(o, 1, false, false, true);
-  z-index: 100;
+  z-index: 1;
   //@include gs-span(o,1);
   @include box-sizing(border-box);
-  @include transition(left 0.1s linear);
+  @include transition(transform 0.2s linear);
+  @include transform(translate3d(0,0,0));
   z-index: 10;
   a {
     color: $white;
@@ -155,15 +163,8 @@ a {
   }
   @media screen and (max-width: 500px) {
     left: - gs-width(o, 1, 3, false, true);
-    @include gs-span(o,1,3);
-  }
-}
-@media screen and (max-width: 500px) {
-  .resp {
-    #header {
-      left: 0;
-      padding: 10%;
-    }
+    padding: 10%;
+    width: gs-width(o, 1, 3, false, true);
   }
 }
 .logo {
@@ -215,12 +216,38 @@ a {
   text-align: center;
 }
 #resp-nav {
+  background: url("../images/menu-icon.svg") no-repeat 0 38%;
+  background-size: 15px 16px;
   display: none;
+  color: $white;
+  padding-left: 24px;
   position: fixed;
-  right: 10%;
-  top: 10%;
+  right: 20px;
+  top: 15px;
+  z-index: 100;
   @media screen and (max-width: 500px) {
     display: block;
+  }
+  &:hover, &:focus {
+    color: $white;
+  }
+  &.open {
+    background: url("../images/menu-close.svg") no-repeat 0 38%;
+    background-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .resp {
+    #header {
+      //left: 0;
+      @include transform(translate3d(100%,0,0));
+      padding: 10%;
+      overflow: auto;
+    }
+    .copy {
+      margin-top: 4em;
+      position: static;
+    }
   }
 }
 
@@ -515,7 +542,7 @@ a {
 // Work pages navigation
 
 .work-nav {
-  bottom: -40px;
+  bottom: -50px;
   border-radius: 10px 10px 0 0;
   left: 22.21852%;
   padding: 0.2em 0.5em 0.1em;

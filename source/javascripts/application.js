@@ -27,31 +27,29 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
 
   console.log(menuLink)
 
-  if(width > 320) {
-    var fired = false;
-    window.addEventListener('scroll', function() {
-      if(window.pageYOffset >= 100 && fired === false) {
-        addClass(body, 'scrolling');
-        //addClass('#logo', 'to-top');
-        //fired = true;
-      }
-      else {
-        removeClass(body, 'scrolling');
-        //removeClass('#logo', 'to-top');
-      }
-    });
-  }
+  var fired = false;
+  window.addEventListener('scroll', function() {
+    if(window.pageYOffset >= 100 && fired === false) {
+      addClass(body, 'scrolling');
+      //addClass('#logo', 'to-top');
+      //fired = true;
+    }
+    else {
+      removeClass(body, 'scrolling');
+      //removeClass('#logo', 'to-top');
+    }
+  });
 
   menuLink.addEventListener("click", function(event){ 
-    console.log('clicked');
-    //var header = document.getElementById('#header');
     if (hasClass(body, 'resp')) {
       removeClass(body, 'resp')
+      removeClass(menuLink, 'open')
     }
     else {
       addClass(body, 'resp')
+      addClass(menuLink, 'open')
     }
     event.preventDefault();
-  }, false);
+  });
 
 }
