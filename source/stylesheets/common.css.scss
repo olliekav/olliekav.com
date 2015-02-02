@@ -78,6 +78,9 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   // }
 
   background-color: $color;
+  main {
+    background-color: $color;
+  }
   a {
     color: $dark-grey;
     &:hover {
@@ -158,12 +161,12 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
 }
 
 // Transforms
-@mixin transform($transition...) {
-  -webkit-transform: $transition;
-  -moz-transform: $transition;
-  -ms-transform: $transition;
-  -o-transform: $transition;
-  transition: $transition;
+@mixin transform($transform...) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transition: $transform;
 }
 
 // Gradients

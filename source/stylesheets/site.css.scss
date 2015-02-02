@@ -18,7 +18,6 @@ body {
   width:100%;
   @include box-sizing(border-box);
   @extend %clearfix;
-  -webkit-backface-visibility: hidden;
   @media screen and (max-width: 900px) {
     font-size: 125%;
   }
@@ -26,13 +25,15 @@ body {
 main {
   @include gs-span(o,2,5);
   position: relative;
-  @include transform(translate3d(0,0,0));
-  @include transition(transform 0.2s linear);
+  z-index: 10;
   @media screen and (max-width: 500px) {
-    padding: 10%;
-    @include box-sizing(border-box);
-    @include gs-span(o,1,5);
     float: none;
+    margin: 0;
+    padding: 10%;
+    @include transform(translate3d(0,0,0));
+    @include transition(transform 0.2s ease-in-out);
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    @include box-sizing(border-box);
     width: 100%;
   }
 }
@@ -40,9 +41,7 @@ main {
   .resp {
     main {
       @include transform(translate3d(gs-width(o, 1, 3, false, true),0,0));
-      position: fixed;
-      top: 0;
-      overflow-y: hidden;
+      //left: gs-width(o, 1, 3, false, true);
     }
   }
 }
@@ -82,6 +81,7 @@ h1 {
   line-height: 1;
   margin: 0 0 0.5em 0;
   //@extend %hyphenate
+  @include transform(translate3d(0,0,0));
   @media screen and (max-width: 500px) {
     font-size: 25vw;
   }
@@ -147,13 +147,11 @@ a {
   padding: 3.7%;
   position: fixed;
   top: 0;
-  width: gs-width(o, 1, false, false, true);
-  z-index: 1;
-  //@include gs-span(o,1);
+  @include gs-span(o,1);
   @include box-sizing(border-box);
-  @include transition(transform 0.2s linear);
-  @include transform(translate3d(0,0,0));
-  z-index: 10;
+  @include transition(left .2s linear);
+  width: gs-width(o, 1);
+  z-index: 1;
   a {
     color: $white;
     @include transition(color 0.1s linear);
@@ -164,7 +162,7 @@ a {
   @media screen and (max-width: 500px) {
     left: - gs-width(o, 1, 3, false, true);
     padding: 10%;
-    width: gs-width(o, 1, 3, false, true);
+    @include gs-span(o,1,3);
   }
 }
 .logo {
@@ -203,6 +201,9 @@ a {
     padding: 0;
     > li {
       list-style: none;
+      @media screen and (max-width: 500px) {
+        margin-bottom: 0.2em;
+      }
     }
   }
 }
@@ -239,13 +240,12 @@ a {
 @media screen and (max-width: 500px) {
   .resp {
     #header {
-      //left: 0;
-      @include transform(translate3d(100%,0,0));
+      left: 0;
+      //@include transform(translate3d(100%,0,0));
       padding: 10%;
-      overflow: auto;
     }
     .copy {
-      margin-top: 4em;
+      margin-top: 1em;
       position: static;
     }
   }
@@ -270,6 +270,12 @@ a {
     a {
       border-radius: 30px;
       padding: 0.6em;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    margin: 1em 0 0;
+    li {
+      margin-bottom: 0.2em;
     }
   }
 }
@@ -302,9 +308,9 @@ a {
   @media screen and (max-width: 500px) {
     main {
       float: none;
-      margin-left: 0;
+      margin: 0;
+      overflow: hidden;
       padding: 0;
-      @include gs-span(o,1,5);
       width: 100%;
     }
   }
@@ -487,8 +493,8 @@ a {
     @include gs-span(o,2,3,(2,5));
   } 
   @media screen and (max-width: 500px) {
-    @include gs-span(o,1,5);
     float: none;
+    margin: 0;
     padding-top: 50px;
     width: 100%;
   }
@@ -503,8 +509,8 @@ a {
     @include gs-span(o,4,5,(2,5));
   } 
   @media screen and (max-width: 500px) {
-    @include gs-span(o,1,5);
     float: none;
+    margin: 0;
     padding-top: 50px;
     width: 100%;
   }
@@ -532,6 +538,7 @@ a {
   }
   @media screen and (max-width: 500px) {
     &.col-1, &.col-3, &.col-2-1, &.col-2-2 {
+      display: block;
       float: none;
       margin: 3em 0;
       width: 100%;
