@@ -103,10 +103,12 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
       fill: darken($color, 5%);
     }
   }
-  #resp-nav {
+  .resp-nav>a {
     background-color: darken($color, 5%);
-    &:hover {
+    color: $white;
+    &:hover, &:focus {
       background-color: darken($color, 6%);
+      color: $white;
     }
   }
   h1 {
@@ -202,15 +204,6 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   -ms-flex:  $values;
   flex:  $values;
 }
-
-// .wrapper {
-//   @include flexbox();
-// }
-
-// .item {
-//   @include flex(1 200px);
-//   @include order(2);
-// }
 
 // Extends
 

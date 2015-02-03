@@ -24,7 +24,7 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
       html = document.querySelector('html'),
       height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
       width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
-      menuLink = document.getElementById('resp-nav'),
+      menuLink = document.querySelector('.resp-nav'),
       top = document.documentElement.scrollTop || document.body.scrollTop;
 
   // Add scrolling class to body

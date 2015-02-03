@@ -84,9 +84,11 @@ h1 {
   //@extend %hyphenate
   @media screen and (max-width: 800px) {
     font-size: 20vw;
+    letter-spacing: -4px;
   }
   @media screen and (max-width: 500px) {
     font-size: 25vw;
+    letter-spacing: -3px;
   }
 }
 h2 {
@@ -230,25 +232,30 @@ a {
     position: static;
   }
 }
-#resp-nav {
-  background: url("../images/menu-icon.svg") no-repeat 8px 48%;
-  background-size: 15px 16px;
-  border-radius: 5px;
+.resp-nav {
   display: none;
-  color: $white;
-  outline: none;
-  padding: 0.3em 0.5em 0.1em 1.5em;
+  left: 0;
+  overflow: hidden;
   position: fixed;
-  right: 4%;
-  top: 3%;
+  right: 0;
+  top: 0;
+  width: 100%;
   z-index: 10;
   @media screen and (max-width: 500px) {
     display: block;
   }
-  &:hover, &:focus {
-    color: $white !important;
+  a {
+    background: url("../images/menu-icon.svg") no-repeat 8px 48%;
+    background-size: 15px 16px;
+    border-radius: 5px;
+    display: inline-block;
+    color: $white;
+    float: right;
+    margin: 1% 5%;
+    outline: none;
+    padding: 0.3em 0.5em 0.1em 1.5em;
   }
-  &.open {
+  &.open>a {
     background-image: url("../images/menu-close.svg");
   }
 }
@@ -338,8 +345,12 @@ a {
   flex-flow: row wrap;
   height: 100%;
   min-height: 100%;
+  overflow: hidden;
   justify-content: center;
   padding: 0;
+  @media screen and (max-width: 700px) {
+    overflow: auto;
+  }
   @media screen and (max-width: 500px) {
     display: block;
     height: auto;
@@ -365,14 +376,19 @@ a {
       display: none;
     }
     a {
-      @include flexbox();
+      display: block;
+      //@include flexbox();
       height: 100%;
-      justify-content: center;
+      //justify-content: center;
       @include transition(background-color 0.1s linear);
       @media screen and (max-width: 500px) {
         display: block;
-        height: auto;
-        padding: 20% 0;
+        height: 220px;
+        padding: 2em 0;
+      }
+      img {
+        margin: 0 auto;
+        @extend %vertical-align;
       }
       &.alfred-app {
         background-color: $alfred-color;
@@ -380,7 +396,6 @@ a {
           background-color: darken($alfred-color, 3%);
         }
         img {
-          margin: 0 auto;
           width: 50%;
         }
       }
@@ -390,7 +405,6 @@ a {
           background-color: darken($rebellion-color, 3%);
         }
         img {
-          margin: 0 auto;
           width: 70%;
         }
       }
@@ -400,7 +414,6 @@ a {
           background-color: darken($alton-convent-color, 3%);
         }
         img {
-          margin: 0 auto;
           width: 35%;
         }
       }
@@ -410,7 +423,6 @@ a {
           background-color: darken($mumbu-color, 3%);
         }
         img {
-          margin: 0 auto;
           width: 45%;
         }
       }
@@ -420,7 +432,6 @@ a {
           background-color: darken($on-target-color, 3%);
         }
         img {
-          margin: 0 auto;
           width: 40%;
         }
       }
@@ -430,7 +441,6 @@ a {
           background-color: darken($workplace-color, 3%);
         }
         img {
-          margin: 0 auto;
           width: 50%;
         }
       }
@@ -440,7 +450,6 @@ a {
           background-color: darken($backpage-color, 3%);
         }
         img {
-          margin: 0 auto;
           width: 50%;
         }
       }
@@ -450,7 +459,6 @@ a {
           background-color: darken($cloud-color, 3%);
         }
         img {
-          margin: 0 auto;
           width: 55%;
         }
       }
@@ -460,7 +468,6 @@ a {
           background-color: darken($hip-hop-color, 3%);
         }
         img {
-          margin: 0 auto;
           width: 35%;
         }
       }
@@ -470,7 +477,6 @@ a {
           background-color: darken($becomeuk-color, 3%);
         }
         img {
-          margin: 0 auto;
           width: 35%;
         }
       }
@@ -480,7 +486,6 @@ a {
           background-color: darken($babbleink-color, 3%);
         }
         img {
-          margin: 0 auto;
           width: 27%;
         }
       }
