@@ -1,3 +1,7 @@
+---
+work_item: true
+---
+
 <% content_for(:title, client.name) %>
 <% content_for(:description, Nokogiri::HTML(client.intro(115)).text) %>
 <% content_for(:page_class, client.url) %>
@@ -47,7 +51,5 @@
   <% end %>
 
   <hr>
-
-  <%= partial "work_navigation" %>
 
 </section>

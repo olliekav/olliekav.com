@@ -78,9 +78,6 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   // }
 
   background-color: $color;
-  main {
-    background-color: $color;
-  }
   a {
     color: $dark-grey;
     &:hover {
@@ -97,19 +94,18 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
       fill: darken($color, 5%);
     }
   }
+  #resp-nav {
+    background-color: darken($color, 5%);
+    &:hover {
+      background-color: darken($color, 6%);
+    }
+  }
   h1 {
     color: darken($color, 2.5%);
+    @media screen and (max-width: 500px) {
+      color: darken($color, 8%);
+    }
   }
-  // .social-icons {
-  //   li {
-  //     a {
-  //       //border: 4px solid $white;
-  //       &:hover {
-  //         //border-color: darken($color, 10%);
-  //       }
-  //     }
-  //   }
-  // }
   .work-nav {
     a {
       color: $white;

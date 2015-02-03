@@ -19,11 +19,10 @@
   </head>
   <body id="olliekav" class="<%= custom_page_classes %>">
     <%= partial "header" %>
-    <div id="wrapper">
-      <main id="main" role="main">
-        <%= yield %>
-      </main>
-    </div>
+    <main id="main" role="main">
+      <%= yield %>
+    </main>
+    <%= partial "work_navigation" if current_page.data.work_item == true %>
     <%= javascript_include_tag "gridset-overlay",  "application" %>
     <%= yield_content :javascript %>
     <script>
