@@ -43,12 +43,12 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
 
   // Responsive nav menu
   menuLink.addEventListener("click", function(event){ 
-    if (hasClass(body, 'resp')) {
-      removeClass(body, 'resp')
+    if (hasClass(html, 'resp')) {
+      removeClass(html, 'resp')
       removeClass(menuLink, 'open')
     }
     else {
-      addClass(body, 'resp')
+      addClass(html, 'resp')
       addClass(menuLink, 'open')
     }
     event.preventDefault();

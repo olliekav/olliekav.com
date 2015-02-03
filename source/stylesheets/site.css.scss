@@ -7,11 +7,11 @@
 // Basic layout setup
 
 html {
-  height:100%;
+  height: 100%;
   width: 100%;
 }
 body {
-  background-color: #fff;
+  background-color: $dark-grey;
   color: $white;
   font: 400 150%/1.5 $ff-din-round;
   margin: 0;
@@ -24,21 +24,25 @@ body {
     font-size: 125%;
   }
 }
+.resp, .resp>body {
+  overflow: hidden;
+}
 main {
+  left: 0;
   @include gs-span(o,2,5);
-  //position: relative;
+  position: relative;
   @media screen and (max-width: 500px) {
-    float: none;
     margin: 0;
     padding: 10%;
     @include box-sizing(border-box);
+    @include transition(left .3s ease-in-out);
     width: 100%;
     @include transform(translate3d(0,0,0));
-    @include transition(transform 0.2s ease-in-out);
-    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    z-index: 1;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     .resp & {
-      @include transform(translate3d(gs-width(o, 1, 3, false, true),0,0));
-      //left: gs-width(o, 1, 3, false, true);
+      left: gs-width(o, 1, 3, false, true);
     }
   }
 }
@@ -78,7 +82,6 @@ h1 {
   line-height: 1;
   margin: 0 0 0.5em 0;
   //@extend %hyphenate
-  @include transform(translate3d(0,0,0));
   @media screen and (max-width: 800px) {
     font-size: 20vw;
   }
@@ -149,9 +152,11 @@ a {
   top: 0;
   @include gs-span(o,1);
   @include box-sizing(border-box);
-  @include transition(all .3s ease-in-out);
+  @include transition(left .3s ease-in-out);
   width: gs-width(o, 1);
-  z-index: 10;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  z-index: 100;
   a {
     color: $white;
     @include transition(color 0.1s linear);
@@ -161,9 +166,9 @@ a {
   }
   @media screen and (max-width: 500px) {
     left: - gs-width(o,1,3,false,true);
-    opacity: 0;
     padding: 10%;
-    @include gs-span(o,1,3);
+    width: gs-width(o,1,3,false,true);
+    z-index: 1;
     .resp & {
       left: 0;
       opacity: 1;
@@ -228,19 +233,20 @@ a {
 #resp-nav {
   background: url("../images/menu-icon.svg") no-repeat 8px 48%;
   background-size: 15px 16px;
+  border-radius: 5px;
   display: none;
   color: $white;
   outline: none;
-  padding: 0.3em 1.5em 0.1em 1.5em;
+  padding: 0.3em 0.5em 0.1em 1.5em;
   position: fixed;
-  right: 0;
-  top: 1em;
-  z-index: 100;
+  right: 4%;
+  top: 3%;
+  z-index: 10;
   @media screen and (max-width: 500px) {
     display: block;
   }
   &:hover, &:focus {
-    color: $white;
+    color: $white !important;
   }
   &.open {
     background-image: url("../images/menu-close.svg");
@@ -319,7 +325,6 @@ a {
     main {
       float: none;
       margin: 0;
-      overflow: hidden;
       padding: 0;
       width: 100%;
     }
@@ -496,6 +501,12 @@ a {
     padding-top: 150px;
     h1 {
       position: static;
+      -ms-word-break: break-all;
+      word-break: break-all;
+      word-break: break-word;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto;
     }
   }
 }
@@ -522,10 +533,10 @@ a {
     @include gs-span(o,4,5,(2,5));
   } 
   @media screen and (max-width: 500px) {
-    float: none;
     margin: 0;
     padding-top: 50px;
-    width: 100%;
+    @include gs-span(o,1,5,false);
+    @include box-sizing(border-box);
   }
 }
 .image {

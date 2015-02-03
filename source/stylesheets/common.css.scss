@@ -78,6 +78,11 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   // }
 
   background-color: $color;
+  @media screen and (max-width: 500px) {
+    main {
+      background-color: $color;
+    }
+  }
   a {
     color: $dark-grey;
     &:hover {
@@ -89,6 +94,9 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     a:hover, a.active {
       color: darken($color, 10%);
     }
+    // @media screen and (max-width: 500px) {
+    //   background-color: $dark-grey;
+    // }
   }
   .logo:hover {
     path {
