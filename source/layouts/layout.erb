@@ -23,7 +23,7 @@
       <%= yield %>
     </main>
     <%= partial "work_navigation" if current_page.data.work_item == true %>
-    <%= javascript_include_tag "gridset-overlay",  "application" %>
+    <%= javascript_include_tag "gridset-overlay", "layout.engine.min", "application" %>
     <%= yield_content :javascript %>
     <script>
       var _gaq = [['_setAccount', 'UA-15656719-1'], ['_trackPageview']];
@@ -37,7 +37,7 @@
     </script>
     <style>
       .gridsetoverlaywrap {
-        opacity: 0.2;
+        opacity: 0.5;
       }
     </style>
   </body>

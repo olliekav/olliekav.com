@@ -85,6 +85,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     }
   }
   #header {
+    background-color: $color;
     a:hover, a.active {
       color: darken($color, 10%);
     }
@@ -103,7 +104,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   h1 {
     color: darken($color, 2.5%);
     @media screen and (max-width: 500px) {
-      color: darken($color, 8%);
+      color: darken($color, 5%);
     }
   }
   .work-nav {
@@ -244,7 +245,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
 // @extend %vertical-align
 %vertical-align {
   position: relative;
-  top: 48%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);

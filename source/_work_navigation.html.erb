@@ -8,7 +8,6 @@
         <% prev_page = work_pages[index-1] %>
         <% content_tag(:li, class: "prev") do %>
           <% link_to("/work/#{prev_page.url}/") do %>
-            <span>Prev</span>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                viewBox="200 200 100 100" enable-background="new 200 200 100 100" xml:space="preserve">
             <path fill="#FFFFFF" d="M250,300c-27.57,0-50-22.43-50-50c0-27.57,22.43-50,50-50c27.57,0,50,22.43,50,50
@@ -18,6 +17,7 @@
               c0-1.362,0.541-2.668,1.504-3.631l17.474-17.474c2.005-2.006,5.257-2.006,7.263,0c2.005,2.006,2.005,5.257,0,7.263L239.707,250
               l13.842,13.842c2.005,2.005,2.005,5.257,0,7.263C252.546,272.108,251.232,272.609,249.917,272.609z"/>
             </svg>
+            <span>Prev</span>
           <% end %>
         <% end unless index == 0 %>
         <% content_tag(:li, class: "next") do %>
