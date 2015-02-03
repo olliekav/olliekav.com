@@ -1,6 +1,10 @@
 <header id="header">
-  <%#= link_to(image_tag("logo.svg", alt: "OllieKav"), "/", class: "logo") %>
-  <%= partial "logo" %>
+  <!--[if gte IE 9]><!-->
+    <%= partial "logo" %>
+  <!--<![endif]-->
+  <!--[if lte IE 8]>
+    <%= link_to(image_tag("logo.png", alt: "OllieKav"), "/", class: "logo") %>
+  <![endif]-->
   <nav id="navigation">
     <ul>
       <li><%= link_to("Work", "/work/", nav_active("/work/")) %></li>

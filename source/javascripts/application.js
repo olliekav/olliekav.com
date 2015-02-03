@@ -65,5 +65,17 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     reSize();
     window.addEventListener('resize', reSize, false);
   }
-
 }
+
+
+// if (document.all && document.querySelector && !document.addEventListener) {
+
+//   var index;
+//   var svgs = document.querySelectorAll('.svg');
+//   for (index = 0; index < svgs.length; ++index) {
+//     img = svgs[index];
+//     var title = img.getAttribute('alt');
+//     img.style.display = 'none';
+//   }
+
+// }

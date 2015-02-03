@@ -280,13 +280,13 @@ a {
 
 .page-index {
   height: 100%;
-  overflow: hidden;
   @include colour-scheme($mint);
   main {
     height: 100%;
     @include box-sizing(border-box);
   }
   @media screen and (max-width: 500px) {
+    overflow: hidden;
     main {
       padding: 0 10%;
     }
@@ -745,7 +745,7 @@ a {
 
 // IE Fixes
 
-.ie9 {
+.ie9,.ie8 {
   h1 {
     font-size: 18vw;
   }
@@ -781,6 +781,34 @@ a {
           display: block;
         }
       }
+    }
+  }
+}
+.ie8 {
+  body {
+    min-width: 900px
+  }
+  .logo {
+    padding-bottom: 0;
+  }
+  h1 {
+    font-size: 8em;
+  }
+  .home {
+    h1 {
+      top: 10%;
+    }
+  }
+  .work-list {
+    img {
+      display: none;
+    }
+    a:after {
+      content: ""attr(title)"";
+      color: $white !important;
+      vertical-align: middle;
+      @extend %vertical-align;
+      top: 42%;
     }
   }
 }

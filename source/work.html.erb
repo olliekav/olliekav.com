@@ -7,9 +7,9 @@
   <% $stderr.puts work_list %>
   <% work_list.each do |c| %>
     <article class="client">
-      <% link_to("/work/#{c.url}/", class: c.url) do %>
+      <% link_to("/work/#{c.url}/", class: c.url, title: c.name) do %>
         <% image_url = "work/#{c.url}/#{c.logo}" %>
-        <%= image_tag(image_url, :alt => "") %>
+        <%= image_tag(image_url, :alt => c.name, class: 'svg') %>
         <h2><%= c.name %></h2>
       <% end %>
     </article>
