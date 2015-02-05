@@ -223,6 +223,7 @@ a {
   bottom: 3.7%;
   font-size: 0.6em;
   left: 0;
+  margin: 0;
   padding: 0 3.7%;
   position: absolute;
   right: 0;
@@ -292,8 +293,8 @@ a {
 // Homepage
 
 .page-index {
-  height: 100%;
   @include colour-scheme($mint);
+  height: 100%;
   main {
     height: 100%;
     @include box-sizing(border-box);
@@ -377,9 +378,7 @@ a {
     }
     a {
       display: block;
-      //@include flexbox();
       height: 100%;
-      //justify-content: center;
       @include transition(background-color 0.1s linear);
       @media screen and (max-width: 500px) {
         display: block;
@@ -498,9 +497,8 @@ a {
 .work-item {
   padding-top: 20%;
   h1 {
-    position: fixed;
-    top: 20%;
-    z-index: -1;
+    @extend %h1_header;
+    padding-right: 3.7%;
   }
   @media screen and (max-width: 500px) {
     padding-top: 150px;
@@ -620,6 +618,7 @@ a {
     border-radius: 0;
     left: 0;
     right: 0;
+    padding: 0.4em 0.5em 0.3em;
   }
 }
 .scrolling {
@@ -667,16 +666,14 @@ a {
 // About page
 
 .page-about {
-  @include colour-scheme($mint);
+  @include colour-scheme($salmon);
   .about-me {
     padding-top: 25%;
     @extend %clearfix;
   }
   h1 {
-    color: darken($mint, 7%);
-    position: fixed;
-    top: 20%;
-    z-index: -1;
+    color: darken($salmon, 3%);
+    @extend %h1_header;
   }
   @media screen and (max-width: 500px) {
     .about-me {
@@ -709,12 +706,9 @@ a {
 // Music page
 
 .page-music {
-  @include colour-scheme($mint);
+  @include colour-scheme($dark-grey);
   h1 {
-    opacity: 0;
-    position: fixed;
-    top: 20%;
-    z-index: -1;
+    @extend %h1_header;
   }
 }
 .music {
@@ -728,11 +722,11 @@ a {
 .td.player.light ul,
 .td.player.light .follow-link {
   background-color: transparent;
-  border-color: darken($mint, 10%) !important;
+  border-color: darken($dark-grey, 10%) !important;
   color: $white;
 }
 .td.player.light .slider>.track {
-  background-color: darken($mint, 10%);
+  background-color: darken($dark-grey, 10%);
 }
 .td.player.light .slider>.highlight-track {
   border: 0;
@@ -749,10 +743,10 @@ a {
 .td.player.light .buy-link:hover, 
 .td.player.light .follow-link:hover {
   background-color: transparent;
-  color: darken($mint, 20%);
+  color: darken($dark-grey, 20%);
 }
 .td.player.light .slider>.dragger {
-  background-color: darken($mint, 30%);
+  background-color: darken($dark-grey, 30%);
 }
 .td.player.solo .info-solo,
 .td.player.solo .scrubber {

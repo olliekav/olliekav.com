@@ -5,6 +5,7 @@
 $dark-grey: #222222;
 $mint: #41d1c6;
 $white: #fff;
+$salmon: #EE4B54;
 
 $alfred-color: #5c1f87;
 $rebellion-color: #c20000;
@@ -90,13 +91,10 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     }
   }
   #header {
-    background-color: $color;
+    //background-color: $color;
     a:hover, a.active {
       color: darken($color, 10%);
     }
-    // @media screen and (max-width: 500px) {
-    //   background-color: $dark-grey;
-    // }
   }
   .logo:hover {
     path {
@@ -104,20 +102,21 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     }
   }
   .resp-nav>a {
-    background-color: darken($color, 5%);
+    background-color: rgba(darken($color, 5%), 0.9);
     color: $white;
     &:hover, &:focus {
-      background-color: darken($color, 6%);
+      background-color: rgba(darken($color, 6%), 0.9);
       color: $white;
     }
   }
   h1 {
-    color: darken($color, 2.5%);
+    color: darken($color, 3%);
     @media screen and (max-width: 500px) {
       color: darken($color, 5%);
     }
   }
   .work-nav {
+    background-color: rgba(darken($color, 5%), 0.9);
     a {
       color: $white;
       path {
@@ -145,9 +144,6 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     img {
       box-shadow: 0 0 10px rgba(darken($color, 30%), 0.5);
     }
-  }
-  .work-nav {
-    background-color: rgba(darken($color, 5%), 0.9);
   }
 }
 
@@ -250,6 +246,13 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+// @extend %h1_header
+%h1_header {
+  position: fixed;
+  top: 20%;
+  z-index: -1;
 }
 
 // @extend %hyphenate

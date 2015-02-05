@@ -23,22 +23,27 @@
       <%= yield %>
     </main>
     <%= partial "work_navigation" if current_page.data.work_item == true %>
-    <%= javascript_include_tag "gridset-overlay", "layout.engine.min", "application" %>
+    <%= javascript_include_tag "layout.engine.min", "application" %>
     <%= yield_content :javascript %>
-    <script>
-      var _gaq = [['_setAccount', 'UA-15656719-1'], ['_trackPageview']];
-      (function(d, t) {
-        var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-        g.async = true;
-        g.src = '//www.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g, s);
-      })(document, 'script');
-    </script>
-    <style>
-      .gridsetoverlaywrap {
-        opacity: 0.5;
-      }
-    </style>
+    <% if build? %>
+      <script>
+        var _gaq = [['_setAccount', 'UA-3660187-2'], ['_trackPageview']];
+        (function(d, t) {
+          var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+          g.async = true;
+          g.src = '//www.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g, s);
+        })(document, 'script');
+      </script>
+    <% end %>
+    <% if development? %>
+      <%= javascript_include_tag "gridset-overlay" %>
+      <style>
+        .gridsetoverlaywrap {
+          opacity: 0.5;
+        }
+      </style>
+    <% end %>
   </body>
 </html>
