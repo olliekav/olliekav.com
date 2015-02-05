@@ -52,6 +52,7 @@ section {
   width: 100%;
 }
 .row {
+  max-width: 1000px;
   @extend %clearfix;
 }
 img {
@@ -119,7 +120,6 @@ a {
     color: $dark-grey;
   }
 }
-
 .button {
   background-color: $dark-grey;
   border: none;
@@ -201,8 +201,8 @@ a {
 }
 .scrolling {
   .logo {
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
   }
 }
 #navigation {
@@ -476,7 +476,7 @@ a {
           background-color: darken($becomeuk-color, 3%);
         }
         img {
-          width: 35%;
+          width: 30%;
         }
       }
       &.babble-ink {
@@ -542,6 +542,9 @@ a {
     @include box-sizing(border-box);
   }
 }
+.gallery {
+  max-width: 1000px;
+}
 .image {
   margin-top: 5em;
   &.full {
@@ -562,6 +565,7 @@ a {
   img {
     display: block;
     margin: 0 auto;
+    width: 100%;
   }
   @media screen and (max-width: 500px) {
     &.col-1, &.col-3, &.col-2-1, &.col-2-2 {
@@ -579,11 +583,13 @@ a {
   bottom: -50px;
   border-radius: 10px 10px 0 0;
   left: 22.21852%;
+  max-width: 1000px;
   padding: 0.2em 0.5em 0.1em;
   position: fixed;
   right: 3.7%;
   z-index: 100;
   @extend %clearfix;
+  @include box-sizing(border-box);
   @include transition(bottom .3s linear);
   a {
     color: $white;
@@ -707,12 +713,50 @@ a {
 
 .page-music {
   @include colour-scheme($dark-grey);
+  background-image: url("../images/background-music.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   h1 {
     @extend %h1_header;
+    color: $light-grey;
+  }
+  #header {
+    .logo:hover {
+      path {
+        fill: $light-grey;
+      }
+    }
+    a:hover, a.active {
+      color: $light-grey;
+    }
   }
 }
 .music {
-  padding: 3.7% 0;
+  padding: 32% 0 3.7%;
+  .row {
+    margin-bottom: 4em;
+  }
+  .col-1 {
+    @include gs-span(o,3,4,(2,5));
+  }
+  .col-2 {
+    @include gs-span(o,5,false,(2,5));
+  }
+  @media screen and (max-width: 500px) {
+    padding-top: 100px;
+    .col-1 {
+      @include gs-span(o,1,5,(2,5));
+      float: none;
+      width: 100%;
+    }
+    .col-2 {
+      @include gs-span(o,1,5,(2,5));
+      float: none;
+      width: 100%;
+    }
+  }
 }
 .media-player {
   margin-bottom: 1em;
@@ -722,11 +766,11 @@ a {
 .td.player.light ul,
 .td.player.light .follow-link {
   background-color: transparent;
-  border-color: darken($dark-grey, 10%) !important;
+  border-color: $light-grey !important;
   color: $white;
 }
 .td.player.light .slider>.track {
-  background-color: darken($dark-grey, 10%);
+  background-color: $light-grey;
 }
 .td.player.light .slider>.highlight-track {
   border: 0;
@@ -743,14 +787,17 @@ a {
 .td.player.light .buy-link:hover, 
 .td.player.light .follow-link:hover {
   background-color: transparent;
-  color: darken($dark-grey, 20%);
+  color: darken($white, 20%);
 }
 .td.player.light .slider>.dragger {
-  background-color: darken($dark-grey, 30%);
+  background-color: #999;
 }
 .td.player.solo .info-solo,
 .td.player.solo .scrubber {
   border-left: 0; 
+}
+a.tdbutton.expand.buy-link {
+  color: $white;
 }
 
 // IE Fixes

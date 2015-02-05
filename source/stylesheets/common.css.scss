@@ -3,6 +3,7 @@
 // Colors
 
 $dark-grey: #222222;
+$light-grey: #2e2e2e;
 $mint: #41d1c6;
 $white: #fff;
 $salmon: #EE4B54;
@@ -85,7 +86,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     }
   }
   a {
-    color: $dark-grey;
+    color: #000;
     &:hover {
       color: darken($color, 15%);
     }
@@ -93,7 +94,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   #header {
     //background-color: $color;
     a:hover, a.active {
-      color: darken($color, 10%);
+      color: darken($color, 13%);
     }
   }
   .logo:hover {
@@ -110,9 +111,9 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     }
   }
   h1 {
-    color: darken($color, 3%);
+    color: darken($color, 5%);
     @media screen and (max-width: 500px) {
-      color: darken($color, 5%);
+      color: darken($color, 6%);
     }
   }
   .work-nav {
@@ -253,6 +254,9 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   position: fixed;
   top: 20%;
   z-index: -1;
+  @media screen and (max-width: 500px) {
+    position: static;
+  }
 }
 
 // @extend %hyphenate
