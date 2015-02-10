@@ -9,19 +9,30 @@
 html {
   height: 100%;
   width: 100%;
+  &.turbolinks-progress-bar::before {
+    background-color: $white !important;
+    height: 5px !important;
+  }
 }
 body {
   background-color: $dark-grey;
   color: $white;
   font: 400 150%/1.5 $ff-din-round;
   margin: 0;
+  opacity: 1;
   padding: 0;
-  position: relative;
   width:100%;
+  @include transition(opacity 0.5s ease-in-out);
   @include box-sizing(border-box);
   @extend %clearfix;
   @media screen and (max-width: 900px) {
     font-size: 125%;
+  }
+  .animate-out & {
+    opacity: 0;
+  }
+  .animate-in & {
+    opacity: 1;
   }
 }
 .resp, .resp>body {
@@ -81,7 +92,7 @@ h1 {
   font-size: 25vmin;
   letter-spacing: -5px;
   line-height: 1;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.5em -1.2%;
   //@extend %hyphenate
   @media screen and (max-width: 800px) {
     font-size: 20vw;
@@ -678,7 +689,6 @@ a {
     @extend %clearfix;
   }
   h1 {
-    color: darken($salmon, 3%);
     @extend %h1_header;
   }
   @media screen and (max-width: 500px) {

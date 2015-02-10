@@ -77,7 +77,7 @@ helpers do
   end
   # Custom page classes
   def custom_page_classes
-    "page-#{page_classes} #{yield_content(:page_class) if content_for?(:page_class)}"
+    "class='page-#{page_classes} #{yield_content(:page_class) if content_for?(:page_class)}'"
   end
   # Tag lists
   def sentence_tag_list(article)

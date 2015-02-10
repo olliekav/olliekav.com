@@ -5,3 +5,4 @@ source 'https://rubygems.org'
 gem "middleman", "~>3.3.7"
 gem "middleman-livereload", "~> 3.1.0"
 gem "nokogiri"
+gem "turbolinks", "~> 2.5.0", require: false

@@ -45,7 +45,7 @@ clients:
     cite:
     services: 
       - Web design
-      - For <a href="http://kyan.com">Kyan</a>
+      - 'Agency: <a href="http://kyan.com">Kyan</a>'
     logo: logo.svg
     images: 
       - image: 
@@ -105,7 +105,7 @@ clients:
     services: 
       - Web Design
       - Application design
-      - For <a href="http://kyan.com">Kyan</a>
+      - 'Agency: <a href="http://kyan.com">Kyan</a>'
     logo: logo.svg
     images: 
       - image: 
@@ -137,7 +137,7 @@ clients:
       - Responsive build
       - Marketing materials
       - Iconography
-      - For <a href="http://kyan.com">Kyan</a>
+      - 'Agency: <a href="http://kyan.com">Kyan</a>'
     logo: logo.svg
     images: 
       - image: 
@@ -166,7 +166,7 @@ clients:
       - Web design
       - Responsive build
       - Rails back-end
-      - For <a href="http://kyan.com">Kyan</a>
+      - 'Agency: <a href="http://kyan.com">Kyan</a>'
     logo: logo.svg
     images: 
       - image: 
@@ -225,7 +225,7 @@ clients:
     cite:
     services: 
       - Web design
-      - For <a href="http://kyan.com">Kyan</a>
+      - 'Agency: <a href="http://kyan.com">Kyan</a>'
     logo: logo.svg
     images: 
       - image: 

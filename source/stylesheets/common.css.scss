@@ -80,6 +80,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   // }
 
   background-color: $color;
+  //@include transition(background-color 1s ease-in-out);
   @media screen and (max-width: 500px) {
     main {
       background-color: $color;

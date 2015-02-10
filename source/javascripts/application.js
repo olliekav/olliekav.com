@@ -1,3 +1,5 @@
+//= require turbolinks
+
 var hasClass = function (elem, className) {
   return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
 }
@@ -18,53 +20,97 @@ var removeClass = function (elem, className) {
   }
 }
 
+Turbolinks.enableProgressBar();
+Turbolinks.enableTransitionCache();
+
 if ( 'querySelector' in document && 'addEventListener' in window ) {
 
   var body = document.querySelector('body'),
-      html = document.querySelector('html'),
-      height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
-      width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
-      menuLink = document.querySelector('.resp-nav'),
-      top = document.documentElement.scrollTop || document.body.scrollTop;
+      html = document.querySelector('html');
+      // height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
+      // width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
+      // top = document.documentElement.scrollTop || document.body.scrollTop;
 
   // Add scrolling class to body
-  var fired = false;
-  window.addEventListener('scroll', function() {
-    if(window.pageYOffset >= 100 && fired === false) {
-      addClass(body, 'scrolling');
-      //addClass('#logo', 'to-top');
-      //fired = true;
-    }
-    else {
-      removeClass(body, 'scrolling');
-      //removeClass('#logo', 'to-top');
-    }
-  });
+  function scrolling() {
+    var fired = false;
+    window.addEventListener('scroll', function() {
+      var body = document.querySelector('body');
+      if(window.pageYOffset >= 100 && fired === false) {
+        addClass(body, 'scrolling');
+        //fired = true;
+      }
+      else {
+        removeClass(body, 'scrolling');
+      }
+    });
+  }
 
   // Responsive nav menu
-  menuLink.addEventListener("click", function(event){ 
-    if (hasClass(html, 'resp')) {
-      removeClass(html, 'resp')
-      removeClass(menuLink, 'open')
-    }
-    else {
-      addClass(html, 'resp')
-      addClass(menuLink, 'open')
-    }
-    event.preventDefault();
-  });
+  function responsiveNav() {
+    var menuLink = document.querySelector('.resp-nav');
+    menuLink.addEventListener("click", function(event){ 
+      if (hasClass(html, 'resp')) {
+        removeClass(html, 'resp')
+        removeClass(menuLink, 'open')
+      }
+      else {
+        addClass(html, 'resp')
+        addClass(menuLink, 'open')
+      }
+      event.preventDefault();
+    });
+  }
+
+  // Make SVG link play nice with turbolinks
+  function svglink() {
+    var svg = document.querySelector('.logo');
+    svg.addEventListener("click", function(event){ 
+      Turbolinks.visit('/');
+      event.preventDefault();
+    });
+  }
 
   // ie9 fixes for flexbox
-  if(hasClass(html, 'ie9')) {
-    function reSize() {
-      [].forEach.call(document.querySelectorAll('.client'), function(el) {
-        var itemHeight = body.offsetHeight / 3;
-        el.style.height = itemHeight + 'px';
-      })
+  function fixie9() {
+    if(hasClass(html, 'ie9')) {
+      function reSize() {
+        [].forEach.call(document.querySelectorAll('.client'), function(el) {
+          var itemHeight = body.offsetHeight / 3;
+          el.style.height = itemHeight + 'px';
+        })
+      }
+      reSize();
+      window.addEventListener('resize', reSize, false);
     }
-    reSize();
-    window.addEventListener('resize', reSize, false);
   }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    scrolling();
+    responsiveNav();
+    fixie9();
+  });
+
+  document.addEventListener("page:fetch", function() {
+    removeClass(html, "resp");
+    removeClass(html, "animate-in");
+    addClass(html, "animate-out");
+    scrolling();
+    responsiveNav();
+    window.scrollTo(0,0);
+  });
+
+  // document.addEventListener("page:change", function() {
+    
+  // });
+
+  document.addEventListener("page:load", function() {
+    removeClass(html, "animate-out");
+    addClass(html, "animate-in");
+    responsiveNav();
+    fixie9();
+  });
+
 }
 
 
