@@ -26,7 +26,7 @@ Time.zone = "US/Eastern"
 #   page "/admin/*"
 # end
 
-page "/feed.xml", layout: false
+#page "/feed.xml", layout: false
 page "/404.html", :layout => false
 page "/sitemap.xml", :layout => false
 
@@ -58,9 +58,9 @@ helpers do
   # Set the page title
   def page_title
     if content_for?(:title)
-      "#{yield_content(:title)} - Capra Design"
+      "#{yield_content(:title)} - OK Design"
     else
-      "Capra Design"
+      "OK Design"
     end
   end
   # Set the page description
@@ -68,7 +68,7 @@ helpers do
     if content_for?(:description)
       "#{yield_content(:description)}"
     else
-      "Capra is a design agency based in Ottawa, Canada run by husband and wife team Ollie and Kat Kavanagh. Our focus is great design. We love interactive work like websites, games and apps because we get involved in building what we design."
+      "Hi, I'm Ollie, a designer and front end developer currently residing in Ottawa, Canada."
     end
   end
   # Active nav items
