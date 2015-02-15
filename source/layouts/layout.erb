@@ -14,6 +14,7 @@
     <script>try{Typekit.load();}catch(e){}</script>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "layout.engine.min", "application" %>
+    <%= yield_content :javascript %>
     <!--[if lt IE 9]>
       <%= javascript_include_tag("html5shiv.min.js") %>
     <![endif]-->
@@ -39,7 +40,6 @@
       <%= yield %>
     </main>
     <%= partial "work_navigation" if current_page.data.work_item == true %>
-    <%= yield_content :javascript %>
     <% if build? %>
       <script>
         ga('send', 'pageview');

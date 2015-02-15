@@ -102,7 +102,6 @@ h1 {
   letter-spacing: -5px;
   line-height: 1;
   margin: 0 0 0.5em -1.2%;
-  @include transition(color linear 0.3s);
   //@extend %hyphenate
   @media screen and (max-width: 800px) {
     font-size: 20vw;
@@ -136,7 +135,7 @@ li {
 a {
   color: $white;
   text-decoration: none;
-  @include transition(all 0.1s linear);
+  @include transition(color 0.1s linear);
   &:hover {
     color: $dark-grey;
   }
@@ -154,7 +153,7 @@ a {
   @include box-sizing(border-box);
   -webkit-appearance: none;
   width: 100%;
-  @include transition(all 0.1s linear);
+  @include transition(background-color 0.1s linear);
   &:hover {
     background-color: darken($dark-grey, 10%);
     color: #fff;
