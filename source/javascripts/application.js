@@ -96,17 +96,16 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     removeClass(html, "resp");
     removeClass(html, "animate-in");
     addClass(html, "animate-out");
-    scrolling();
-    responsiveNav();
-    svglink();
-    fixie9();
     window.scrollTo(0,0);
   });
 
   document.addEventListener("page:load", function() {
     removeClass(html, "animate-out");
     addClass(html, "animate-in");
-    tonedenInit();
+    scrolling();
+    responsiveNav();
+    svglink();
+    fixie9();
   });
 
 }
