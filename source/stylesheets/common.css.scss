@@ -7,6 +7,7 @@ $light-grey: #2e2e2e;
 $mint: #41d1c6;
 $white: #fff;
 $salmon: #EE4B54;
+$blue: #0457A7;
 
 $alfred-color: #5c1f87;
 $rebellion-color: #c20000;
@@ -80,7 +81,6 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   // }
 
   background-color: $color;
-  //@include transition(background-color 1s ease-in-out);
   @media screen and (max-width: 500px) {
     main {
       background-color: $color;
@@ -146,6 +146,16 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     img {
       box-shadow: 0 0 10px rgba(darken($color, 30%), 0.5);
     }
+  }
+}
+
+@mixin work-item($color, $width) {
+  background-color: $color;
+  &:hover {
+    background-color: darken($color, 3%);
+  }
+  img {
+    width: $width;
   }
 }
 

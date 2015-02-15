@@ -23,6 +23,7 @@ body {
   padding: 0;
   width:100%;
   @include transition(opacity 0.5s ease-in-out);
+  //@include transition(background-color linear 0.3s);
   @include box-sizing(border-box);
   @extend %clearfix;
   @media screen and (max-width: 900px) {
@@ -38,6 +39,14 @@ body {
 .resp, .resp>body {
   overflow: hidden;
 }
+// #wrapper {
+//   left: 0;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   z-index: 0;
+//   @include transition(background-color linear 0.3s);
+// }
 main {
   left: 0;
   @include gs-span(o,2,5);
@@ -59,7 +68,7 @@ main {
 }
 section {
   @include box-sizing(border-box);
-  padding: 4em 0;
+  padding: 25% 0 4em;
   width: 100%;
 }
 .row {
@@ -93,6 +102,7 @@ h1 {
   letter-spacing: -5px;
   line-height: 1;
   margin: 0 0 0.5em -1.2%;
+  @include transition(color linear 0.3s);
   //@extend %hyphenate
   @media screen and (max-width: 800px) {
     font-size: 20vw;
@@ -126,7 +136,7 @@ li {
 a {
   color: $white;
   text-decoration: none;
-  @include transition(color 0.1s linear);
+  @include transition(all 0.1s linear);
   &:hover {
     color: $dark-grey;
   }
@@ -144,10 +154,10 @@ a {
   @include box-sizing(border-box);
   -webkit-appearance: none;
   width: 100%;
+  @include transition(all 0.1s linear);
   &:hover {
     background-color: darken($dark-grey, 10%);
     color: #fff;
-    @include transition(background-color 0.1s linear);
   }
   @media screen and (max-width: 400px) {
     font-size: 1em;
@@ -401,103 +411,37 @@ a {
         @extend %vertical-align;
       }
       &.alfred-app {
-        background-color: $alfred-color;
-        &:hover {
-          background-color: darken($alfred-color, 3%);
-        }
-        img {
-          width: 50%;
-        }
+        @include work-item($alfred-color, 50%);
       }
       &.rebellion-games {
-        background-color: $rebellion-color;
-        &:hover {
-          background-color: darken($rebellion-color, 3%);
-        }
-        img {
-          width: 70%;
-        }
+        @include work-item($rebellion-color, 70%);
       }
       &.alton-convent-school {
-        background-color: $alton-convent-color;
-        &:hover {
-          background-color: darken($alton-convent-color, 3%);
-        }
-        img {
-          width: 35%;
-        }
+        @include work-item($alton-convent-color, 35%);
       }
       &.mumbu-app {
-        background-color: $mumbu-color;
-        &:hover {
-          background-color: darken($mumbu-color, 3%);
-        }
-        img {
-          width: 45%;
-        }
+        @include work-item($mumbu-color, 45%);
       }
       &.on-target-recruitment {
-        background-color: $on-target-color;
-        &:hover {
-          background-color: darken($on-target-color, 3%);
-        }
-        img {
-          width: 40%;
-        }
+        @include work-item($on-target-color, 40%);
       }
       &.workplace-concepts {
-        background-color: $workplace-color;
-        &:hover {
-          background-color: darken($workplace-color, 3%);
-        }
-        img {
-          width: 50%;
-        }
+        @include work-item($workplace-color, 50%);
       }
       &.backpage-football {
-        background-color: $backpage-color;
-        &:hover {
-          background-color: darken($backpage-color, 3%);
-        }
-        img {
-          width: 50%;
-        }
+        @include work-item($backpage-color, 50%);
       }
       &.cloud-profiler {
-        background-color: $cloud-color;
-        &:hover {
-          background-color: darken($cloud-color, 3%);
-        }
-        img {
-          width: 55%;
-        }
+        @include work-item($cloud-color, 55%);
       }
       &.hip-hop-quoted {
-        background-color: $hip-hop-color;
-        &:hover {
-          background-color: darken($hip-hop-color, 3%);
-        }
-        img {
-          width: 35%;
-        }
+        @include work-item($hip-hop-color, 35%);
       }
       &.become-uk {
-        background-color: $becomeuk-color;
-        &:hover {
-          background-color: darken($becomeuk-color, 3%);
-        }
-        img {
-          width: 30%;
-        }
+        @include work-item($becomeuk-color, 30%);
       }
       &.babble-ink {
-        background-color: $babbleink-color;
-        &:hover {
-          background-color: darken($babbleink-color, 3%);
-        }
-        img {
-          width: 27%;
-        }
+        @include work-item($babbleink-color, 27%);
       }
     }
   }
@@ -506,7 +450,7 @@ a {
 // Work template
 
 .work-item {
-  padding-top: 20%;
+  padding-top: 27%;
   h1 {
     @extend %h1_header;
     padding-right: 3.7%;
@@ -525,7 +469,6 @@ a {
   }
 }
 .project {
-  padding-top: 15%;
   @include gs-span(o,3,4,(2,5));
   @media screen and (max-width: 800px) {
     @include gs-span(o,2,3,(2,5));
@@ -533,12 +476,11 @@ a {
   @media screen and (max-width: 500px) {
     float: none;
     margin: 0;
-    padding-top: 50px;
     width: 100%;
   }
 }
 .services {
-  padding-top: 14%;
+  margin-top: -1.4%;
   @include gs-span(o,5,false,(2,5));
   ul {
     font-size: 0.8em;
@@ -625,9 +567,15 @@ a {
       }
       &.next {
         float: right;
+        span {
+          margin-right: 5px;
+        }
       }
       &.prev {
         float: left;
+        span {
+          margin-left: 5px;
+        }
       }
     }
   }
@@ -685,7 +633,6 @@ a {
 .page-about {
   @include colour-scheme($salmon);
   .about-me {
-    padding-top: 25%;
     @extend %clearfix;
   }
   h1 {
@@ -722,29 +669,17 @@ a {
 // Music page
 
 .page-music {
-  @include colour-scheme($dark-grey);
-  background-image: url("../images/background-music.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  @include colour-scheme($blue);
+  // background-image: url("../images/background-music.jpg");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  // background-attachment: fixed;
   h1 {
     @extend %h1_header;
-    color: $light-grey;
-  }
-  #header {
-    .logo:hover {
-      path {
-        fill: $light-grey;
-      }
-    }
-    a:hover, a.active {
-      color: $light-grey;
-    }
   }
 }
 .music {
-  padding: 32% 0 3.7%;
   .row {
     margin-bottom: 4em;
   }
@@ -776,11 +711,11 @@ a {
 .td.player.light ul,
 .td.player.light .follow-link {
   background-color: transparent;
-  border-color: $light-grey !important;
+  border-color: darken($blue, 5%) !important;
   color: $white;
 }
 .td.player.light .slider>.track {
-  background-color: $light-grey;
+  background-color: darken($blue, 5%);
 }
 .td.player.light .slider>.highlight-track {
   border: 0;

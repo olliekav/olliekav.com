@@ -36,7 +36,7 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     var fired = false;
     window.addEventListener('scroll', function() {
       var body = document.querySelector('body');
-      if(window.pageYOffset >= 100 && fired === false) {
+      if(window.pageYOffset >= 50 && fired === false) {
         addClass(body, 'scrolling');
         //fired = true;
       }
@@ -50,6 +50,7 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
   function responsiveNav() {
     var menuLink = document.querySelector('.resp-nav');
     menuLink.addEventListener("click", function(event){ 
+      console.log('clicked');
       if (hasClass(html, 'resp')) {
         removeClass(html, 'resp')
         removeClass(menuLink, 'open')
@@ -89,6 +90,7 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     scrolling();
     responsiveNav();
     fixie9();
+    svglink();
   });
 
   document.addEventListener("page:fetch", function() {
@@ -97,18 +99,16 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     addClass(html, "animate-out");
     scrolling();
     responsiveNav();
+    svglink();
     window.scrollTo(0,0);
   });
-
-  // document.addEventListener("page:change", function() {
-    
-  // });
 
   document.addEventListener("page:load", function() {
     removeClass(html, "animate-out");
     addClass(html, "animate-in");
     responsiveNav();
     fixie9();
+    svglink();
   });
 
 }

@@ -13,11 +13,10 @@
     <script src="//use.typekit.net/gmc4yrr.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "layout.engine.min", "application" %>
     <!--[if lt IE 9]>
       <%= javascript_include_tag("html5shiv.min.js") %>
     <![endif]-->
-    <%= javascript_include_tag "layout.engine.min", "application" %>
-    <%= yield_content :javascript %>
     <% if development? %>
       <%= javascript_include_tag "gridset-overlay" %>
       <style>
@@ -40,6 +39,7 @@
       <%= yield %>
     </main>
     <%= partial "work_navigation" if current_page.data.work_item == true %>
+    <%= yield_content :javascript %>
     <% if build? %>
       <script>
         ga('send', 'pageview');
