@@ -88,7 +88,6 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
 
   // Music player
   function tonedenInit() {
-    console.log("I'm running")
     ToneDenReady = window.ToneDenReady || [];
     var configOne = {
       dom: "#player-1",
