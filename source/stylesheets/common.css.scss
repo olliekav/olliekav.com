@@ -72,14 +72,6 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
 
 @mixin colour-scheme($color) {
 
-  // $hover_color: $color !default;
-
-  // @if $lighten {
-  //   $hover_color: lighten($color, 10%);
-  // } @else {
-  //   $hover_color: darken($feat_color, 10%);
-  // }
-
   background-color: $color;
   @media screen and (max-width: 500px) {
     main {
@@ -93,9 +85,11 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     }
   }
   #header {
-    //background-color: $color;
     a:hover, a.active {
       color: darken($color, 13%);
+    }
+    a.active {
+      @include transition(color linear 0.5s);
     }
   }
   .logo:hover {

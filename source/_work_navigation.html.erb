@@ -8,8 +8,7 @@
         <% prev_page = work_pages[index-1] %>
         <% content_tag(:li, class: "prev") do %>
           <% link_to("/work/#{prev_page.url}/") do %>
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-               viewBox="200 200 100 100" enable-background="new 200 200 100 100" xml:space="preserve">
+            <svg x="0px" y="0px" viewBox="200 200 100 100" enable-background="new 200 200 100 100">
             <path fill="#FFFFFF" d="M250,300c-27.57,0-50-22.43-50-50c0-27.57,22.43-50,50-50c27.57,0,50,22.43,50,50
               C300,277.57,277.57,300,250,300z M250,210.272c-21.906,0-39.728,17.822-39.728,39.729c0,21.906,17.822,39.728,39.728,39.728
               c21.906,0,39.729-17.822,39.729-39.728C289.728,228.094,271.906,210.272,250,210.272z"/>
@@ -23,8 +22,7 @@
         <% content_tag(:li, class: "next") do %>
           <% link_to("/work/#{next_page.url}/") do %>
             <span>Next</span>
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-               viewBox="200 200 100 100" enable-background="new 200 200 100 100" xml:space="preserve">
+            <svg x="0px" y="0px" viewBox="200 200 100 100" enable-background="new 200 200 100 100">
             <path fill="#FFFFFF" d="M250,200c27.57,0,50,22.43,50,50c0,27.57-22.43,50-50,50c-27.57,0-50-22.43-50-50
               C200,222.43,222.43,200,250,200z M250,289.728c21.906,0,39.728-17.822,39.728-39.729c0-21.906-17.822-39.728-39.728-39.728
               c-21.906,0-39.729,17.822-39.729,39.728C210.272,271.906,228.094,289.728,250,289.728z"/>

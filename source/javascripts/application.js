@@ -1,4 +1,4 @@
-//= require turbolinks
+/* require turbolinks*/
 
 var hasClass = function (elem, className) {
   return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
@@ -19,9 +19,6 @@ var removeClass = function (elem, className) {
     elem.className = newClass.replace(/^\s+|\s+$/g, '');
   }
 }
-
-Turbolinks.enableProgressBar();
-Turbolinks.enableTransitionCache();
 
 if ( 'querySelector' in document && 'addEventListener' in window ) {
 
@@ -49,7 +46,8 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
   // Responsive nav menu
   function responsiveNav() {
     var menuLink = document.querySelector('.resp-nav');
-    menuLink.addEventListener("click", function(event){ 
+    menuLink.addEventListener("click", function(event){
+    console.log('clicked'); 
       if (hasClass(html, 'resp')) {
         removeClass(html, 'resp')
         removeClass(menuLink, 'open')
@@ -58,15 +56,6 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
         addClass(html, 'resp')
         addClass(menuLink, 'open')
       }
-      event.preventDefault();
-    });
-  }
-
-  // Make SVG link play nice with turbolinks
-  function svglink() {
-    var svg = document.querySelector('.logo');
-    svg.addEventListener("click", function(event){ 
-      Turbolinks.visit('/');
       event.preventDefault();
     });
   }
@@ -85,27 +74,27 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     }
   }
 
-  document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("load", function() {
     scrolling();
     responsiveNav();
     fixie9();
-    svglink();
   });
 
   document.addEventListener("page:fetch", function() {
     removeClass(html, "resp");
-    removeClass(html, "animate-in");
-    addClass(html, "animate-out");
     window.scrollTo(0,0);
   });
 
   document.addEventListener("page:load", function() {
-    removeClass(html, "animate-out");
-    addClass(html, "animate-in");
+    var wrapper = document.getElementById("wrapper")
     scrolling();
     responsiveNav();
-    svglink();
     fixie9();
+    console.log('page loaded TL');
+    if((hasClass(wrapper, 'page-music') && !hasClass(html, 'ie9'))) {
+      console.log('music page')
+      tonedenInit();
+    }
   });
 
 }

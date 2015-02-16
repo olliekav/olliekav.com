@@ -14,6 +14,13 @@
     <script>try{Typekit.load();}catch(e){}</script>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "layout.engine.min", "application" %>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+      <%= javascript_include_tag "reactize.min.js" %>
+      <script>
+        Turbolinks.enableProgressBar();
+      </script>
+      <%= yield_content :javascript %>
+    <!--<![endif]-->
     <!--[if lt IE 9]>
       <%= javascript_include_tag("html5shiv.min.js") %>
     <![endif]-->
@@ -33,13 +40,14 @@
       ga('create', 'UA-3660187-2', 'auto');
     </script>
   </head>
-  <body id="olliekav"<%= custom_page_classes %>>
-    <%= partial "header" %>
-    <main id="main" role="main">
-      <%= yield %>
-    </main>
-    <%= yield_content :javascript %>
-    <%= partial "work_navigation" if current_page.data.work_item == true %>
+  <body id="olliekav">
+    <div id="wrapper"<%= custom_page_classes %>>
+      <%= partial "header" %>
+      <main id="main" role="main">
+        <%= yield %>
+      </main>
+      <%= partial "work_navigation" if current_page.data.work_item == true %>
+    </div>
     <% if build? %>
       <script>
         ga('send', 'pageview');

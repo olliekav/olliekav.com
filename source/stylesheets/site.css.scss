@@ -8,6 +8,7 @@
 
 html {
   height: 100%;
+  position: relative;
   width: 100%;
   &.turbolinks-progress-bar::before {
     background-color: $white !important;
@@ -22,31 +23,33 @@ body {
   opacity: 1;
   padding: 0;
   width:100%;
-  @include transition(opacity 0.5s ease-in-out);
+  //@include transition(opacity 0.5s ease-in-out);
   //@include transition(background-color linear 0.3s);
   @include box-sizing(border-box);
   @extend %clearfix;
   @media screen and (max-width: 900px) {
     font-size: 125%;
   }
-  .animate-out & {
-    opacity: 0;
-  }
-  .animate-in & {
-    opacity: 1;
-  }
+  // .animate-out & {
+  //   opacity: 0;
+  // }
+  // .animate-in & {
+  //   opacity: 1;
+  // }
 }
 .resp, .resp>body {
   overflow: hidden;
 }
-// #wrapper {
-//   left: 0;
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   z-index: 0;
-//   @include transition(background-color linear 0.3s);
-// }
+#wrapper {
+  //bottom: 0;
+  left: 0;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  @include transition(background-color linear 0.5s);
+}
 main {
   left: 0;
   @include gs-span(o,2,5);
@@ -102,6 +105,7 @@ h1 {
   letter-spacing: -5px;
   line-height: 1;
   margin: 0 0 0.5em -1.2%;
+  @include transition(color 0.5s linear);
   //@extend %hyphenate
   @media screen and (max-width: 800px) {
     font-size: 20vw;
@@ -261,7 +265,7 @@ a {
   right: 0;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 2000;
   @media screen and (max-width: 500px) {
     display: block;
   }
@@ -315,6 +319,9 @@ a {
 .page-index {
   @include colour-scheme($mint);
   height: 100%;
+  #wrapper {
+    height: 100%;
+  }
   main {
     height: 100%;
     @include box-sizing(border-box);
@@ -344,7 +351,10 @@ a {
 .work_index {
   @include colour-scheme($dark-grey);
   height: 100%;
-  > main {
+  #wrapper {
+    height: 100%;
+  }
+  main {
     height: 100%;
     margin-left: 18.51852%;
     width: 81.48148%;
@@ -703,6 +713,7 @@ a {
   }
 }
 .media-player {
+  background-color: rgba($blue, 0.8);
   margin-bottom: 1em;
 }
 .td.player.light,

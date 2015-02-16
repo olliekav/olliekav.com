@@ -1,6 +1,9 @@
 // Music player
+
+var ToneDenReady = window.ToneDenReady || [];
+
 function tonedenInit() {
-  ToneDenReady = window.ToneDenReady || [];
+  
   var configOne = {
     dom: "#player-1",
     urls: [
@@ -55,6 +58,7 @@ function tonedenInit() {
   // }); 
 
   if(typeof ToneDen != 'undefined'){
+    //ToneDen.player.destroy();
     ToneDen.player.create(configOne);
     ToneDen.player.create(configTwo);
     ToneDen.player.create(configThree);
@@ -76,7 +80,3 @@ function tonedenInit() {
 }
 
 tonedenInit();
-
-document.addEventListener("page:load", function() {
-  tonedenInit();
-});
