@@ -90,9 +90,7 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     scrolling();
     responsiveNav();
     fixie9();
-    console.log('page loaded TL');
     if((hasClass(wrapper, 'page-music') && !hasClass(html, 'ie9'))) {
-      console.log('music page')
       tonedenInit();
     }
   });
