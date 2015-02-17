@@ -42,16 +42,15 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
       }
     });
 
-    body.addEventListener("click", function(e) {
-      if(e.target && e.target.nodeName == "A") {
-        console.log('clicked aagin');
+    window.addEventListener("click", function(e) {
+      console.log('clicked');
+      if(e.target && e.target.className == "resp-nav") {
+        console.log('Here again')
         if (hasClass(html, 'resp')) {
           removeClass(html, 'resp')
-          removeClass(menuLink, 'open')
         }
         else {
           addClass(html, 'resp')
-          addClass(menuLink, 'open')
         }
         e.preventDefault();
       }
@@ -134,12 +133,13 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
   document.addEventListener("page:fetch", function() {
     var html = document.querySelector('html');
     removeClass(html, "resp");
+    ready();
     window.scrollTo(0,0);
   });
 
-  document.addEventListener("page:load", function() {
-    ready();
-  });
+  // document.addEventListener("page:load", function() {
+  //   ready();
+  // });
 
 }
 

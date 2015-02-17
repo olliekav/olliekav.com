@@ -273,7 +273,7 @@ a {
   @media screen and (max-width: 500px) {
     display: block;
   }
-  &.open {
+  .resp &  {
     background-image: url("../images/menu-close.svg");
   }
 }
