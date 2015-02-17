@@ -97,7 +97,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
       fill: darken($color, 5%);
     }
   }
-  .resp-nav>a {
+  .resp-nav {
     background-color: rgba(darken($color, 5%), 0.9);
     color: $white;
     &:hover, &:focus {

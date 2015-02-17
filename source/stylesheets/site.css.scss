@@ -164,6 +164,7 @@ a {
   }
   @media screen and (max-width: 400px) {
     font-size: 1em;
+    display: block;
     width: 100%;
   }
 }
@@ -258,29 +259,21 @@ a {
   }
 }
 .resp-nav {
+  background: url("../images/menu-icon.svg") no-repeat 8px 48%;
+  background-size: 15px 16px;
+  border-radius: 5px;
+  color: $white;
   display: none;
-  left: 0;
-  overflow: hidden;
+  outline: none;
+  padding: 0.3em 0.5em 0.1em 1.5em;
   position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 2000;
+  right: 5%;
+  top: 2%;
+  z-index: 100;
   @media screen and (max-width: 500px) {
     display: block;
   }
-  a {
-    background: url("../images/menu-icon.svg") no-repeat 8px 48%;
-    background-size: 15px 16px;
-    border-radius: 5px;
-    display: inline-block;
-    color: $white;
-    float: right;
-    margin: 1% 5%;
-    outline: none;
-    padding: 0.3em 0.5em 0.1em 1.5em;
-  }
-  &.open>a {
+  &.open {
     background-image: url("../images/menu-close.svg");
   }
 }

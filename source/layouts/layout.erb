@@ -15,10 +15,7 @@
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "layout.engine.min", "application" %>
     <!--[if (gt IE 9)|!(IE)]><!-->
-      <%= javascript_include_tag "reactize.min.js" %>
-      <script>
-        Turbolinks.enableProgressBar();
-      </script>
+      
       <%= yield_content :javascript %>
     <!--<![endif]-->
     <!--[if lt IE 9]>
