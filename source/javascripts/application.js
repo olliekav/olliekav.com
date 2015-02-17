@@ -42,16 +42,18 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
       }
     });
 
-    menuLink.addEventListener("click", function(e) {
-      e.preventDefault();
-      console.log('clicked');
-      if (hasClass(html, 'resp')) {
-        removeClass(html, 'resp')
-        removeClass(menuLink, 'open')
-      }
-      else {
-        addClass(html, 'resp')
-        addClass(menuLink, 'open')
+    body.addEventListener("click", function(e) {
+      if(e.target && e.target.nodeName == "A") {
+        console.log('clicked aagin');
+        if (hasClass(html, 'resp')) {
+          removeClass(html, 'resp')
+          removeClass(menuLink, 'open')
+        }
+        else {
+          addClass(html, 'resp')
+          addClass(menuLink, 'open')
+        }
+        e.preventDefault();
       }
     }, false);
 

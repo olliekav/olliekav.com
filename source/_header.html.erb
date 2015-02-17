@@ -3,7 +3,7 @@
     <%= partial "logo" %>
   <!--<![endif]-->
   <!--[if lte IE 8]>
-    <%= link_to(image_tag("logo.png", alt: "OllieKav"), "/", class: "logo") %>
+    <%= link_to(image_tag("logo.png", alt: "OK"), "/", class: "logo") %>
   <![endif]-->
   <nav id="navigation">
     <ul>
@@ -16,7 +16,7 @@
     <li><%= link_to("<span>Twitter</span>", "https://twitter.com/olliekav", class: "icon-twitter-1") %></li>
     <li><%= link_to("<span>Github</span>", "https://github.com/olliekav", class: "icon-github-circled") %></li>
     <li><%= link_to("<span>Soundcloud</span>", "https://soundcloud.com/olliekav", class: "icon-soundcloud-1") %></li>
-  </ul>
+  </ul> 
   <p class="copy">© <%= Time.now.year %></p>
 </header>
-<%= link_to("Menu", "#", class: 'resp-nav') %>
+<%= link_to("Menu", "#", class: 'resp-nav', data: { no_turbolink: true }) %>
