@@ -1,5 +1,3 @@
-/* require turbolinks */
-
 var hasClass = function (el, cls) {
   return el.className && new RegExp("(\\s|^)" + cls + "(\\s|$)").test(el.className);
 }
