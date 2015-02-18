@@ -677,11 +677,6 @@ a {
 
 .page-music {
   @include colour-scheme($blue);
-  // background-image: url("../images/background-music.jpg");
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
-  // background-attachment: fixed;
   h1 {
     @extend %h1_header;
   }
@@ -718,39 +713,39 @@ a {
 .td.player.light div, 
 .td.player.light ul,
 .td.player.light .follow-link {
-  background-color: transparent;
+  background-color: transparent !important;
   border-color: darken($blue, 5%) !important;
   color: $white;
 }
 .td.player.light .slider>.track {
-  background-color: darken($blue, 5%);
+  background-color: darken($blue, 5%) !important;
 }
 .td.player.light .slider>.highlight-track {
-  border: 0;
-  background-color: $white;
+  border: 0 !important;
+  background-color: $white !important;
 }
 .td.player.light .info a, 
 .td.player.light .mini-song-info a,
 .td.player.light .follow-link {
-  color: $white;
+  color: $white !important;
 }
 .td.player.light .waveform path {
-  stroke: $white;
+  stroke: $white !important;
 }
 .td.player.light .buy-link:hover, 
 .td.player.light .follow-link:hover {
-  background-color: transparent;
-  color: darken($white, 20%);
+  background-color: transparent !important;
+  color: darken($white, 20%) !important;
 }
 .td.player.light .slider>.dragger {
-  background-color: #999;
+  background-color: #999 !important;
 }
 .td.player.solo .info-solo,
 .td.player.solo .scrubber {
-  border-left: 0; 
+  border-left: 0 !important; 
 }
 a.tdbutton.expand.buy-link {
-  color: $white;
+  color: $white !important;
 }
 
 // IE Fixes
