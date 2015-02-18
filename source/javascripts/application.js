@@ -1,7 +1,7 @@
 /* require turbolinks */
 
-var hasClass = function (elem, className) {
-  return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+var hasClass = function (el, cls) {
+  return el.className && new RegExp("(\\s|^)" + cls + "(\\s|$)").test(el.className);
 }
 
 var addClass = function (elem, className) {
@@ -30,33 +30,31 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
         wrapper = document.getElementById("wrapper"),
         menuLink = document.querySelector('.resp-nav');
 
-    var fired = false;
-    window.addEventListener('scroll', function() {
-      var body = document.querySelector('body');
-      if(window.pageYOffset >= 50 && fired === false) {
-        addClass(body, 'scrolling');
-        //fired = true;
-      }
-      else {
-        removeClass(body, 'scrolling');
-      }
-    });
-
-    window.addEventListener("click", function(e) {
-      console.log('clicked');
-      if(e.target && e.target.className == "resp-nav") {
-        console.log('Here again')
-        if (hasClass(html, 'resp')) {
-          removeClass(html, 'resp')
+    workNav = function() {
+      var fired = false;
+      window.addEventListener('scroll', function() {
+        if(window.pageYOffset >= 50 && fired === false) {
+          addClass(body, 'scrolling');
+          //fired = true;
         }
         else {
+          removeClass(body, 'scrolling');
+        }
+      });
+    }
+
+    respNav = function(e) {
+     if(e.target && e.target.className === "resp-nav") {
+        e.preventDefault();
+        if(hasClass(html, 'resp')) {
+          removeClass(html, 'resp')
+        } else {
           addClass(html, 'resp')
         }
-        e.preventDefault();
       }
-    }, false);
+    }
 
-    if(hasClass(html, 'ie9')) {
+    fixIE9 = function() {
       function reSize() {
         [].forEach.call(document.querySelectorAll('.client'), function(el) {
           var itemHeight = body.offsetHeight / 3;
@@ -67,79 +65,109 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
       window.addEventListener('resize', reSize, false);
     }
 
+    if(hasClass(html, 'resp')) {
+      removeClass(html, 'resp');
+      console.log('arrived');
+    }
+
+    workNav();
+
+    if(hasClass(html, 'ie9')) {
+      fixIE9();
+    }
+
     if((hasClass(wrapper, 'page-music') && !hasClass(html, 'ie9'))) {
+      var ToneDenReady = window.ToneDenReady || [];
+      tonedenInit = function () {
+        console.log('true')
+        var configOne = {
+          dom: "#player-1",
+          urls: [
+            "https://soundcloud.com/olliekav/ollie-k-dnb-mix-270513"
+          ]
+        }
+        var configTwo = {
+          dom: "#player-2",
+          urls: [
+            "https://soundcloud.com/olliekav/ollie-k-drum-bass-mix-2000"
+          ]
+        }
+        var configThree = {
+          dom: "#player-3",
+          urls: [
+            "https://soundcloud.com/olliekav/drum-and-bass-mix-2005"
+          ]
+        }
+        var configFour = {
+          dom: "#player-4",
+          urls: [
+            "https://soundcloud.com/olliekav/olliek-mixjune04"
+          ]
+        }
+        var configFive = {
+          dom: "#player-5",
+          urls: [
+            "https://soundcloud.com/olliekav/ollie-k-house-techno-mix-21-02"
+          ]
+        }
+        var configSix = {
+          dom: "#player-6",
+          urls: [
+            "https://soundcloud.com/olliekav/ollie-k-house-techno-mix-19-05"
+          ]
+        }
+        var configSeven = {
+          dom: "#player-7",
+          urls: [
+            "https://soundcloud.com/olliekav/house-techno-mix-12-12-08"
+          ]
+        }
+
+        // ToneDenReady.push(function() {
+        //   ToneDen.player.create(configOne);
+        //   ToneDen.player.create(configTwo);
+        //   ToneDen.player.create(configThree);
+        //   ToneDen.player.create(configFour);
+        //   ToneDen.player.create(configFive);
+        //   ToneDen.player.create(configSix);
+        //   ToneDen.player.create(configSeven);
+        // }); 
+
+        if(typeof ToneDen != 'undefined'){
+          //ToneDen.player.destroy();
+          ToneDen.player.create(configOne);
+          ToneDen.player.create(configTwo);
+          ToneDen.player.create(configThree);
+          ToneDen.player.create(configFour);
+          ToneDen.player.create(configFive);
+          ToneDen.player.create(configSix);
+          ToneDen.player.create(configSeven);
+        } else {
+          ToneDenReady.push(function() {
+            ToneDen.player.create(configOne);
+            ToneDen.player.create(configTwo);
+            ToneDen.player.create(configThree);
+            ToneDen.player.create(configFour);
+            ToneDen.player.create(configFive);
+            ToneDen.player.create(configSix);
+            ToneDen.player.create(configSeven);
+          }); 
+        }
+      }
       tonedenInit();
     }
 
   };
 
-  // var body = document.querySelector('body'),
-  //     html = document.querySelector('html');
-      // height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
-      // width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
-      // top = document.documentElement.scrollTop || document.body.scrollTop;
-
-  // // Add scrolling class to body
-  // function scrolling() {
-  //   var fired = false;
-  //   window.addEventListener('scroll', function() {
-  //     var body = document.querySelector('body');
-  //     if(window.pageYOffset >= 50 && fired === false) {
-  //       addClass(body, 'scrolling');
-  //       //fired = true;
-  //     }
-  //     else {
-  //       removeClass(body, 'scrolling');
-  //     }
-  //   });
-  // }
-
-  // // Responsive nav menu
-  // function responsiveNav() {
-  //   var menuLink = document.querySelector('.resp-nav');
-  //   console.log('found');
-  //   menuLink.addEventListener("click", function(event){
-  //   console.log('clicked');
-  //     if (hasClass(html, 'resp')) {
-  //       removeClass(html, 'resp')
-  //       removeClass(menuLink, 'open')
-  //     }
-  //     else {
-  //       addClass(html, 'resp')
-  //       addClass(menuLink, 'open')
-  //     }
-  //     event.preventDefault();
-  //   }, false);
-  // }
-
-  // // ie9 fixes for flexbox
-  // function fixie9() {
-  //   if(hasClass(html, 'ie9')) {
-  //     function reSize() {
-  //       [].forEach.call(document.querySelectorAll('.client'), function(el) {
-  //         var itemHeight = body.offsetHeight / 3;
-  //         el.style.height = itemHeight + 'px';
-  //       })
-  //     }
-  //     reSize();
-  //     window.addEventListener('resize', reSize, false);
-  //   }
-  // }
-
   document.addEventListener("DOMContentLoaded", function() {
     ready();
+    window.addEventListener("click", respNav, false);
   }, false);
 
-  document.addEventListener("page:fetch", function() {
-    var html = document.querySelector('html');
-    removeClass(html, "resp");
+  document.addEventListener("page:load", function() {
     ready();
     window.scrollTo(0,0);
-  });
-
-  // document.addEventListener("page:load", function() {
-  //   ready();
-  // });
+  }, false);
 
 }
 

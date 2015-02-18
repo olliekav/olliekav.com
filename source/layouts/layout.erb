@@ -12,7 +12,7 @@
     <link href="/images/favicon.ico" rel="shortcut icon"></link>
     <script src="//use.typekit.net/gmc4yrr.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
-    <%= stylesheet_link_tag "site" %>
+    <%= stylesheet_link_tag "site", data: { turbolinks_track: true }  %>
     <%= javascript_include_tag "layout.engine.min", "application" %>
     <!--[if (gt IE 9)|!(IE)]><!-->
       <%= javascript_include_tag "reactize.min.js" %>

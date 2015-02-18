@@ -106,7 +106,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     }
   }
   h1 {
-    color: darken($color, 5%);
+    color: darken($color, 4%);
     @media screen and (max-width: 500px) {
       color: darken($color, 6%);
     }

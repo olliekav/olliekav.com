@@ -105,7 +105,7 @@ h1 {
   letter-spacing: -5px;
   line-height: 1;
   margin: 0 0 0.5em -1.2%;
-  @include transition(color 0.5s linear);
+  //@include transition(color 0.1s linear);
   //@extend %hyphenate
   @media screen and (max-width: 800px) {
     font-size: 20vw;
@@ -154,6 +154,7 @@ a {
   margin: 0 auto;
   padding:0.6em 1em;
   text-align: center;
+  text-transform: uppercase;
   @include box-sizing(border-box);
   -webkit-appearance: none;
   width: 100%;
@@ -216,7 +217,7 @@ a {
   }
   path {
     fill: $white;
-    @include transition(fill 0.05s linear);
+    @include transition(fill 0.1s linear);
   }
   &:hover {
     path {
@@ -259,13 +260,14 @@ a {
   }
 }
 .resp-nav {
-  background: url("../images/menu-icon.svg") no-repeat 8px 48%;
+  background: url("../images/menu-icon.svg") no-repeat 8px 45%;
   background-size: 15px 16px;
   border-radius: 5px;
   color: $white;
   display: none;
+  line-height: 1;
   outline: none;
-  padding: 0.3em 0.5em 0.1em 1.5em;
+  padding: 8px 0.5em 6px 1.5em;
   position: fixed;
   right: 5%;
   top: 3%;
@@ -491,10 +493,10 @@ a {
     @include gs-span(o,4,5,(2,5));
   } 
   @media screen and (max-width: 500px) {
+    float: none;
     margin: 0;
     padding-top: 50px;
-    @include gs-span(o,1,5,false);
-    @include box-sizing(border-box);
+    width: 100%;
   }
 }
 .gallery {
@@ -539,7 +541,6 @@ a {
   border-radius: 10px 10px 0 0;
   left: 22.21852%;
   max-width: 1000px;
-  padding: 0.2em 0.5em 0.1em;
   position: fixed;
   right: 3.7%;
   z-index: 100;
@@ -554,6 +555,10 @@ a {
     li {
       display: inline;
       margin: 0;
+      a {
+        display: inline-block;
+        padding: 0.1em 0.5em 0.2em;
+      }
       span {
         display: inline-block;
         font-size: 0.6em;
