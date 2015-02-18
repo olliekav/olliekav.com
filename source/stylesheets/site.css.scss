@@ -106,7 +106,6 @@ h1 {
   line-height: 1;
   margin: 0 0 0.5em -1.2%;
   //@include transition(color 0.1s linear);
-  //@extend %hyphenate
   @media screen and (max-width: 800px) {
     font-size: 20vw;
     letter-spacing: -4px;
@@ -152,7 +151,7 @@ a {
   font-family: $ff-din-round;
   font-weight: 300;
   margin: 0 auto;
-  padding:0.6em 1em;
+  padding:0.8em 1em 0.6em;
   text-align: center;
   text-transform: uppercase;
   @include box-sizing(border-box);
@@ -466,6 +465,7 @@ a {
       -ms-word-break: break-all;
       word-break: break-all;
       word-break: break-word;
+      -ms-hyphens: auto;
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
       hyphens: auto;

@@ -9,11 +9,10 @@
     <meta name="keywords" content="design, web design, HTML5, CSS3, typography, layout, grids, javascript, ruby, ruby on rails, wordpress, php, middleman app, games, web applications, ottawa"/>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <%= stylesheet_link_tag "site", data: { turbolinks_track: true }  %>
     <link href="/images/favicon.ico" rel="shortcut icon"></link>
     <script src="//use.typekit.net/gmc4yrr.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
-    <%= stylesheet_link_tag "site", data: { turbolinks_track: true }  %>
-    <%= javascript_include_tag "layout.engine.min", "application" %>
     <!--[if (gt IE 9)|!(IE)]><!-->
       <%= javascript_include_tag "reactize.min.js" %>
       <script>
@@ -22,6 +21,7 @@
       </script>
       <%= yield_content :javascript %>
     <!--<![endif]-->
+    <%= javascript_include_tag "application", data: { turbolinks_track: true } %>
     <!--[if lt IE 9]>
       <%= javascript_include_tag("html5shiv.min.js") %>
     <![endif]-->

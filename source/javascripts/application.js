@@ -1,3 +1,5 @@
+//= require layout.engine.min
+
 var hasClass = function (el, cls) {
   return el.className && new RegExp("(\\s|^)" + cls + "(\\s|$)").test(el.className);
 }
@@ -65,7 +67,6 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
 
     if(hasClass(html, 'resp')) {
       removeClass(html, 'resp');
-      console.log('arrived');
     }
 
     workNav();
@@ -74,10 +75,9 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
       fixIE9();
     }
 
-    if((hasClass(wrapper, 'page-music') && !hasClass(html, 'ie9'))) {
-      var ToneDenReady = window.ToneDenReady || [];
-      tonedenInit = function () {
-        console.log('true')
+    
+    tonedenInit = function () {
+      if(hasClass(wrapper, 'page-music')) {
         var configOne = {
           dom: "#player-1",
           urls: [
@@ -119,20 +119,10 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
           urls: [
             "https://soundcloud.com/olliekav/house-techno-mix-12-12-08"
           ]
-        }
-
-        // ToneDenReady.push(function() {
-        //   ToneDen.player.create(configOne);
-        //   ToneDen.player.create(configTwo);
-        //   ToneDen.player.create(configThree);
-        //   ToneDen.player.create(configFour);
-        //   ToneDen.player.create(configFive);
-        //   ToneDen.player.create(configSix);
-        //   ToneDen.player.create(configSeven);
-        // }); 
+        } 
 
         if(typeof ToneDen != 'undefined'){
-          //ToneDen.player.destroy();
+          console.log('undefined')
           ToneDen.player.create(configOne);
           ToneDen.player.create(configTwo);
           ToneDen.player.create(configThree);
@@ -141,6 +131,7 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
           ToneDen.player.create(configSix);
           ToneDen.player.create(configSeven);
         } else {
+          ToneDenReady = window.ToneDenReady || [];
           ToneDenReady.push(function() {
             ToneDen.player.create(configOne);
             ToneDen.player.create(configTwo);
@@ -149,21 +140,22 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
             ToneDen.player.create(configFive);
             ToneDen.player.create(configSix);
             ToneDen.player.create(configSeven);
-          }); 
+          });
         }
       }
-      tonedenInit();
     }
 
   };
 
   document.addEventListener("DOMContentLoaded", function() {
     ready();
+    tonedenInit();
     window.addEventListener("click", respNav, false);
   }, false);
 
   document.addEventListener("page:load", function() {
     ready();
+    tonedenInit();
     window.scrollTo(0,0);
   }, false);
 

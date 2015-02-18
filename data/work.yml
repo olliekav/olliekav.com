@@ -36,7 +36,7 @@ clients:
       - image: 
           name: alfred-remote-1-small.jpg
           css_class: col-1 screen
-  - name: Rebellion Games
+  - name: 'Rebellion Games'
     weight: 2
     url: rebellion-games
     link: http://www.rebellion.co.uk/
