@@ -150,6 +150,11 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     window.addEventListener("click", respNav, false);
   }, false);
 
+  // document.addEventListener("page:fetch", function() {
+  //   removeClass(body, 'animate-in')
+  //   addClass(body, 'animate-out')
+  // }, false);
+
   document.addEventListener("page:load", function() {
     ready();
     tonedenInit();

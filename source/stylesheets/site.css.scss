@@ -105,7 +105,7 @@ h1 {
   letter-spacing: -5px;
   line-height: 1;
   margin: 0 0 0.5em -1.2%;
-  //@include transition(color 0.1s linear);
+  @include transition(color 0.1s linear);
   @media screen and (max-width: 800px) {
     font-size: 20vw;
     letter-spacing: -4px;
@@ -557,7 +557,7 @@ a {
       margin: 0;
       a {
         display: inline-block;
-        padding: 0.1em 0.5em 0.2em;
+        padding: 0.2em 0.5em 0.2em;
       }
       span {
         display: inline-block;
