@@ -709,44 +709,6 @@ a {
   background-color: rgba($blue, 0.8);
   margin-bottom: 1em;
 }
-.td.player.light,
-.td.player.light div, 
-.td.player.light ul,
-.td.player.light .follow-link {
-  background-color: transparent !important;
-  border-color: darken($blue, 5%) !important;
-  color: $white;
-}
-.td.player.light .slider>.track {
-  background-color: darken($blue, 5%) !important;
-}
-.td.player.light .slider>.highlight-track {
-  border: 0 !important;
-  background-color: $white !important;
-}
-.td.player.light .info a, 
-.td.player.light .mini-song-info a,
-.td.player.light .follow-link {
-  color: $white !important;
-}
-.td.player.light .waveform path {
-  stroke: $white !important;
-}
-.td.player.light .buy-link:hover, 
-.td.player.light .follow-link:hover {
-  background-color: transparent !important;
-  color: darken($white, 20%) !important;
-}
-.td.player.light .slider>.dragger {
-  background-color: #999 !important;
-}
-.td.player.solo .info-solo,
-.td.player.solo .scrubber {
-  border-left: 0 !important; 
-}
-a.tdbutton.expand.buy-link {
-  color: $white !important;
-}
 
 // IE Fixes
 
