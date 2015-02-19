@@ -85,7 +85,7 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
             entry.parentNode.insertBefore(script, entry);
           }());
         }
-
+        // Now we are ready to
         ToneDenReady = window.ToneDenReady || [];
         var configOne = {
           dom: "#player-1",
@@ -130,7 +130,6 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
           ]
         }
         if(typeof ToneDen != 'undefined'){
-          console.log('undefined')
           ToneDen.player.create(configOne);
           ToneDen.player.create(configTwo);
           ToneDen.player.create(configThree);
@@ -140,7 +139,6 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
           ToneDen.player.create(configSeven);
         } else {
           ToneDenReady.push(function() {
-            console.log('ToneDen')
             ToneDen.player.create(configOne);
             ToneDen.player.create(configTwo);
             ToneDen.player.create(configThree);
