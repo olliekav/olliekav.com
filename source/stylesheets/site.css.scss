@@ -188,9 +188,6 @@ a {
   a {
     color: $white;
     @include transition(color 0.1s linear);
-    &:hover {
-      color: darken($mint, 10%);
-    }
   }
   @media screen and (max-width: 500px) {
     left: - gs-width(o,1,3,false,true);
@@ -221,14 +218,14 @@ a {
   }
   &:hover {
     path {
-      fill: darken($mint, 10%);
+      fill: #fff;
     }
   }
 }
 .scrolling {
   .logo {
-    transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
   }
 }
 #navigation {
@@ -330,11 +327,31 @@ a {
 
 // Homepage
 
+@include keyframes(pulse) {
+  0% {background-color: $alfred-color;} 
+  25% {background-color: $rebellion-color;} 
+  50% {background-color: $alton-convent-color;} 
+  75% {background-color: $workplace-color;} 
+  100% {background-color: $becomeuk-color;}
+}
 .page-index {
-  @include colour-scheme($mint);
   height: 100%;
-  #wrapper {
-    height: 100%;
+  @include animation(pulse 40s ease-in-out infinite alternate);
+  a {
+    color: #fff;
+    opacity: 1;
+    @include transition(opacity linear 0.1s);
+    &:hover {
+      color: #fff;
+      opacity: 0.6;
+    }
+  }
+  .logo {
+    opacity: 1;
+    @include transition(opacity linear 0.1s);
+    &:hover {
+      opacity: 0.6;
+    }
   }
   main {
     height: 100%;
@@ -365,9 +382,6 @@ a {
 .work_index {
   @include colour-scheme($dark-grey);
   height: 100%;
-  #wrapper {
-    height: 100%;
-  }
   main {
     height: 100%;
     margin-left: 18.51852%;

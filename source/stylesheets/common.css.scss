@@ -159,6 +159,22 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   transition: $transition;
 }
 
+// Keyframes 
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { 
+    @content;
+  }
+  @-moz-keyframes #{$name} { 
+    @content;
+  }
+  @-o-keyframes #{$name} { 
+    @content;
+  }
+  @keyframes #{$name} { 
+    @content;
+  }
+}
+
 // Transforms
 @mixin transform($transform...) {
   -webkit-transform: $transform;
@@ -166,6 +182,15 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   -ms-transform: $transform;
   -o-transform: $transform;
   transition: $transform;
+}
+
+// Animate
+@mixin animation($animate...) {
+  -webkit-animation: $animate;
+  -moz-animation: $animate;
+  -ms-animation: $animate;
+  -o-animation: $animate;
+  animation: $animate;
 }
 
 // Gradients
