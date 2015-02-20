@@ -79,7 +79,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
       color: darken($color, 13%);
     }
     a.active {
-      @include transition(color linear 0.5s);
+      //@include transition(color linear 0.5s);
     }
   }
   .logo:hover {

@@ -21,12 +21,20 @@ body {
   color: $white;
   font: 400 150%/1.5 $ff-din-round;
   margin: 0;
+  opacity: 1;
   padding: 0;
   width:100%;
   @include box-sizing(border-box);
   @extend %clearfix;
+  @include transition(opacity 0.2s ease-in);
   @media screen and (max-width: 900px) {
     font-size: 125%;
+  }
+  .animate-out & {
+    opacity: 0;
+  }
+  .animate-in & {
+    opacity: 1;
   }
 }
 .resp, .resp>body {
@@ -39,7 +47,7 @@ body {
   top: 0;
   right: 0;
   z-index: 1;
-  @include transition(background-color 0.3s linear);
+  //@include transition(background-color 0.1s ease-in);
 }
 main {
   left: 0;
@@ -61,17 +69,9 @@ main {
   }
 }
 section {
-  opacity: 1;
   @include box-sizing(border-box);
   padding: 25% 0 4em;
   width: 100%;
-  .animate-out & {
-    opacity: 0;
-  }
-  .animate-in & {
-    @include transition(opacity 0.5s ease-in-out);
-    opacity: 1;
-  }
 }
 .row {
   max-width: 1000px;
@@ -114,11 +114,11 @@ h1 {
     font-size: 25vw;
     letter-spacing: -3px;
   }
-  .animate-out & {
-    opacity: 0;
-  }
+  // .animate-out & {
+  //   opacity: 0;
+  // }
   .animate-in & {
-    @include transition(opacity 1s ease-in-out);
+    @include transition(opacity 0.5s ease-in-out);
     opacity: 1;
   }
 }
@@ -553,7 +553,6 @@ a {
   z-index: 100;
   @extend %clearfix;
   @include box-sizing(border-box);
-  @include transition(bottom .3s linear, background-color 0.3s linear);
   a {
     color: $white;
   }
