@@ -30,12 +30,6 @@ body {
   @media screen and (max-width: 900px) {
     font-size: 125%;
   }
-  // .animate-out & {
-  //   opacity: 0;
-  // }
-  // .animate-in & {
-  //   opacity: 1;
-  // }
 }
 .resp, .resp>body {
   overflow: hidden;
@@ -70,8 +64,16 @@ main {
 }
 section {
   @include box-sizing(border-box);
+  opacity: 1;
   padding: 25% 0 4em;
   width: 100%;
+  .animate-out & {
+    opacity: 0;
+  }
+  .animate-in & {
+    @include transition(opacity 0.2s ease-in-out);
+    opacity: 1;
+  }
 }
 .row {
   max-width: 1000px;
@@ -105,7 +107,6 @@ h1 {
   line-height: 1;
   margin: 0 0 0.5em -1.2%;
   opacity: 1;
-  //@include transition(color 0.1s linear);
   @media screen and (max-width: 800px) {
     font-size: 20vw;
     letter-spacing: -4px;
@@ -114,13 +115,6 @@ h1 {
     font-size: 25vw;
     letter-spacing: -3px;
   }
-  // .animate-out & {
-  //   opacity: 0;
-  // }
-  // .animate-in & {
-  //   @include transition(opacity 0.5s ease-in-out);
-  //   opacity: 1;
-  // }
 }
 h2 {
   font-size: 1.750em;
@@ -250,6 +244,15 @@ a {
       }
     }
   }
+  @media screen and (max-device-width: 680px) and (orientation: landscape) { 
+    font-size: 0.8em;
+    ul {
+      margin: 0;
+      > li {
+        margin-bottom: 0.2em;
+      }
+    }
+  }
 }
 .copy {
   bottom: 3.7%;
@@ -262,6 +265,10 @@ a {
   text-align: center;
   @media screen and (max-width: 500px) {
     margin-top: 1em;
+    position: static;
+  }
+  @media screen and (max-device-width: 680px) and (orientation: landscape) { 
+    margin-top: 0.5em;
     position: static;
   }
 }
@@ -309,6 +316,12 @@ a {
   }
   @media screen and (max-width: 500px) {
     margin: 1em 0 0;
+    li {
+      margin-bottom: 0.2em;
+    }
+  }
+  @media screen and (max-device-width: 680px) and (orientation: landscape) { 
+    margin: 0.6em 0 0;
     li {
       margin-bottom: 0.2em;
     }
