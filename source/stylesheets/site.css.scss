@@ -7,6 +7,7 @@
 // Basic layout setup
 
 html {
+  background-color: $dark-grey;
   height: 100%;
   position: relative;
   width: 100%;
@@ -20,35 +21,25 @@ body {
   color: $white;
   font: 400 150%/1.5 $ff-din-round;
   margin: 0;
-  opacity: 1;
   padding: 0;
   width:100%;
-  //@include transition(opacity 0.5s ease-in-out);
-  //@include transition(background-color linear 0.3s);
   @include box-sizing(border-box);
   @extend %clearfix;
   @media screen and (max-width: 900px) {
     font-size: 125%;
   }
-  // .animate-out & {
-  //   opacity: 0;
-  // }
-  // .animate-in & {
-  //   opacity: 1;
-  // }
 }
 .resp, .resp>body {
   overflow: hidden;
 }
 #wrapper {
-  //bottom: 0;
   left: 0;
   min-height: 100%;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
-  @include transition(background-color linear 0.5s);
+  @include transition(background-color 0.3s linear);
 }
 main {
   left: 0;
@@ -70,9 +61,17 @@ main {
   }
 }
 section {
+  opacity: 1;
   @include box-sizing(border-box);
   padding: 25% 0 4em;
   width: 100%;
+  .animate-out & {
+    opacity: 0;
+  }
+  .animate-in & {
+    @include transition(opacity 0.5s ease-in-out);
+    opacity: 1;
+  }
 }
 .row {
   max-width: 1000px;
@@ -105,7 +104,8 @@ h1 {
   letter-spacing: -5px;
   line-height: 1;
   margin: 0 0 0.5em -1.2%;
-  @include transition(color 0.1s linear);
+  opacity: 1;
+  //@include transition(color 0.1s linear);
   @media screen and (max-width: 800px) {
     font-size: 20vw;
     letter-spacing: -4px;
@@ -113,6 +113,13 @@ h1 {
   @media screen and (max-width: 500px) {
     font-size: 25vw;
     letter-spacing: -3px;
+  }
+  .animate-out & {
+    opacity: 0;
+  }
+  .animate-in & {
+    @include transition(opacity 1s ease-in-out);
+    opacity: 1;
   }
 }
 h2 {
@@ -546,7 +553,7 @@ a {
   z-index: 100;
   @extend %clearfix;
   @include box-sizing(border-box);
-  @include transition(bottom .3s linear);
+  @include transition(bottom .3s linear, background-color 0.3s linear);
   a {
     color: $white;
   }

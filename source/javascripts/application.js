@@ -54,6 +54,16 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
       }
     }
 
+    animateClass = function() {
+      if(hasClass(html, 'animate-out')) {
+        removeClass(html, 'animate-out')
+        addClass(html, 'animate-in')
+      } else {
+        removeClass(html, 'animate-in')
+        addClass(html, 'animate-out')
+      }
+    }
+
     fixIE9 = function() {
       function reSize() {
         [].forEach.call(document.querySelectorAll('.client'), function(el) {
@@ -170,12 +180,12 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     window.addEventListener("click", respNav, false);
   }, false);
 
-  // document.addEventListener("page:fetch", function() {
-  //   removeClass(body, 'animate-in')
-  //   addClass(body, 'animate-out')
-  // }, false);
+  document.addEventListener("page:fetch", function() {
+    animateClass();
+  }, false);
 
   document.addEventListener("page:load", function() {
+    animateClass();
     ready();
     window.scrollTo(0,0);
   }, false);
