@@ -30,12 +30,12 @@ body {
   @media screen and (max-width: 900px) {
     font-size: 125%;
   }
-  .animate-out & {
-    opacity: 0;
-  }
-  .animate-in & {
-    opacity: 1;
-  }
+  // .animate-out & {
+  //   opacity: 0;
+  // }
+  // .animate-in & {
+  //   opacity: 1;
+  // }
 }
 .resp, .resp>body {
   overflow: hidden;
@@ -117,10 +117,10 @@ h1 {
   // .animate-out & {
   //   opacity: 0;
   // }
-  .animate-in & {
-    @include transition(opacity 0.5s ease-in-out);
-    opacity: 1;
-  }
+  // .animate-in & {
+  //   @include transition(opacity 0.5s ease-in-out);
+  //   opacity: 1;
+  // }
 }
 h2 {
   font-size: 1.750em;
