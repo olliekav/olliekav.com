@@ -580,6 +580,7 @@ a {
   z-index: 100;
   @extend %clearfix;
   @include box-sizing(border-box);
+  @include transition(bottom 0.2s linear);
   a {
     color: $white;
   }
@@ -748,6 +749,9 @@ a {
 .ie9,.ie8 {
   h1 {
     font-size: 18vw;
+  }
+  .page-index {
+    background-color: $alfred-color;
   }
   .work-list {
     display: block;
