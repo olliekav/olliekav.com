@@ -34,10 +34,6 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
       removeClass(html, 'resp');
     }
 
-    // if(hasClass(html, 'ie9')) {
-    //   fixIE9();
-    // }
-
     tonedenInit();
     workNav();
 
@@ -59,7 +55,6 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
   fixIE9 = function() {
     function reSize() {
       [].forEach.call(document.querySelectorAll('.client'), function(el) {
-              alert('fired');
         var itemHeight = body.offsetHeight / 3;
         el.style.height = itemHeight + 'px';
       })
