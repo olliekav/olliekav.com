@@ -277,6 +277,9 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   @media screen and (max-width: 500px) {
     position: static;
   }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    position: relative;
+  }
 }
 
 // @extend %hyphenate
