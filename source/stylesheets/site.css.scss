@@ -388,6 +388,12 @@ a {
     @extend %vertical-align;
     span {
       display: block;
+      &:nth-child(2) {
+        opacity: 0.7;
+      }
+      &:nth-child(3) {
+        opacity: 0.4;
+      }
     }
   }
 }
@@ -673,6 +679,12 @@ a {
 }
 .become-uk {
   @include colour-scheme($becomeuk-color);
+  h1 {
+    color: darken($becomeuk-color, 7%);
+    @media screen and (max-width: 500px) {
+      color: darken($becomeuk-color, 8%);
+    }
+  }
 }
 .cloud-profiler {
   @include colour-scheme($cloud-color);
