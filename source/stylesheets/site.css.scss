@@ -222,6 +222,7 @@ a {
     .resp & {
       left: 0;
       opacity: 1;
+      overflow-x: scroll;
     }
   }
 }
@@ -379,9 +380,6 @@ a {
       padding-bottom: 0;
     }
   }
-  #wrapper {
-    min-height: 100%;
-  }
   section {
     height: 100%;
     overflow: hidden;
@@ -393,6 +391,10 @@ a {
     @media screen and (max-width: 500px) {
       overflow: visible;
       padding-top: 150px;
+    }
+    @media screen and (max-device-width: 680px) and (orientation: landscape) {
+      min-height: 100%;
+      padding-top: 15%;
     }
   }
   article {
