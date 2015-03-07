@@ -60,7 +60,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
 
 // Color schemes
 
-@mixin colour-scheme($color) {
+@mixin colour-scheme($color, $h1) {
 
   background-color: $color;
   @media screen and (max-width: 500px) {
@@ -88,18 +88,15 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     }
   }
   .resp-nav {
-    background-color: rgba(darken($color, 5%), 0.9);
+    background-color: rgba(darken($color, 3%), 0.9);
     color: $white;
     &:hover, &:focus {
-      background-color: rgba(darken($color, 6%), 0.9);
+      background-color: rgba(darken($color, 4%), 0.9);
       color: $white;
     }
   }
   h1 {
-    color: darken($color, 4%);
-    @media screen and (max-width: 500px) {
-      color: darken($color, 6%);
-    }
+    color: darken($color, $h1);
   }
   .work-nav {
     background-color: rgba(darken($color, 5%), 0.9);
@@ -118,16 +115,20 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   }
   //@if $button {
   .button {
-    background-color: darken($color, 5%);
+    //background-color: darken($color, 15%);
+    //background-color: $dark-grey;
     color: #fff;
     &:hover {
-      background-color: darken($color, 8%);
-      color: #fff;
+      border-color: darken($color, 10%);
+      //background-color: darken($color, 18%);
+      //background-color: darken($dark-grey, 5%);
+      color: darken($color, 10%);
     }
   }
   ///}
   .image.screen {
     img {
+      border-radius: 5px;
       box-shadow: 0 0 10px rgba(darken($color, 30%), 0.5);
     }
   }
@@ -274,12 +275,6 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   position: fixed;
   top: 20%;
   z-index: -1;
-  @media screen and (max-width: 500px) {
-    position: static;
-  }
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    position: relative;
-  }
 }
 
 // @extend %hyphenate

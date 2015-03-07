@@ -1,9 +1,11 @@
 clients:
   - name: Alfred App
+    featured: true
     weight: 1
     url: alfred-app
     link: http://alfredapp.com
     intro: "Alfred App has become one of the most popular productivity tools on OSX with thousands of users worldwide and awards from all the top industry publications. I've worked with Andrew and Vero from initial conception of the app looking after branding, web design, iconography and application UI. The latest design work has been the launch of Alfred Remote for iOS."
+    home_intro: "Designing the most popular productivity tool on OSX."
     testimonial:
     cite:
     services: 
@@ -13,7 +15,8 @@ clients:
       - Marketing materials
       - Iconography
       - OSX Application design
-    logo: logo.svg
+    logo: alfred-logo.svg
+    device_image: alfred-device.jpg
     images: 
       - image: 
           name: alfred-logos.png
@@ -37,16 +40,19 @@ clients:
           name: alfred-remote-1-small.jpg
           css_class: col-1 screen
   - name: 'Rebellion Games'
+    featured: true
     weight: 2
     url: rebellion-games
     link: http://www.rebellion.co.uk/
     intro: "Rebellion came to <a href='http://kyan.com'>Kyan</a> looking for a fresh new design that reflected them as a company. They also wanted a highly customisable CMS system so they could roll out new game releases. As Senior creative on this project I looked after UI and design for both the main website and the CMS. The website has been a great success and given Rebellion the flexibility they need to expand globally."
+    home_intro: "An online presence for one of Europe’s leading games developers."
     testimonial:
     cite:
     services: 
       - Web design
       - 'Agency: <a href="http://kyan.com">Kyan</a>'
-    logo: logo.svg
+    logo: rebellion-logo.svg
+    device_image: rebellion-device.jpg
     images: 
       - image: 
           name: rebellion-site-1.jpg
@@ -64,10 +70,12 @@ clients:
           name: rebellion-site-2-small.jpg
           css_class: col-2-2 screen
   - name: Alton Convent School
+    featured: true
     weight: 3
     url: alton-convent-school
     link: http://altonconvent.org.uk/
     intro: "Alton Convent is one of the top independent schools in the UK and needed a new web presence to reflect this. Using Wordpress as a foundation I built them a flexible CMS sitting behind a beautiful photo-led design and a fully responsive front-end build. The Convent’s design is now a benchmark for other premium schools and has received compliments from both staff and parents."
+    home_intro: "Setting the web design benchmark for independent schools in the UK."
     testimonial:
     cite:
     services: 
@@ -75,7 +83,8 @@ clients:
       - Responsive build
       - Marketing materials
       - Wordpress back-end
-    logo: logo.svg
+    logo: alton-convent-logo.svg
+    device_image: alton-convent-device.jpg
     images: 
       - image: 
           name: alton-convent-site-1.jpg
@@ -96,17 +105,20 @@ clients:
           name: alton-convent-site-5.jpg
           css_class: col-1 screen
   - name: Become UK
+    featured: true
     weight: 4
     url: become-uk
     link: http://becomerecruitment.com/
     intro: "Established in 1997, Become is a leading creative recruitment agency and digital recruitment agency with offices in the UK, Australia and Hong Kong. They needed a design that would reflect their standing in the industry and attract new clients. Using strong brand guidelines, we created a design that stands out from other recruitment agencies."
+    home_intro: "Bringing new life to an online creative recruitment agency."
     testimonial:
     cite:
     services: 
       - Web Design
       - Application design
       - 'Agency: <a href="http://kyan.com">Kyan</a>'
-    logo: logo.svg
+    logo: become-logo.svg
+    device_image: become-device.jpg
     images: 
       - image: 
           name: become-site-1.jpg
@@ -138,7 +150,7 @@ clients:
       - Marketing materials
       - Iconography
       - 'Agency: <a href="http://kyan.com">Kyan</a>'
-    logo: logo.svg
+    logo: mumbu-logo.svg
     images: 
       - image: 
           name: mumbu-site-1.jpg
@@ -167,7 +179,7 @@ clients:
       - Responsive build
       - Rails back-end
       - 'Agency: <a href="http://kyan.com">Kyan</a>'
-    logo: logo.svg
+    logo: workplace-logo.svg
     images: 
       - image: 
           name: workplace-site-1.jpg
@@ -196,7 +208,7 @@ clients:
       - Web design
       - Responsive build
       - Project management
-    logo: logo.svg
+    logo: babbleink-logo.svg
     images: 
       - image: 
           name: babbleink-ipad-1.png
@@ -226,7 +238,7 @@ clients:
     services: 
       - Web design
       - 'Agency: <a href="http://kyan.com">Kyan</a>'
-    logo: logo.svg
+    logo: ontarget-logo.svg
     images: 
       - image: 
           name: ontarget-site-1.jpg
@@ -276,7 +288,7 @@ clients:
       - Web design
       - Responsive build
       - Art direction
-    logo: logo.svg
+    logo: hip-hop-quoted-logo.svg
     images: 
       - image: 
           name: hip-hop-quoted-logo.png

@@ -7,9 +7,8 @@
 // Basic layout setup
 
 html {
-  background-color: $dark-grey;
+  background-color: $white;
   height: 100%;
-  position: relative;
   width: 100%;
   &.turbolinks-progress-bar::before {
     background-color: $white !important;
@@ -20,9 +19,11 @@ body {
   background-color: $dark-grey;
   color: $white;
   font: 400 150%/1.5 $ff-din-round;
+  min-height: 100%;
   margin: 0;
   opacity: 1;
   padding: 0;
+  position: relative;
   width:100%;
   @include box-sizing(border-box);
   @extend %clearfix;
@@ -42,6 +43,7 @@ body {
   right: 0;
   z-index: 1;
   //@include transition(background-color 0.2s ease-in);
+  @extend %clearfix;
 }
 main {
   left: 0;
@@ -53,12 +55,12 @@ main {
     @include box-sizing(border-box);
     @include transition(left .3s ease-in-out);
     width: 100%;
-    @include transform(translate3d(0,0,0));
     z-index: 1;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     .resp & {
       left: gs-width(o, 1, 3, false, true);
+      //@include transform(translate(0,0,0));
     }
   }
 }
@@ -102,18 +104,31 @@ h1,h2,h3,h4 {
   padding: 0;
 }
 h1 {
-  font-size: 25vmin;
+  font-size: 40vw;
   letter-spacing: -5px;
-  line-height: 1;
-  margin: 0 0 0.5em -1.2%;
+  line-height: 0.9;
+  left: 0;
+  margin: 0 0 0.5em gs-width(o, 1, false, false, true);
+  position: fixed;
   opacity: 1;
+  top: 10%;
+  z-index: -1;
   @media screen and (max-width: 800px) {
-    font-size: 20vw;
+    font-size: 60vw;
     letter-spacing: -4px;
+    margin-left: 3.7%;
+    padding-left: 0;
+    @include transition(margin-left .3s ease-in-out);
+    .resp & {
+      //left: 0;
+      margin-left: gs-width(o, 1, 3, false, true);
+      padding-left: 3.7%;
+      opacity: 1;
+    }
   }
   @media screen and (max-width: 500px) {
-    font-size: 25vw;
-    letter-spacing: -3px;
+    font-size: 80vw;
+    top: 20%;
   }
 }
 h2 {
@@ -145,11 +160,13 @@ a {
   }
 }
 .button {
-  background-color: $dark-grey;
-  border: none;
-  color: #fff;
+  background-color: none;
+  border: 2px solid $white;
+  border-radius: 0.3em;
+  color: $white;
   display: inline-block;
   font-family: $ff-din-round;
+  font-size: 1em;
   font-weight: 300;
   margin: 0 auto;
   padding:0.8em 1em 0.6em;
@@ -158,10 +175,16 @@ a {
   @include box-sizing(border-box);
   -webkit-appearance: none;
   width: 100%;
-  @include transition(background-color 0.1s linear);
+  @include transition(all 0.1s linear);
   &:hover {
-    background-color: darken($dark-grey, 10%);
+    //background-color: darken($dark-grey, 10%);
     color: #fff;
+  }
+  @media screen and (max-width: 1175px) {
+    font-size: 0.9em;
+  }
+  @media screen and (max-width: 1075px) {
+    font-size: 0.8em;
   }
   @media screen and (max-width: 400px) {
     font-size: 1em;
@@ -185,7 +208,7 @@ a {
   width: gs-width(o, 1);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  z-index: 100;
+  z-index: 1000;
   a {
     color: $white;
     @include transition(color 0.1s linear);
@@ -348,29 +371,119 @@ a {
 }
 .page-index {
   height: 100%;
-  @include animation(pulse 40s ease-in-out infinite alternate);
-  a {
-    color: #fff;
-    opacity: 1;
-    @include transition(opacity linear 0.1s);
-    &:hover {
-      color: #fff;
-      opacity: 0.6;
-    }
-  }
-  .logo {
-    opacity: 1;
-    @include transition(opacity linear 0.1s);
-    &:hover {
-      opacity: 0.6;
-    }
-  }
-  .resp-nav {
-    background-color: rgba(0,0,0,0.1)
-  }
+  // @include animation(pulse 40s ease-in-out infinite alternate);
   main {
     height: 100%;
     @include box-sizing(border-box);
+    @media screen and (max-width: 800px) {
+      padding-bottom: 0;
+    }
+  }
+  #wrapper {
+    min-height: 100%;
+  }
+  section {
+    height: 100%;
+    overflow: hidden;
+    padding-top: 27%;
+    @include box-sizing(border-box);
+    @media screen and (max-width: 800px) {
+      padding-top: 45%;
+    }
+    @media screen and (max-width: 500px) {
+      overflow: visible;
+      padding-top: 150px;
+    }
+  }
+  article {
+    display: none;
+    height: 100%;
+    &:first-child {
+      display: block;
+    }
+    .js & {
+      display: none;
+    }
+    h2 {
+      font-weight: 400; 
+      line-height: 1.4;
+      @include gs-span(o,3,4,(2,5));
+      @media screen and (max-width: 1000px) {
+        font-size: 1.5em;
+      }
+      @media screen and (max-width: 800px) {
+        font-size: 1.3em;
+        @include gs-span(o,2,3,(2,5));
+      }
+      @media screen and (max-width: 500px) {
+        float: none;
+        margin: 0 0 1em;
+        width: 100%;
+      }
+    }
+    .button {
+      margin-top: 1%;
+      max-width: 345px;
+      @include gs-span(o,5,false,(2,5));
+      @media screen and (max-width: 800px) {
+        @include gs-span(o,4,5,(2,5));
+      }
+      @media screen and (max-width: 500px) {
+        float: none;
+        margin: 0;
+        width: 100%;
+      }
+    }
+    .device {
+      border: 1.5em solid $dark-grey;
+      border-radius: 1.5em;
+      margin-top: 3em;
+      max-width: 1000px;
+      @include gs-span(o,3,5,(2,5));
+      @include box-sizing(border-box);
+      img {
+        display: block;
+      }
+      @media screen and (max-width: 800px) {
+        float: none;
+        margin: 3em 0 0;
+        width: 100%;
+      }
+      @media screen and (max-width: 500px) {
+        border-width: 1em;
+        border-radius: 1em;
+      }
+    }
+  }
+  article & {
+    display: none;
+  }
+  &.alfred-app {
+    background-color: $alfred-color;
+    article.ft-alfred-app {
+      display: block;
+      h1 {
+        max-width: 70%;
+      }
+    }
+  }
+  &.rebellion-games {
+    background-color: $rebellion-color;
+    article.ft-rebellion-games {
+      display: block;
+    }
+  }
+  &.alton-convent-school {
+    background-color: $alton-convent-color;
+    article.ft-alton-convent-school {
+      display: block;
+    }
+  }
+  &.become-uk {
+    background-color: $becomeuk-color;
+    article.ft-become-uk {
+      display: block;
+    }
   }
   @media screen and (max-width: 500px) {
     overflow: hidden;
@@ -379,29 +492,11 @@ a {
     }
   }
 }
-.home {
-  height: 100%;
-  padding: 0;
-  h1 {
-    color: #fff;
-    margin: 0 0 0 -1.8%;
-    @extend %vertical-align;
-    span {
-      display: block;
-      &:nth-child(2) {
-        opacity: 0.7;
-      }
-      &:nth-child(3) {
-        opacity: 0.4;
-      }
-    }
-  }
-}
 
 // Work page 
 
 .work_index {
-  @include colour-scheme($dark-grey);
+  @include colour-scheme($dark-grey, 3%);
   height: 100%;
   main {
     height: 100%;
@@ -509,22 +604,8 @@ a {
 
 .work-item {
   padding-top: 27%;
-  h1 {
-    @extend %h1_header;
-    padding-right: 3.7%;
-  }
   @media screen and (max-width: 500px) {
     padding-top: 150px;
-    h1 {
-      position: static;
-      -ms-word-break: break-all;
-      word-break: break-all;
-      word-break: break-word;
-      -ms-hyphens: auto;
-      -webkit-hyphens: auto;
-      -moz-hyphens: auto;
-      hyphens: auto;
-    }
   }
 }
 .project {
@@ -657,61 +738,49 @@ a {
 // Set up colours for individual clients
 
 .alfred-app {
-  @include colour-scheme($alfred-color);
+  @include colour-scheme($alfred-color, 4%);
 }
 .rebellion-games {
-  @include colour-scheme($rebellion-color);
+  @include colour-scheme($rebellion-color, 4%);
 }
 .alton-convent-school {
-  @include colour-scheme($alton-convent-color);
+  @include colour-scheme($alton-convent-color, 2%);
 }
 .mumbu-app {
-  @include colour-scheme($mumbu-color);
+  @include colour-scheme($mumbu-color, 3%);
 }
 .on-target-recruitment {
-  @include colour-scheme($on-target-color);
+  @include colour-scheme($on-target-color, 3%);
 }
 .workplace-concepts {
-  @include colour-scheme($workplace-color);
+  @include colour-scheme($workplace-color, 3%);
 }
 .backpage-football {
-  @include colour-scheme($backpage-color);
+  @include colour-scheme($backpage-color, 3%);
 }
 .become-uk {
-  @include colour-scheme($becomeuk-color);
-  h1 {
-    color: darken($becomeuk-color, 7%);
-    @media screen and (max-width: 500px) {
-      color: darken($becomeuk-color, 8%);
-    }
-  }
+  @include colour-scheme($becomeuk-color, 7%);
 }
 .cloud-profiler {
-  @include colour-scheme($cloud-color);
+  @include colour-scheme($cloud-color, 3%);
 }
 .hip-hop-quoted {
-  @include colour-scheme($hip-hop-color);
+  @include colour-scheme($hip-hop-color, 3%);
 }
 .babble-ink {
-  @include colour-scheme($babbleink-color);
+  @include colour-scheme($babbleink-color, 2%);
 }
 
 // About page
 
 .page-about {
-  @include colour-scheme($salmon);
+  @include colour-scheme($salmon, 5%);
   .about-me {
     @extend %clearfix;
   }
-  h1 {
-    @extend %h1_header;
-  }
   @media screen and (max-width: 500px) {
     .about-me {
-      padding-top: 100px;
-    }
-    h1 {
-      position: static;
+      padding-top: 150px;
     }
   }
   .col-1 {
@@ -737,10 +806,7 @@ a {
 // Music page
 
 .page-music {
-  @include colour-scheme($blue);
-  h1 {
-    @extend %h1_header;
-  }
+  @include colour-scheme($blue, 3%);
 }
 .music {
   .row {
@@ -767,19 +833,13 @@ a {
   }
 }
 .media-player {
-  background-color: rgba($blue, 0.8);
+  //background-color: rgba($blue, 0.8);
   margin-bottom: 1em;
 }
 
 // IE Fixes
 
 .ie9,.ie8 {
-  h1 {
-    font-size: 18vw;
-  }
-  .page-index {
-    background-color: $alfred-color;
-  }
   .work-list {
     display: block;
     overflow: hidden;
@@ -816,6 +876,9 @@ a {
   }
 }
 .ie8 {
+  .page-index {
+    background-color: $alfred-color;
+  }
   body {
     min-width: 900px
   }
