@@ -45,7 +45,7 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     addClass(body, 'js');
     if(hasClass(wrapper, 'page-index') ) {
       wrapper.setAttribute('class', 'page-index');
-      var wrapperClasses = ['alfred-app','rebellion-games','alton-convent-school', 'become-uk'];
+      var wrapperClasses = ['alfred-app','rebellion-games','alton-convent-school', 'become-recruitment'];
       var randomClass = Math.floor(Math.random()*wrapperClasses.length);
       addClass(wrapper, wrapperClasses[randomClass]);
     }

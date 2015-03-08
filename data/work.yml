@@ -75,7 +75,7 @@ clients:
     url: alton-convent-school
     link: http://altonconvent.org.uk/
     intro: "Alton Convent is one of the top independent schools in the UK and needed a new web presence to reflect this. Using Wordpress as a foundation I built them a flexible CMS sitting behind a beautiful photo-led design and a fully responsive front-end build. The Convent’s design is now a benchmark for other premium schools and has received compliments from both staff and parents."
-    home_intro: "Setting the web design benchmark for independent schools in the UK."
+    home_intro: "Setting the design benchmark for independent schools in the UK."
     testimonial:
     cite:
     services: 
@@ -104,10 +104,10 @@ clients:
       - image: 
           name: alton-convent-site-5.jpg
           css_class: col-1 screen
-  - name: Become UK
+  - name: Become Recruitment
     featured: true
     weight: 4
-    url: become-uk
+    url: become-recruitment
     link: http://becomerecruitment.com/
     intro: "Established in 1997, Become is a leading creative recruitment agency and digital recruitment agency with offices in the UK, Australia and Hong Kong. They needed a design that would reflect their standing in the industry and attract new clients. Using strong brand guidelines, we created a design that stands out from other recruitment agencies."
     home_intro: "Bringing new life to an online creative recruitment agency."
@@ -135,7 +135,6 @@ clients:
       - image: 
           name: become-site-4.jpg
           css_class: col-2-2 screen
-
   - name: Mumbu
     weight: 5
     url: mumbu-app

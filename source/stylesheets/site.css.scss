@@ -32,9 +32,9 @@ body {
     font-size: 125%;
   }
 }
-.resp, .resp>body {
-  overflow: hidden;
-}
+// .resp, .resp>body {
+//   overflow: hidden;
+// }
 #wrapper {
   left: 0;
   min-height: 100%;
@@ -42,7 +42,6 @@ body {
   top: 0;
   right: 0;
   z-index: 1;
-  //@include transition(background-color 0.2s ease-in);
   @extend %clearfix;
 }
 main {
@@ -54,13 +53,13 @@ main {
     padding: 8%;
     @include box-sizing(border-box);
     @include transition(left .3s ease-in-out);
+    @include transform(translate3d(0,0,0));
     width: 100%;
     z-index: 1;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     .resp & {
       left: gs-width(o, 1, 3, false, true);
-      //@include transform(translate(0,0,0));
     }
   }
 }
@@ -103,32 +102,45 @@ h1,h2,h3,h4 {
   margin: 0;
   padding: 0;
 }
+// h1 {
+//   font-size: 40vw;
+//   letter-spacing: -5px;
+//   line-height: 0.9;
+//   margin: 0 0 0.5em -5%;
+//   position: fixed;
+//   opacity: 1;
+//   top: 10%;
+//   z-index: -1;
+//   @media screen and (max-width: 800px) {
+//     font-size: 60vw;
+//     letter-spacing: -4px;
+//     top: 2%;
+//   }
+//   @media screen and (max-width: 500px) {
+//     font-size: 80vw;
+//     top: 1.5%;
+//   }
+// }
 h1 {
   font-size: 40vw;
   letter-spacing: -5px;
-  line-height: 0.9;
-  left: 0;
-  margin: 0 0 0.5em gs-width(o, 1, false, false, true);
+  line-height: 1;
+  margin: 0 0 0.5em -1.2%;
   position: fixed;
   opacity: 1;
   top: 10%;
   z-index: -1;
   @media screen and (max-width: 800px) {
-    font-size: 60vw;
+    font-size: 50vw;
+    margin-left: -3.5%;
     letter-spacing: -4px;
-    margin-left: 3.7%;
-    padding-left: 0;
-    @include transition(margin-left .3s ease-in-out);
-    .resp & {
-      //left: 0;
-      margin-left: gs-width(o, 1, 3, false, true);
-      padding-left: 3.7%;
-      opacity: 1;
-    }
+    top: 100px;
   }
   @media screen and (max-width: 500px) {
-    font-size: 80vw;
-    top: 20%;
+    font-size: 60vw;
+    letter-spacing: -3px;
+    margin-left: -5%;
+    top: 100px;
   }
 }
 h2 {
@@ -219,6 +231,7 @@ a {
     width: gs-width(o,1,3,false,true);
     max-width: 400px;
     z-index: 1;
+    @include transform(translate3d(0,0,0));
     .resp & {
       left: 0;
       opacity: 1;
@@ -371,19 +384,15 @@ a {
   100% {background-color: $becomeuk-color;}
 }
 .page-index {
-  height: 100%;
   // @include animation(pulse 40s ease-in-out infinite alternate);
   main {
-    height: 100%;
-    @include box-sizing(border-box);
-    @media screen and (max-width: 800px) {
-      padding-bottom: 0;
-    }
+    padding-bottom: 0;
+  }
+  #wrapper {
+    min-height: 100%;
   }
   section {
-    height: 100%;
-    overflow: hidden;
-    padding-top: 27%;
+    padding-bottom: 0;
     @include box-sizing(border-box);
     @media screen and (max-width: 800px) {
       padding-top: 45%;
@@ -414,7 +423,7 @@ a {
         font-size: 1.5em;
       }
       @media screen and (max-width: 800px) {
-        font-size: 1.3em;
+        //font-size: 1.3em;
         @include gs-span(o,2,3,(2,5));
       }
       @media screen and (max-width: 500px) {
@@ -428,7 +437,7 @@ a {
       max-width: 345px;
       @include gs-span(o,5,false,(2,5));
       @media screen and (max-width: 800px) {
-        @include gs-span(o,4,5,(2,5));
+        @include gs-span(o,5,false,(2,5));
       }
       @media screen and (max-width: 500px) {
         float: none;
@@ -437,10 +446,13 @@ a {
       }
     }
     .device {
-      border: 1.5em solid $dark-grey;
-      border-radius: 1.5em;
+      border-top: 1.5em solid $dark-grey;
+      border-right: 1.5em solid $dark-grey;
+      border-left: 1.5em solid $dark-grey;
+      border-radius: 1.5em 1.5em 0 0;
       margin-top: 3em;
       max-width: 1000px;
+      overflow: hidden;
       @include gs-span(o,3,5,(2,5));
       @include box-sizing(border-box);
       img {
@@ -448,12 +460,13 @@ a {
       }
       @media screen and (max-width: 800px) {
         float: none;
-        margin: 3em 0 0;
+        margin: 2.5em 0 0;
         width: 100%;
       }
       @media screen and (max-width: 500px) {
         border-width: 1em;
-        border-radius: 1em;
+        border-radius: 1em 1em 0 0;
+        margin-top: 1.8em;
       }
     }
   }
@@ -481,9 +494,9 @@ a {
       display: block;
     }
   }
-  &.become-uk {
+  &.become-recruitment {
     background-color: $becomeuk-color;
-    article.ft-become-uk {
+    article.ft-become-recruitment {
       display: block;
     }
   }
@@ -592,7 +605,7 @@ a {
       &.hip-hop-quoted {
         @include work-item($hip-hop-color, 35%);
       }
-      &.become-uk {
+      &.become-recruitment {
         @include work-item($becomeuk-color, 30%);
       }
       &.babble-ink {
@@ -760,7 +773,7 @@ a {
 .backpage-football {
   @include colour-scheme($backpage-color, 3%);
 }
-.become-uk {
+.become-recruitment {
   @include colour-scheme($becomeuk-color, 7%);
 }
 .cloud-profiler {
