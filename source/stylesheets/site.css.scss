@@ -303,21 +303,26 @@ a {
   }
 }
 .resp-nav {
-  background: url("../images/menu-icon.svg") no-repeat 8px 45%;
+  background: url("../images/menu-icon.svg") no-repeat 9px 47%;
+  background-color: rgba($dark-grey, 0.3);
   background-size: 15px 16px;
   border-radius: 5px;
   color: $white;
   display: none;
+  float: right;
   line-height: 1;
   outline: none;
-  padding: 8px 0.5em 6px 1.5em;
+  padding: 8px 0.5em 4px 1.5em;
   position: fixed;
-  right: 3%;
+  right: 1em;
   text-transform: uppercase;
-  top: 3%;
+  top: 1em;
   z-index: 100;
   @media screen and (max-width: 800px) {
     display: block;
+  }
+  &:hover {
+    background-color: rgba($dark-grey, 0.2);
   }
   .resp &  {
     background-image: url("../images/menu-close.svg");

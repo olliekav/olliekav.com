@@ -87,10 +87,10 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     }
   }
   .resp-nav {
-    background-color: rgba(darken($color, 10%), 0.9);
+    background-color: rgba(darken($color, 10%), 0.5);
     color: $white;
     &:hover, &:focus {
-      background-color: rgba(darken($color, 8%), 0.9);
+      background-color: rgba(darken($color, 8%), 0.4);
       color: $white;
     }
   }
