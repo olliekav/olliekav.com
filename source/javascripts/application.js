@@ -34,7 +34,7 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
       removeClass(html, 'resp');
     }
 
-    addBodyClass();
+    //addBodyClass();
     tonedenInit();
     workNav();
 
@@ -85,7 +85,7 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
       entry.parentNode.insertBefore(tdScript, entry);
       var tdStyle = document.createElement("style");
       tdStyle.type = "text/css";
-      cssStyles = '.td.player.light,.td.player.light div,.td.player.light ul,.td.player.light .follow-link{background-color: transparent !important;border-color: #034A8E !important;color: #fff;}.td.player.light .slider>.track{background-color: #034A8E !important;}.td.player.light .slider>.highlight-track {border: 0 !important;background-color: #fff !important;}.td.player.light .info a, .td.player.light .mini-song-info a,.td.player.light .follow-link {color: #fff !important;}.td.player.light .waveform path {stroke: #fff !important;}.td.player.light .buy-link:hover, .td.player.light .follow-link:hover {background-color: transparent !important;color: #034A8E !important;}.td.player.light .slider>.dragger {background-color: #fff !important;}.td.player.solo .info-solo,.td.player.solo .scrubber {border-left: 0 !important; }a.tdbutton.expand.buy-link {color: #fff !important;}.tdrow {margin:0 !important;}'
+      cssStyles = '.td.player.light,.td.player.light div,.td.player.light ul,.td.player.light .follow-link{background-color: transparent !important;border-color: #aeaeae !important;color: #fff;}.td.player.light .slider>.track{background-color: #aeaeae !important;}.td.player.light .slider>.highlight-track {border: 0 !important;background-color: #fff !important;}.td.player.light .info a, .td.player.light .mini-song-info a,.td.player.light .follow-link {color: #fff !important;}.td.player.light .waveform path {stroke: #fff !important;}.td.player.light .buy-link:hover, .td.player.light .follow-link:hover {background-color: transparent !important;color: #aeaeae !important;}.td.player.light .slider>.dragger {background-color: #fff !important;}.td.player.solo .info-solo,.td.player.solo .scrubber {border-left: 0 !important; }a.tdbutton.expand.buy-link {color: #fff !important;}.tdrow {margin:0 !important;}'
       if (tdStyle.styleSheet){
         tdStyle.styleSheet.cssText = cssStyles;
       } else {

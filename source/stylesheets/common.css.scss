@@ -3,6 +3,7 @@
 // Colors
 
 $dark-grey: #222222;
+$mid-grey: #aeaeae;
 $light-grey: #2e2e2e;
 $mint: #41d1c6;
 $white: #fff;
@@ -17,7 +18,7 @@ $on-target-color: #0c4e70;
 $workplace-color: #98c707;
 $backpage-color: #9bcb5d;
 $cloud-color: #212529;
-$hip-hop-color: #27272a;
+$hip-hop-color: #4d4d4d;
 $becomeuk-color: #E93C95;
 $babbleink-color: #009897;
 
@@ -63,20 +64,17 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
 @mixin colour-scheme($color, $h1) {
 
   background-color: $color;
-  @media screen and (max-width: 500px) {
-    main {
-      background-color: $color;
-    }
-  }
+  @include gradient-directional($color, darken($color, 5%), -45deg);
+
   a {
-    color: #000;
+    color: darken($color, 25%);
     &:hover {
-      color: darken($color, 15%);
+      color: $white;
     }
   }
   #header {
     a:hover, a.active {
-      color: darken($color, 13%);
+      color: darken($color, 25%);
     }
     a.active {
       //@include transition(color linear 0.5s);
@@ -84,22 +82,22 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   }
   .logo:hover {
     path {
-      fill: darken($color, 5%);
+      fill: darken($color, 20%);
     }
   }
   .resp-nav {
-    background-color: rgba(darken($color, 3%), 0.9);
+    background-color: rgba(darken($color, 8%), 0.9);
     color: $white;
     &:hover, &:focus {
-      background-color: rgba(darken($color, 4%), 0.9);
+      background-color: rgba(darken($color, 5%), 0.9);
       color: $white;
     }
   }
-  h1 {
-    color: darken($color, $h1);
-  }
+  // h1 {
+  //   color: darken($color, $h1);
+  // }
   .work-nav {
-    background-color: rgba(darken($color, 5%), 0.9);
+    background-color: rgba(darken($color, 8%), 0.9);
     a {
       color: $white;
       path {
@@ -107,9 +105,9 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
       }
     }
     a:hover {
-      color: darken($color, 15%);
+      color: darken($color, 25%);
       path {
-        fill: darken($color, 15%);
+        fill: darken($color, 25%);
       }
     }
   }
@@ -119,10 +117,10 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     //background-color: $dark-grey;
     color: #fff;
     &:hover {
-      border-color: darken($color, 10%);
+      border-color: darken($color, 25%);
       //background-color: darken($color, 18%);
       //background-color: darken($dark-grey, 5%);
-      color: darken($color, 10%);
+      color: darken($color, 25%);
     }
   }
   ///}

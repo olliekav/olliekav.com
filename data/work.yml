@@ -1,5 +1,6 @@
 clients:
   - name: Alfred App
+    page_title: Increased<br> Productivity
     featured: true
     weight: 1
     url: alfred-app
@@ -40,6 +41,7 @@ clients:
           name: alfred-remote-1-small.jpg
           css_class: col-1 screen
   - name: 'Rebellion Games'
+    page_title: 'Join the<br> Rebellion'
     featured: true
     weight: 2
     url: rebellion-games
@@ -50,6 +52,7 @@ clients:
     cite:
     services: 
       - Web design
+      - Art Direction
       - 'Agency: <a href="http://kyan.com">Kyan</a>'
     logo: rebellion-logo.svg
     device_image: rebellion-device.jpg
@@ -70,6 +73,7 @@ clients:
           name: rebellion-site-2-small.jpg
           css_class: col-2-2 screen
   - name: Alton Convent School
+    page_title: Beautifully<br> Educated
     featured: true
     weight: 3
     url: alton-convent-school
@@ -105,6 +109,7 @@ clients:
           name: alton-convent-site-5.jpg
           css_class: col-1 screen
   - name: Become Recruitment
+    page_title: Become<br> Inspired
     featured: true
     weight: 4
     url: become-recruitment
@@ -136,6 +141,7 @@ clients:
           name: become-site-4.jpg
           css_class: col-2-2 screen
   - name: Mumbu
+    page_title: Changing<br> Business
     weight: 5
     url: mumbu-app
     link: http://mumbu.com
@@ -167,6 +173,7 @@ clients:
           name: mumbu-site-5.jpg
           css_class: col-2-2 screen
   - name: Workplace Concepts
+    page_title: Project<br> Managed
     weight: 6
     url: workplace-concepts
     link: http://www.workplaceconcepts.co.uk/
@@ -175,6 +182,7 @@ clients:
     cite:
     services: 
       - Web design
+      - Art Direction
       - Responsive build
       - Rails back-end
       - 'Agency: <a href="http://kyan.com">Kyan</a>'
@@ -195,7 +203,8 @@ clients:
       - image: 
           name: workplace-site-4.jpg
           css_class: col-2-2 screen
-  - name: Babble INK
+  - name: Inventences
+    page_title: Glorious<br> Sentences
     weight: 7
     url: babble-ink
     link: http://inventences.com/
@@ -228,6 +237,7 @@ clients:
           name: babbleink-site-2.jpg
           css_class: col-2-2 screen
   - name: On-Target Recruitment
+    page_title: Leading<br> Recruiter
     weight: 8
     url: on-target-recruitment
     link: http://www.otrsales.co.uk/
@@ -236,6 +246,7 @@ clients:
     cite:
     services: 
       - Web design
+      - Art Direction
       - 'Agency: <a href="http://kyan.com">Kyan</a>'
     logo: ontarget-logo.svg
     images: 
@@ -276,6 +287,7 @@ clients:
   #         name: alfred-site-1.jpg
   #         css_class: col-3 screen
   - name: Hip-Hop Quoted
+    page_title: Hip-Hop<br> Quoted
     weight: 9
     url: hip-hop-quoted
     link: http://hiphopquoted.com
@@ -285,8 +297,9 @@ clients:
     services: 
       - 'Branding & logo design'
       - Web design
-      - Responsive build
       - Art direction
+      - Responsive build
+      - Graphic Design
     logo: hip-hop-quoted-logo.svg
     images: 
       - image: 

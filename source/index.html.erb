@@ -1,20 +1,17 @@
 <% content_for(:title, "Home") %>
 <% content_for(:description, "Hi, I'm Ollie, a designer and front end developer currently residing in Ottawa, Canada.") %>
 
-<section class="home">
-
-  <% 
-    featured = data.work.clients.select{|item| item.featured rescue false }
-    featured.each_with_index do |client, index| %>
-    <article class="ft-<%= client.url %>">
-      <h1><%= client.name %></h1>
-      <h2><%= client.home_intro %></h2>
-      <%= link_to("View project", "/work/#{client.url}/", class: "button") %>
-      <hr>
-      <div class="device">
-        <% image_url = "work/#{client.url}/#{client.device_image}" %>
-        <%= image_tag(image_url, :alt => client.name) %>
-      </div>
+<section class="work-list">
+  
+  <% work_list = data.work.clients %>
+  <% $stderr.puts work_list %>
+  <% work_list.each do |c| %>
+    <article class="client">
+      <% link_to("/work/#{c.url}/", class: "wi-#{c.url}", title: c.name) do %>
+        <% image_url = "work/#{c.url}/#{c.logo}" %>
+        <%= image_tag(image_url, :alt => c.name) %>
+        <h2><%= c.name %></h2>
+      <% end %>
     </article>
   <% end %>
 

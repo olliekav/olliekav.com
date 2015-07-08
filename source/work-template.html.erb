@@ -8,7 +8,9 @@ work_item: true
 
 <section class="work work-item">
 
-  <h1><%= client.name %></h1>
+  <header>
+    <h1><%= client.page_title %></h1>
+  </header>
 
   <div class="row">
     <% if client.intro %>
@@ -26,7 +28,7 @@ work_item: true
             <li><%= item %></li>
           <% end %>
         </ul>
-        <%= link_to("Live project", client.link, class: "button") %>
+        <%= link_to("Live project", client.link, class: "button", target: "_blank") %>
       </div>
     <% end %>
   </div>
