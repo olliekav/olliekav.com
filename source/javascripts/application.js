@@ -1,4 +1,6 @@
 //= require layout.engine.min
+//= require turbolinks
+//= require turbo-react.min
 
 if ( 'querySelector' in document && 'addEventListener' in window ) {
 

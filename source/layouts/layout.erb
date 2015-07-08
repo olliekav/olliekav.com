@@ -15,14 +15,11 @@
     <link href="/images/favicon.ico" rel="shortcut icon"></link>
     <script src="//use.typekit.net/gmc4yrr.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
-    <!--[if (gt IE 9)|!(IE)]><!-->
-      <%= javascript_include_tag "reactize.min.js" %>
-      <script>
-        Turbolinks.enableProgressBar();
-        Turbolinks.enableTransitionCache();
-      </script>
-    <!--<![endif]-->
     <%= javascript_include_tag "application", data: { turbolinks_track: true } %>
+    <script>
+      Turbolinks.ProgressBar.enable();
+      Turbolinks.enableTransitionCache();
+    </script>
     <!--[if lt IE 9]>
       <%= javascript_include_tag("html5shiv.min.js") %>
     <![endif]-->
