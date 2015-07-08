@@ -262,7 +262,7 @@ a {
   font-weight: 400;
   text-align: center;
   ul {
-    margin: 1em 0 0;
+    margin: 1.5em 0 0;
     padding: 0;
     > li {
       list-style: none;
@@ -330,7 +330,7 @@ a {
   span {
     display: none;
   }
-  margin: 2em 0 0;
+  margin: 1.5em 0 0;
   padding: 0;
   li {
     list-style: none;
@@ -515,7 +515,11 @@ a {
   }
 }
 .gallery {
+  margin-top: 9em;
   max-width: 1000px;
+  @media screen and (max-width: 500px) {
+    margin-top: 2em;
+  }
 }
 .image {
   margin-top: 5em;

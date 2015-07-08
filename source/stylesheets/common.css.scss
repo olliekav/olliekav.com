@@ -26,11 +26,11 @@ $babbleink-color: #009897;
 
 @font-face {
   font-family: 'social';
-  src: url('../fonts/social/social.eot?89839386');
-  src: url('../fonts/social/social.eot?89839386#iefix') format('embedded-opentype'),
-       url('../fonts/social/social.woff?89839386') format('woff'),
-       url('../fonts/social/social.ttf?89839386') format('truetype'),
-       url('../fonts/social/social.svg?89839386#social') format('svg');
+  src: url('../fonts/social/social.eot?51655142');
+  src: url('../fonts/social/social.eot?51655142#iefix') format('embedded-opentype'),
+       url('../fonts/social/social.woff?51655142') format('woff'),
+       url('../fonts/social/social.ttf?51655142') format('truetype'),
+       url('../fonts/social/social.svg?51655142#social') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -51,9 +51,10 @@ $babbleink-color: #009897;
   margin-left: .2em;
 }
  
-.icon-soundcloud-1:before { content: '\e801'; } /* '' */
+.icon-soundcloud:before { content: '\e800'; } /* '' */
+.icon-dribbble:before { content: '\e801'; } /* '' */
 .icon-github-circled:before { content: '\e802'; } /* '' */
-.icon-twitter-1:before { content: '\e805'; } /* '' */
+.icon-twitter:before { content: '\e803'; } /* '' */
 
 $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', sans-serif;
 
@@ -64,7 +65,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
 @mixin colour-scheme($color, $h1) {
 
   background-color: $color;
-  @include gradient-directional($color, darken($color, 5%), -45deg);
+  @include gradient-directional($color, darken($color, 8%), 135deg);
 
   a {
     color: darken($color, 25%);
@@ -86,10 +87,10 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
     }
   }
   .resp-nav {
-    background-color: rgba(darken($color, 8%), 0.9);
+    background-color: rgba(darken($color, 10%), 0.9);
     color: $white;
     &:hover, &:focus {
-      background-color: rgba(darken($color, 5%), 0.9);
+      background-color: rgba(darken($color, 8%), 0.9);
       color: $white;
     }
   }
@@ -97,7 +98,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   //   color: darken($color, $h1);
   // }
   .work-nav {
-    background-color: rgba(darken($color, 8%), 0.9);
+    background-color: rgba(darken($color, 10%), 0.9);
     a {
       color: $white;
       path {
