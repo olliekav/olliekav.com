@@ -65,6 +65,7 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
 @mixin colour-scheme($color, $h1) {
 
   background-color: $color;
+  // @include transition(background-color 0.2s linear);
   @include gradient-directional($color, darken($color, 8%), 135deg);
 
   a {

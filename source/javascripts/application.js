@@ -36,22 +36,10 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
       removeClass(html, 'resp');
     }
 
-    //addBodyClass();
     tonedenInit();
     workNav();
 
   }; 
-
-  // Adding random classes to the homepage
-  addBodyClass = function() {
-    addClass(body, 'js');
-    if(hasClass(wrapper, 'page-index') ) {
-      wrapper.setAttribute('class', 'page-index');
-      var wrapperClasses = ['alfred-app','rebellion-games','alton-convent-school', 'become-recruitment'];
-      var randomClass = Math.floor(Math.random()*wrapperClasses.length);
-      addClass(wrapper, wrapperClasses[randomClass]);
-    }
-  }
 
   workNav = function() {
     var fired = false;

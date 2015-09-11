@@ -27,7 +27,6 @@ body {
   width:100%;
   @include box-sizing(border-box);
   @extend %clearfix;
-  @include transition(opacity 0.2s ease-in);
   @media screen and (max-width: 1000px) {
     font-size: 125%;
   }
@@ -68,11 +67,11 @@ section {
   opacity: 1;
   padding: 25% 0;
   width: 100%;
+  @include transition(opacity 0.5s ease-in-out);
   .animate-out & {
     opacity: 0;
   }
   .animate-in & {
-    @include transition(opacity 0.2s ease-in-out);
     opacity: 1;
   }
 }
@@ -390,6 +389,7 @@ a {
   align-items: center;
   @include flexbox();
   -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   height: 100%;
   min-height: 100%;
@@ -409,6 +409,7 @@ a {
     height: 33.333333333%;
     @include flex(0 0 33.33333333%);
     flex-direction: column;
+    -ms-flex-direction: column;
     text-align: center;
     @media screen and (max-width: 700px) {
       flex: 0 0 50%;
