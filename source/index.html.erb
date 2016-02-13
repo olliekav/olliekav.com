@@ -4,8 +4,8 @@
 <section class="work-list">
   
   <% work_list = data.work.clients %>
-  <% $stderr.puts work_list %>
-  <% work_list.each do |c| %>
+  <%# $stderr.puts work_list %>
+  <% data.work.clients.each do |c| %>
     <article class="client">
       <% link_to("/work/#{c.url}/", class: "wi-#{c.url}", title: c.name) do %>
         <% image_url = "work/#{c.url}/#{c.logo}" %>

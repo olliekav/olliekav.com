@@ -23,7 +23,7 @@
     <!--[if lt IE 9]>
       <%= javascript_include_tag("html5shiv.min.js") %>
     <![endif]-->
-    <% if development? %>
+    <% if app.development? %>
       <%= javascript_include_tag "gridset-overlay" %>
       <style>
         .gridsetoverlaywrap {
@@ -47,7 +47,7 @@
       </main>
       <%= partial "work_navigation" if current_page.data.work_item == true %>
     </div>
-    <% if build? %>
+    <% if app.build? %>
       <script>
         ga('send', 'pageview');
       </script>

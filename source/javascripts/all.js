@@ -1,5 +1,4 @@
-//= require layout.engine.min
-//= require turbolinks
+//= require layout.engine.min.js
 
 if ( 'querySelector' in document && 'addEventListener' in window ) {
 
@@ -28,7 +27,6 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
 
     body = document.querySelector('body'),
     html = document.querySelector('html'),
-    wrapper = document.getElementById("wrapper"),
     menuLink = document.querySelector('.resp-nav');
 
     if(hasClass(html, 'resp')) {
@@ -38,12 +36,12 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     tonedenInit();
     workNav();
 
-  }; 
+  };
 
   workNav = function() {
     var fired = false;
     window.addEventListener('scroll', function() {
-      if(window.pageYOffset >= 50 && fired === false) {
+      if(window.pageYOffset >= 10 && fired === false) {
         addClass(body, 'scrolling');
         //fired = true;
       }
@@ -85,7 +83,7 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
   }
 
   tonedenInit = function () {
-    if(hasClass(wrapper, 'page-music') && !hasClass(html, 'ie9')) {
+    if(hasClass(body, 'page-music') && !hasClass(html, 'ie9')) {
       // Now we are ready to
       ToneDenReady = window.ToneDenReady || [];
       var configOne = {
@@ -173,23 +171,34 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     }
   }
 
+  // Various loading events for Turbolinks to initialize functions
+
   document.addEventListener("DOMContentLoaded", function() {
     ready();
     loadToneDen();
     window.addEventListener("click", respNav);
   }, false);
 
-  document.addEventListener("page:load", function() {
-    animateClass();
-    ready();
-    window.addEventListener("click", respNav);
-    window.scrollTo(0,0);
-  }, false);
+  // document.addEventListener("page:load", function() {
+  //   ready();
+  //   window.addEventListener("click", respNav);
+  //   window.scrollTo(0,0);
+  // }, false);
 
-  document.addEventListener("page:before-unload", function() {
-    animateClass();
-    window.removeEventListener("click", respNav);
-  });
+  // document.addEventListener("page:before-change", function() {
+  //   window.removeEventListener("click", respNav);
+  // });
+
+  // Lets do some page animations with the Turbolinks
+
+  // document.addEventListener('page:fetch', function() {
+  //   console.log('changing')
+  //   addClass(document.querySelector('html'), ' fadeOut');
+  // });
+  // document.addEventListener('page:restore', function() {
+  //   console.log('unload')
+  //   addClass(document.querySelector('html'), ' fadeIn');
+  // });
 
 }
 

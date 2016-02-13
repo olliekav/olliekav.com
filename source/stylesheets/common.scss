@@ -2,7 +2,7 @@
 
 // Colors
 
-$dark-grey: #222222;
+$dark-grey: #171717;
 $mid-grey: #aeaeae;
 $light-grey: #2e2e2e;
 $mint: #41d1c6;
@@ -18,7 +18,7 @@ $on-target-color: #0c4e70;
 $workplace-color: #98c707;
 $backpage-color: #9bcb5d;
 $cloud-color: #212529;
-$hip-hop-color: #4d4d4d;
+$hip-hop-color: #202020;
 $becomeuk-color: #E93C95;
 $babbleink-color: #009897;
 
@@ -95,9 +95,6 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
       color: $white;
     }
   }
-  // h1 {
-  //   color: darken($color, $h1);
-  // }
   .work-nav {
     background-color: rgba(darken($color, 10%), 0.9);
     a {
@@ -115,13 +112,9 @@ $ff-din-round: "ff-din-round-web", 'DIN Round Pro', 'Helvetica Neue', 'Arial', s
   }
   //@if $button {
   .button {
-    //background-color: darken($color, 15%);
-    //background-color: $dark-grey;
     color: #fff;
     &:hover {
       border-color: darken($color, 25%);
-      //background-color: darken($color, 18%);
-      //background-color: darken($dark-grey, 5%);
       color: darken($color, 25%);
     }
   }

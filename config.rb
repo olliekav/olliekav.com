@@ -13,19 +13,6 @@ Time.zone = "US/Eastern"
 # Page options, layouts, aliases and proxies
 ###
 
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
 #page "/feed.xml", layout: false
 page "/404.html", :layout => false
 page "/sitemap.xml", :layout => false
@@ -34,8 +21,8 @@ page "/sitemap.xml", :layout => false
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
-data.work.clients.each do |client|
-  proxy "/work/#{client.url}.html", "/work-template.html", locals: { 
+app.data.work.clients.each do |client|
+  proxy "/work/#{client.url}/index.html", "/work-template.html", locals: { 
     client: client
   }, :ignore => true
 end
@@ -49,8 +36,7 @@ end
 
 # Reload the browser automatically whenever files change
 configure :development do
-  activate :livereload, :host => "olliekav.dev", :apply_js_live => true, :apply_css_live => true
-  config[:file_watcher_ignore] += [ /^build\// ]
+  activate :livereload, no_swf: true
 end
 
 # Methods defined in the helpers block are available in templates
@@ -108,15 +94,9 @@ end
 
 activate :directory_indexes
 
-set :css_dir, 'stylesheets'
-
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
-
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
+  # Minify CSS on build
   activate :minify_css
 
   # Minify Javascript on build
@@ -128,8 +108,6 @@ configure :build do
   activate :gzip
 
   # Use relative URLs
-  #activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  # activate :relative_assets
+  
 end
