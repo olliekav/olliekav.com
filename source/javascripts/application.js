@@ -153,12 +153,12 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
   }
 
   animateClass = function() {
-    if(hasClass(html, 'animate-out')) {
-      removeClass(html, 'animate-out')
-      addClass(html, 'animate-in')
+    if(hasClass(body, 'animate-out')) {
+      removeClass(body, 'animate-out')
+      addClass(body, 'animate-in')
     } else {
-      removeClass(html, 'animate-in')
-      addClass(html, 'animate-out')
+      removeClass(body, 'animate-in')
+      addClass(body, 'animate-out')
     }
   }
 
@@ -180,7 +180,7 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
   }, false);
 
   document.addEventListener("page:load", function() {
-    animateClass();
+    //animateClass();
     ready();
     window.addEventListener("click", respNav);
     window.scrollTo(0,0);
