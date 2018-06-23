@@ -7148,3 +7148,2660 @@ LiveReload Browser URL: {"command":"hello","protocols":["http://livereload.com/p
 == Request: /images/work/rebellion-games/rebellion-site-2.jpg
 == Request: /
 == Finishing Request: index.html (0.07s)
+== LiveReload browser disconnected
+== Activating: file_watcher
+== Activating: front_matter
+== Activating: data
+== Activating: inline_url_rewriter
+== Activating: sitemap_ondisk
+== Activating: sitemap_import
+== Activating: sitemap_endpoint
+== Activating: sitemap_proxies
+== Activating: sitemap_redirects
+== Activating: sitemap_move_files
+== Activating: sitemap_ignore
+== Activating: show_exceptions
+== Activating: external_helpers
+== Activating: erb_renderer
+== Activating: coffee_renderer
+== Activating: haml_renderer
+== Activating: sass_renderer
+== Activating: markdown_renderer
+== Failed Activation `liquid_renderer` : cannot load such file -- liquid
+== Failed Activation `slim_renderer` : cannot load such file -- slim
+== Failed Activation `less_renderer` : cannot load such file -- less
+== Failed Activation `stylus_renderer` : cannot load such file -- stylus
+== Activating: default_helpers
+== Activating: lorem
+== Activating: routing
+== Activating: collections
+== Activating: sprockets
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): work-template.html.erb
+== Reading: Local config: config.rb
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Activating: directory_indexes
+== Activating: livereload
+Loaded extensions:
+== Extension: file_watcher
+== Extension: front_matter
+== Extension: data
+== Extension: inline_url_rewriter
+== Extension: sitemap_ondisk
+== Extension: sitemap_import
+== Extension: sitemap_endpoint
+== Extension: sitemap_proxies
+== Extension: sitemap_redirects
+== Extension: sitemap_move_files
+== Extension: sitemap_ignore
+== Extension: show_exceptions
+== Extension: external_helpers
+== Extension: erb_renderer
+== Extension: coffee_renderer
+== Extension: haml_renderer
+== Extension: sass_renderer
+== Extension: markdown_renderer
+== Extension: default_helpers
+== Extension: lorem
+== Extension: routing
+== Extension: collections
+== Extension: sprockets
+== Extension: directory_indexes
+== Extension: livereload
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): work-template.html.erb
+== Requesting resource list rebuilding: touched_file
+== Requesting resource list rebuilding: registered_new_manipulator_front_matter
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ondisk
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_import
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_endpoint
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_proxies
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_redirects
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_move_files
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ignore
+== Requesting resource list rebuilding: registered_new_manipulator_routing
+== Requesting resource list rebuilding: registered_new_manipulator_collections
+== Requesting resource list rebuilding: registered_new_manipulator_sprockets
+== Requesting resource list rebuilding: registered_new_manipulator_directory_indexes
+== Rebuilding resource list
+== Running manipulator: sitemap_ondisk
+== Running manipulator: sitemap_endpoint
+== Running manipulator: sitemap_proxies
+== Running manipulator: sitemap_redirects
+== Running manipulator: sitemap_ignore
+== Running manipulator: sitemap_import
+== Running manipulator: routing
+== Running manipulator: front_matter
+== Running manipulator: sprockets
+== Running manipulator: directory_indexes
+== Running manipulator: sitemap_move_files
+== Running manipulator: collections
+== LiveReload accepting connections from ws://10.0.1.30:35729
+== Request: /
+== Finishing Request: index.html (0.05s)
+== Request: /stylesheets/site.css
+== Finishing Request: stylesheets/site.css (0.0s)
+== LiveReload browser connected
+LiveReload Browser URL: {"command":"hello","protocols":["http://livereload.com/protocols/official-6","http://livereload.com/protocols/official-7"],"ver":"2.0.8"}
+== Activating: file_watcher
+== Activating: front_matter
+== Activating: data
+== Activating: inline_url_rewriter
+== Activating: sitemap_ondisk
+== Activating: sitemap_import
+== Activating: sitemap_endpoint
+== Activating: sitemap_proxies
+== Activating: sitemap_redirects
+== Activating: sitemap_move_files
+== Activating: sitemap_ignore
+== Activating: show_exceptions
+== Activating: external_helpers
+== Activating: erb_renderer
+== Activating: coffee_renderer
+== Activating: haml_renderer
+== Activating: sass_renderer
+== Activating: markdown_renderer
+== Failed Activation `liquid_renderer` : cannot load such file -- liquid
+== Failed Activation `slim_renderer` : cannot load such file -- slim
+== Failed Activation `less_renderer` : cannot load such file -- less
+== Failed Activation `stylus_renderer` : cannot load such file -- stylus
+== Activating: default_helpers
+== Activating: lorem
+== Activating: routing
+== Activating: collections
+== Activating: sprockets
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): work-template.html.erb
+== Reading: Local config: config.rb
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Activating: directory_indexes
+== Activating: livereload
+Loaded extensions:
+== Extension: file_watcher
+== Extension: front_matter
+== Extension: data
+== Extension: inline_url_rewriter
+== Extension: sitemap_ondisk
+== Extension: sitemap_import
+== Extension: sitemap_endpoint
+== Extension: sitemap_proxies
+== Extension: sitemap_redirects
+== Extension: sitemap_move_files
+== Extension: sitemap_ignore
+== Extension: show_exceptions
+== Extension: external_helpers
+== Extension: erb_renderer
+== Extension: coffee_renderer
+== Extension: haml_renderer
+== Extension: sass_renderer
+== Extension: markdown_renderer
+== Extension: default_helpers
+== Extension: lorem
+== Extension: routing
+== Extension: collections
+== Extension: sprockets
+== Extension: directory_indexes
+== Extension: livereload
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): work-template.html.erb
+== Requesting resource list rebuilding: touched_file
+== Requesting resource list rebuilding: registered_new_manipulator_front_matter
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ondisk
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_import
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_endpoint
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_proxies
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_redirects
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_move_files
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ignore
+== Requesting resource list rebuilding: registered_new_manipulator_routing
+== Requesting resource list rebuilding: registered_new_manipulator_collections
+== Requesting resource list rebuilding: registered_new_manipulator_sprockets
+== Requesting resource list rebuilding: registered_new_manipulator_directory_indexes
+== Rebuilding resource list
+== Running manipulator: sitemap_ondisk
+== Running manipulator: sitemap_endpoint
+== Running manipulator: sitemap_proxies
+== Running manipulator: sitemap_redirects
+== Running manipulator: sitemap_ignore
+== Running manipulator: sitemap_import
+== Running manipulator: routing
+== Running manipulator: front_matter
+== Running manipulator: sprockets
+== Running manipulator: directory_indexes
+== Running manipulator: sitemap_move_files
+== Running manipulator: collections
+== LiveReload accepting connections from ws://10.0.1.30:35729
+== Request: /javascripts/application.js
+== Finishing Request: javascripts/application.js (0.0s)
+== Request: /javascripts/gridset-overlay.js
+== Finishing Request: javascripts/gridset-overlay.js (0.0s)
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.02s)
+== Request: /fonts/social/social.woff
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Request: /images/menu-icon.svg
+== Finishing Request: images/menu-icon.svg (0.0s)
+== LiveReload browser disconnected
+== Activating: file_watcher
+== Activating: front_matter
+== Activating: data
+== Activating: inline_url_rewriter
+== Activating: sitemap_ondisk
+== Activating: sitemap_import
+== Activating: sitemap_endpoint
+== Activating: sitemap_proxies
+== Activating: sitemap_redirects
+== Activating: sitemap_move_files
+== Activating: sitemap_ignore
+== Activating: show_exceptions
+== Activating: external_helpers
+== Activating: erb_renderer
+== Activating: coffee_renderer
+== Activating: haml_renderer
+== Activating: sass_renderer
+== Activating: markdown_renderer
+== Failed Activation `liquid_renderer` : cannot load such file -- liquid
+== Failed Activation `slim_renderer` : cannot load such file -- slim
+== Failed Activation `less_renderer` : cannot load such file -- less
+== Failed Activation `stylus_renderer` : cannot load such file -- stylus
+== Activating: default_helpers
+== Activating: lorem
+== Activating: routing
+== Activating: collections
+== Activating: sprockets
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): work-template.html.erb
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Reading: Local config: config.rb
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Activating: directory_indexes
+== Activating: livereload
+Loaded extensions:
+== Extension: file_watcher
+== Extension: front_matter
+== Extension: data
+== Extension: inline_url_rewriter
+== Extension: sitemap_ondisk
+== Extension: sitemap_import
+== Extension: sitemap_endpoint
+== Extension: sitemap_proxies
+== Extension: sitemap_redirects
+== Extension: sitemap_move_files
+== Extension: sitemap_ignore
+== Extension: show_exceptions
+== Extension: external_helpers
+== Extension: erb_renderer
+== Extension: coffee_renderer
+== Extension: haml_renderer
+== Extension: sass_renderer
+== Extension: markdown_renderer
+== Extension: default_helpers
+== Extension: lorem
+== Extension: routing
+== Extension: collections
+== Extension: sprockets
+== Extension: directory_indexes
+== Extension: livereload
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): work-template.html.erb
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Requesting resource list rebuilding: touched_file
+== Requesting resource list rebuilding: registered_new_manipulator_front_matter
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ondisk
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_import
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_endpoint
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_proxies
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_redirects
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_move_files
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ignore
+== Requesting resource list rebuilding: registered_new_manipulator_routing
+== Requesting resource list rebuilding: registered_new_manipulator_collections
+== Requesting resource list rebuilding: registered_new_manipulator_sprockets
+== Requesting resource list rebuilding: registered_new_manipulator_directory_indexes
+== Rebuilding resource list
+== Running manipulator: sitemap_ondisk
+== Running manipulator: sitemap_endpoint
+== Running manipulator: sitemap_proxies
+== Running manipulator: sitemap_redirects
+== Running manipulator: sitemap_ignore
+== Running manipulator: sitemap_import
+== Running manipulator: routing
+== Running manipulator: front_matter
+== Running manipulator: sprockets
+== Running manipulator: directory_indexes
+== Running manipulator: sitemap_move_files
+== Running manipulator: collections
+== LiveReload accepting connections from ws://10.0.1.30:35729
+== Request: /
+== Finishing Request: index.html (0.04s)
+== LiveReload browser connected
+LiveReload Browser URL: {"command":"hello","protocols":["http://livereload.com/protocols/official-6","http://livereload.com/protocols/official-7"],"ver":"2.0.8"}
+== Request: /stylesheets/site.css
+== Finishing Request: stylesheets/site.css (0.0s)
+== Request: /javascripts/gridset-overlay.js
+== Finishing Request: javascripts/gridset-overlay.js (0.0s)
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Activating: file_watcher
+== Activating: front_matter
+== Activating: data
+== Activating: inline_url_rewriter
+== Activating: sitemap_ondisk
+== Activating: sitemap_import
+== Activating: sitemap_endpoint
+== Activating: sitemap_proxies
+== Activating: sitemap_redirects
+== Activating: sitemap_move_files
+== Activating: sitemap_ignore
+== Activating: show_exceptions
+== Activating: external_helpers
+== Activating: erb_renderer
+== Activating: coffee_renderer
+== Activating: haml_renderer
+== Activating: sass_renderer
+== Activating: markdown_renderer
+== Failed Activation `liquid_renderer` : cannot load such file -- liquid
+== Failed Activation `slim_renderer` : cannot load such file -- slim
+== Failed Activation `less_renderer` : cannot load such file -- less
+== Failed Activation `stylus_renderer` : cannot load such file -- stylus
+== Activating: default_helpers
+== Activating: lorem
+== Activating: routing
+== Activating: collections
+== Activating: sprockets
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): work-template.html.erb
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Reading: Local config: config.rb
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Activating: directory_indexes
+== Activating: livereload
+Loaded extensions:
+== Extension: file_watcher
+== Extension: front_matter
+== Extension: data
+== Extension: inline_url_rewriter
+== Extension: sitemap_ondisk
+== Extension: sitemap_import
+== Extension: sitemap_endpoint
+== Extension: sitemap_proxies
+== Extension: sitemap_redirects
+== Extension: sitemap_move_files
+== Extension: sitemap_ignore
+== Extension: show_exceptions
+== Extension: external_helpers
+== Extension: erb_renderer
+== Extension: coffee_renderer
+== Extension: haml_renderer
+== Extension: sass_renderer
+== Extension: markdown_renderer
+== Extension: default_helpers
+== Extension: lorem
+== Extension: routing
+== Extension: collections
+== Extension: sprockets
+== Extension: directory_indexes
+== Extension: livereload
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): work-template.html.erb
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Requesting resource list rebuilding: touched_file
+== Requesting resource list rebuilding: registered_new_manipulator_front_matter
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ondisk
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_import
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_endpoint
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_proxies
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_redirects
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_move_files
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ignore
+== Requesting resource list rebuilding: registered_new_manipulator_routing
+== Requesting resource list rebuilding: registered_new_manipulator_collections
+== Requesting resource list rebuilding: registered_new_manipulator_sprockets
+== Requesting resource list rebuilding: registered_new_manipulator_directory_indexes
+== Rebuilding resource list
+== Running manipulator: sitemap_ondisk
+== Running manipulator: sitemap_endpoint
+== Running manipulator: sitemap_proxies
+== Running manipulator: sitemap_redirects
+== Running manipulator: sitemap_ignore
+== Running manipulator: sitemap_import
+== Running manipulator: routing
+== Running manipulator: front_matter
+== Running manipulator: sprockets
+== Running manipulator: directory_indexes
+== Running manipulator: sitemap_move_files
+== Running manipulator: collections
+== LiveReload accepting connections from ws://10.0.1.30:35729
+== Request: /javascripts/application.js
+== Finishing Request: javascripts/application.js (0.0s)
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /fonts/social/social.woff
+== Request: /images/favicon.ico
+== Request: /work/alfred-app/
+== Finishing Request: work/alfred-app/index.html (0.04s)
+== Request: /images/work/alfred-app/alfred-site-1.jpg
+== Request: /images/work/alfred-app/alfred-logos.png
+== Request: /images/work/alfred-app/alfred-remote-1.jpg
+== Request: /images/work/alfred-app/alfred-icons.png
+== Request: /images/work/alfred-app/alfred-mobile.png
+== Request: /images/work/alfred-app/alfred-remote-1-small.jpg
+== Request: /images/work/alfred-app/alfred-site-1-small.jpg
+== Request: /about/
+== Finishing Request: about/index.html (0.04s)
+== Request: /music/
+== Finishing Request: music/index.html (0.02s)
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Finishing Request: index.html (0.04s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /work/rebellion-games/
+== Finishing Request: work/rebellion-games/index.html (0.03s)
+== Request: /images/work/rebellion-games/rebellion-site-1.jpg
+== Request: /images/work/rebellion-games/rebellion-site-1-small.jpg
+== Request: /images/work/rebellion-games/rebellion-mobile.png
+== Request: /images/work/rebellion-games/rebellion-site-2.jpg
+== Request: /images/work/rebellion-games/rebellion-site-2-small.jpg
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.01s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Finishing Request: index.html (0.04s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Request: /work/alton-convent-school/
+== Finishing Request: work/alton-convent-school/index.html (0.03s)
+== Request: /images/work/alton-convent-school/alton-convent-site-2.jpg
+== Request: /images/work/alton-convent-school/alton-convent-site-1.jpg
+== Request: /images/work/alton-convent-school/alton-convent-mobile.png
+== Request: /images/work/alton-convent-school/alton-convent-site-3.jpg
+== Request: /images/work/alton-convent-school/alton-convent-site-5.jpg
+== Request: /images/work/alton-convent-school/alton-convent-site-4.jpg
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Finishing Request: index.html (0.04s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Request: /work/become-recruitment/
+== Finishing Request: work/become-recruitment/index.html (0.03s)
+== Request: /images/work/become-recruitment/become-site-1.jpg
+== Request: /images/work/become-recruitment/become-site-2.jpg
+== Request: /images/work/become-recruitment/become-mobile.png
+== Request: /images/work/become-recruitment/become-site-3.jpg
+== Request: /images/work/become-recruitment/become-site-4.jpg
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Finishing Request: index.html (0.04s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Request: /work/workplace-concepts/
+== Finishing Request: work/workplace-concepts/index.html (0.03s)
+== Request: /images/work/workplace-concepts/workplace-site-1.jpg
+== Request: /images/work/workplace-concepts/workplace-site-2.jpg
+== Request: /images/work/workplace-concepts/workplace-site-3.jpg
+== Request: /images/work/workplace-concepts/workplace-site-4.jpg
+== Request: /images/work/workplace-concepts/workplace-mobile.png
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Finishing Request: index.html (0.05s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Request: /work/babble-ink/
+== Finishing Request: work/babble-ink/index.html (0.03s)
+== Request: /images/work/babble-ink/babbleink-ipad-2.png
+== Request: /images/work/babble-ink/babbleink-ipad-1.png
+== Request: /images/work/babble-ink/babbleink-ipad-3.png
+== Request: /images/work/babble-ink/babbleink-ipad-4.png
+== Request: /images/work/babble-ink/babbleink-site-1.jpg
+== Request: /images/work/babble-ink/babbleink-site-2.jpg
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Finishing Request: index.html (0.05s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.01s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.01s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Request: /work/hip-hop-quoted/
+== Finishing Request: work/hip-hop-quoted/index.html (0.03s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Request: /
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Finishing Request: index.html (0.05s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== LiveReload browser disconnected
+== Activating: file_watcher
+== Activating: front_matter
+== Activating: data
+== Activating: inline_url_rewriter
+== Activating: sitemap_ondisk
+== Activating: sitemap_import
+== Activating: sitemap_endpoint
+== Activating: sitemap_proxies
+== Activating: sitemap_redirects
+== Activating: sitemap_move_files
+== Activating: sitemap_ignore
+== Activating: show_exceptions
+== Activating: external_helpers
+== Activating: erb_renderer
+== Activating: coffee_renderer
+== Activating: haml_renderer
+== Activating: sass_renderer
+== Activating: markdown_renderer
+== Failed Activation `liquid_renderer` : cannot load such file -- liquid
+== Failed Activation `slim_renderer` : cannot load such file -- slim
+== Failed Activation `less_renderer` : cannot load such file -- less
+== Failed Activation `stylus_renderer` : cannot load such file -- stylus
+== Activating: default_helpers
+== Activating: lorem
+== Activating: routing
+== Activating: collections
+== Activating: sprockets
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): work-template.html.erb
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Reading: Local config: config.rb
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Activating: directory_indexes
+== Activating: livereload
+Loaded extensions:
+== Extension: file_watcher
+== Extension: front_matter
+== Extension: data
+== Extension: inline_url_rewriter
+== Extension: sitemap_ondisk
+== Extension: sitemap_import
+== Extension: sitemap_endpoint
+== Extension: sitemap_proxies
+== Extension: sitemap_redirects
+== Extension: sitemap_move_files
+== Extension: sitemap_ignore
+== Extension: show_exceptions
+== Extension: external_helpers
+== Extension: erb_renderer
+== Extension: coffee_renderer
+== Extension: haml_renderer
+== Extension: sass_renderer
+== Extension: markdown_renderer
+== Extension: default_helpers
+== Extension: lorem
+== Extension: routing
+== Extension: collections
+== Extension: sprockets
+== Extension: directory_indexes
+== Extension: livereload
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): work-template.html.erb
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Requesting resource list rebuilding: touched_file
+== Requesting resource list rebuilding: registered_new_manipulator_front_matter
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ondisk
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_import
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_endpoint
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_proxies
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_redirects
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_move_files
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ignore
+== Requesting resource list rebuilding: registered_new_manipulator_routing
+== Requesting resource list rebuilding: registered_new_manipulator_collections
+== Requesting resource list rebuilding: registered_new_manipulator_sprockets
+== Requesting resource list rebuilding: registered_new_manipulator_directory_indexes
+== Rebuilding resource list
+== Running manipulator: sitemap_ondisk
+== Running manipulator: sitemap_endpoint
+== Running manipulator: sitemap_proxies
+== Running manipulator: sitemap_redirects
+== Running manipulator: sitemap_ignore
+== Running manipulator: sitemap_import
+== Running manipulator: routing
+== Running manipulator: front_matter
+== Running manipulator: sprockets
+== Activating: file_watcher
+== Activating: front_matter
+== Activating: data
+== Activating: inline_url_rewriter
+== Activating: sitemap_ondisk
+== Activating: sitemap_import
+== Activating: sitemap_endpoint
+== Activating: sitemap_proxies
+== Activating: sitemap_redirects
+== Activating: sitemap_move_files
+== Activating: sitemap_ignore
+== Activating: show_exceptions
+== Activating: external_helpers
+== Activating: erb_renderer
+== Activating: coffee_renderer
+== Activating: haml_renderer
+== Activating: sass_renderer
+== Activating: markdown_renderer
+== Failed Activation `liquid_renderer` : cannot load such file -- liquid
+== Failed Activation `slim_renderer` : cannot load such file -- slim
+== Failed Activation `less_renderer` : cannot load such file -- less
+== Failed Activation `stylus_renderer` : cannot load such file -- stylus
+== Activating: default_helpers
+== Activating: lorem
+== Activating: routing
+== Activating: collections
+== Activating: sprockets
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): work-template.html.erb
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Reading: Local config: config.rb
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Activating: directory_indexes
+== Activating: livereload
+Loaded extensions:
+== Extension: file_watcher
+== Extension: front_matter
+== Extension: data
+== Extension: inline_url_rewriter
+== Extension: sitemap_ondisk
+== Extension: sitemap_import
+== Extension: sitemap_endpoint
+== Extension: sitemap_proxies
+== Extension: sitemap_redirects
+== Extension: sitemap_move_files
+== Extension: sitemap_ignore
+== Extension: show_exceptions
+== Extension: external_helpers
+== Extension: erb_renderer
+== Extension: coffee_renderer
+== Extension: haml_renderer
+== Extension: sass_renderer
+== Extension: markdown_renderer
+== Extension: default_helpers
+== Extension: lorem
+== Extension: routing
+== Extension: collections
+== Extension: sprockets
+== Extension: directory_indexes
+== Extension: livereload
+== Running manipulator: directory_indexes
+== Running manipulator: sitemap_move_files
+== Running manipulator: collections
+== LiveReload accepting connections from ws://10.0.1.30:35729
+== Request: /
+== Finishing Request: index.html (0.04s)
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): work-template.html.erb
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Requesting resource list rebuilding: touched_file
+== Requesting resource list rebuilding: registered_new_manipulator_front_matter
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ondisk
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_import
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_endpoint
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_proxies
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_redirects
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_move_files
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ignore
+== Requesting resource list rebuilding: registered_new_manipulator_routing
+== Requesting resource list rebuilding: registered_new_manipulator_collections
+== Requesting resource list rebuilding: registered_new_manipulator_sprockets
+== Requesting resource list rebuilding: registered_new_manipulator_directory_indexes
+== Rebuilding resource list
+== Running manipulator: sitemap_ondisk
+== Running manipulator: sitemap_endpoint
+== Running manipulator: sitemap_proxies
+== Running manipulator: sitemap_redirects
+== Running manipulator: sitemap_ignore
+== Running manipulator: sitemap_import
+== Running manipulator: routing
+== Running manipulator: front_matter
+== Running manipulator: sprockets
+== Running manipulator: directory_indexes
+== Running manipulator: sitemap_move_files
+== Running manipulator: collections
+== LiveReload accepting connections from ws://10.0.1.30:35729
+== Request: /
+== Finishing Request: index.html (0.03s)
+== Request: /stylesheets/site.css
+== Finishing Request: stylesheets/site.css (0.0s)
+== Request: /javascripts/gridset-overlay.js
+== Finishing Request: javascripts/gridset-overlay.js (0.0s)
+== LiveReload browser connected
+== Request: /images/work/rebellion-games/rebellion-logo.svg
+== Request: /javascripts/application.js
+== Finishing Request: javascripts/application.js (0.0s)
+== Finishing Request: images/work/rebellion-games/rebellion-logo.svg (0.0s)
+LiveReload Browser URL: {"command":"hello","protocols":["http://livereload.com/protocols/official-6","http://livereload.com/protocols/official-7"],"ver":"2.0.8"}
+== Request: /images/work/alfred-app/alfred-logo.svg
+== Finishing Request: images/work/alfred-app/alfred-logo.svg (0.0s)
+== Request: /images/work/alton-convent-school/alton-convent-logo.svg
+== Finishing Request: images/work/alton-convent-school/alton-convent-logo.svg (0.0s)
+== Request: /images/work/become-recruitment/become-logo.svg
+== Finishing Request: images/work/become-recruitment/become-logo.svg (0.0s)
+== Request: /images/work/mumbu-app/mumbu-logo.svg
+== Finishing Request: images/work/mumbu-app/mumbu-logo.svg (0.0s)
+== Request: /images/work/workplace-concepts/workplace-logo.svg
+== Finishing Request: images/work/workplace-concepts/workplace-logo.svg (0.0s)
+== Request: /images/work/babble-ink/babbleink-logo.svg
+== Finishing Request: images/work/babble-ink/babbleink-logo.svg (0.0s)
+== Request: /images/work/on-target-recruitment/ontarget-logo.svg
+== Finishing Request: images/work/on-target-recruitment/ontarget-logo.svg (0.0s)
+== Request: /images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Finishing Request: images/work/hip-hop-quoted/hip-hop-quoted-logo.svg (0.0s)
+== Request: /fonts/social/social.woff
+== Request: /images/favicon.ico
+== LiveReload browser disconnected
+== Activating: file_watcher
+== Activating: front_matter
+== Activating: data
+== Activating: inline_url_rewriter
+== Activating: sitemap_ondisk
+== Activating: sitemap_import
+== Activating: sitemap_endpoint
+== Activating: sitemap_proxies
+== Activating: sitemap_redirects
+== Activating: sitemap_move_files
+== Activating: sitemap_ignore
+== Activating: show_exceptions
+== Activating: external_helpers
+== Activating: erb_renderer
+== Activating: coffee_renderer
+== Activating: haml_renderer
+== Activating: sass_renderer
+== Activating: markdown_renderer
+== Failed Activation `liquid_renderer` : cannot load such file -- liquid
+== Failed Activation `slim_renderer` : cannot load such file -- slim
+== Failed Activation `less_renderer` : cannot load such file -- less
+== Failed Activation `stylus_renderer` : cannot load such file -- stylus
+== Activating: default_helpers
+== Activating: lorem
+== Activating: routing
+== Activating: collections
+== Activating: sprockets
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): work-template.html.erb
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Reading: Local config: config.rb
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_page
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Requesting resource list rebuilding: first_run_change_proxy
+== Activating: directory_indexes
+== Activating: livereload
+Loaded extensions:
+== Extension: file_watcher
+== Extension: front_matter
+== Extension: data
+== Extension: inline_url_rewriter
+== Extension: sitemap_ondisk
+== Extension: sitemap_import
+== Extension: sitemap_endpoint
+== Extension: sitemap_proxies
+== Extension: sitemap_redirects
+== Extension: sitemap_move_files
+== Extension: sitemap_ignore
+== Extension: show_exceptions
+== Extension: external_helpers
+== Extension: erb_renderer
+== Extension: coffee_renderer
+== Extension: haml_renderer
+== Extension: sass_renderer
+== Extension: markdown_renderer
+== Extension: default_helpers
+== Extension: lorem
+== Extension: routing
+== Extension: collections
+== Extension: sprockets
+== Extension: directory_indexes
+== Extension: livereload
+== Change (#<Set: {:data}>): work.yml
+== Rebuilding resource list
+== Change (#<Set: {:source}>): index.html.erb
+== Change (#<Set: {:source}>): _logo.html.erb
+== Change (#<Set: {:source}>): sitemap.xml.erb
+== Change (#<Set: {:source}>): favicon.ico
+== Change (#<Set: {:source}>): images/favicon.ico
+== Change (#<Set: {:source}>): images/middleman.png
+== Change (#<Set: {:source}>): images/background.png
+== Change (#<Set: {:source}>): images/prev.svg
+== Change (#<Set: {:source}>): images/logo.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-mobile.png
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-device.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-logo.svg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-4.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-2.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-3.jpg
+== Change (#<Set: {:source}>): images/work/become-recruitment/become-site-1.jpg
+== Change (#<Set: {:source}>): images/work/backpage-football/backpagefootball-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-device.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.png
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-mobile.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-5.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-4.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-logo.svg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-3.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-2.jpg
+== Change (#<Set: {:source}>): images/work/alton-convent-school/alton-convent-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-mobile.png
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-4.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-3.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-2.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-1.jpg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-logo.svg
+== Change (#<Set: {:source}>): images/work/on-target-recruitment/ontarget-site-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-4.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-1.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-2.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-site-3.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.jpg
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-mobile.png
+== Change (#<Set: {:source}>): images/work/hip-hop-quoted/hip-hop-quoted-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-logo.svg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-4.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-2.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-3.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-site-1.jpg
+== Change (#<Set: {:source}>): images/work/workplace-concepts/workplace-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-header.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-1.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-mobile.png
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-device.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-site-2-small.jpg
+== Change (#<Set: {:source}>): images/work/rebellion-games/rebellion-logo.svg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-2.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-site-1.jpg
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-4.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-2.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-3.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-ipad-1.png
+== Change (#<Set: {:source}>): images/work/babble-ink/babbleink-logo.svg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-4.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-5.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-2.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-3.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-site-1.jpg
+== Change (#<Set: {:source}>): images/work/mumbu-app/mumbu-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/Untitled-7.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logo.svg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-remote-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-logos.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-icons.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-site-1-small.jpg
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-mobile.png
+== Change (#<Set: {:source}>): images/work/alfred-app/alfred-device.jpg
+== Change (#<Set: {:source}>): images/next.svg
+== Change (#<Set: {:source}>): images/menu-close.svg
+== Change (#<Set: {:source}>): images/menu-icon.svg
+== Change (#<Set: {:source}>): images/logo.svg
+== Change (#<Set: {:source}>): images/background-music.jpg
+== Change (#<Set: {:source}>): images/background-home.jpg
+== Change (#<Set: {:source}>): work-template.html.erb
+== Change (#<Set: {:source}>): 404.html
+== Change (#<Set: {:source}>): music.html.erb
+== Change (#<Set: {:source}>): _header.html.erb
+== Change (#<Set: {:source}>): layouts/layout.erb
+== Change (#<Set: {:source}>): _footer.html.erb
+== Change (#<Set: {:source}>): javascripts/reactize.min.js
+== Change (#<Set: {:source}>): javascripts/gridset-overlay.js
+== Change (#<Set: {:source}>): javascripts/turbo-react.min.js
+== Change (#<Set: {:source}>): javascripts/all.js
+== Change (#<Set: {:source}>): javascripts/turbolinks.js
+== Change (#<Set: {:source}>): javascripts/html5shiv.min.js
+== Change (#<Set: {:source}>): javascripts/layout.engine.min.js
+== Change (#<Set: {:source}>): javascripts/application.js
+== Change (#<Set: {:source}>): fonts/social/social.ttf
+== Change (#<Set: {:source}>): fonts/social/social.eot
+== Change (#<Set: {:source}>): fonts/social/social.woff
+== Change (#<Set: {:source}>): fonts/social/social.svg
+== Change (#<Set: {:source}>): _work_navigation.html.erb
+== Change (#<Set: {:source}>): about.html.erb
+== Change (#<Set: {:source}>): stylesheets/common.scss
+== Change (#<Set: {:source}>): stylesheets/o_gridset.scss
+== Change (#<Set: {:source}>): stylesheets/site.css.scss
+== Change (#<Set: {:source}>): stylesheets/normalize.scss
+== Requesting resource list rebuilding: touched_file
+== Requesting resource list rebuilding: registered_new_manipulator_front_matter
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ondisk
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_import
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_endpoint
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_proxies
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_redirects
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_move_files
+== Requesting resource list rebuilding: registered_new_manipulator_sitemap_ignore
+== Requesting resource list rebuilding: registered_new_manipulator_routing
+== Requesting resource list rebuilding: registered_new_manipulator_collections
+== Requesting resource list rebuilding: registered_new_manipulator_sprockets
+== Requesting resource list rebuilding: registered_new_manipulator_directory_indexes
+== Rebuilding resource list
+== Running manipulator: sitemap_ondisk
+== Running manipulator: sitemap_endpoint
+== Running manipulator: sitemap_proxies
+== Running manipulator: sitemap_redirects
+== Running manipulator: sitemap_ignore
+== Running manipulator: sitemap_import
+== Running manipulator: routing
+== Running manipulator: front_matter
+== Running manipulator: sprockets
+== Running manipulator: directory_indexes
+== Running manipulator: sitemap_move_files
+== Running manipulator: collections
+== LiveReload accepting connections from ws://192.168.0.43:35729
+== Request: /
+== Finishing Request: index.html (0.05s)

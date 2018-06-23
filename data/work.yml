@@ -208,7 +208,7 @@ clients:
     weight: 7
     url: babble-ink
     link: http://inventences.com/
-    intro: "BabbleINK is a games company that is the brainchild of artist Joshua Whiskey. He came to <a href='http://kyan.com'>Kyan</a> with some rough ideas for two cryptic word games based on the same board game. We took his existing branding and created a fun, colourful interface while solving a lot of complex UI issues around game mechanics."
+    intro: "BabbleINK is a games company that is the brainchild of artist Joshua Wiskey. He came to <a href='http://kyan.com'>Kyan</a> with some rough ideas for two cryptic word games based on the same board game. We took his existing branding and created a fun, colourful interface while solving a lot of complex UI issues around game mechanics."
     testimonial:
     cite:
     services: 
