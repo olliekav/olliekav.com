@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 gem "middleman"
 gem 'middleman-sprockets', github: 'middleman/middleman-sprockets', branch: 'master'
-gem "turbolinks", github: 'rails/turbolinks', branch: 'master', :require => false
+gem "turbolinks", :require => false
 gem 'middleman-livereload'
 gem "nokogiri"
 gem "redcarpet"

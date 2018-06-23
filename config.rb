@@ -1,5 +1,3 @@
-Time.zone = "US/Eastern"
-
 ###
 # Compass
 ###
