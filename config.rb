@@ -32,11 +32,6 @@ end
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
-# Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload, no_swf: true
-end
-
 # Methods defined in the helpers block are available in templates
 helpers do
   # Set the page title
@@ -91,6 +86,8 @@ helpers do
 end
 
 activate :directory_indexes
+
+activate :sprockets
 
 # Build-specific configuration
 configure :build do

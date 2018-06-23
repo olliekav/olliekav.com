@@ -77,7 +77,6 @@ clients:
     featured: true
     weight: 3
     url: alton-convent-school
-    link: http://altonconvent.org.uk/
     intro: "Alton Convent is one of the top independent schools in the UK and needed a new web presence to reflect this. Using Wordpress as a foundation I built them a flexible CMS sitting behind a beautiful photo-led design and a fully responsive front-end build. The Convent’s design is now a benchmark for other premium schools and has received compliments from both staff and parents."
     home_intro: "A design benchmark for independent schools in the UK."
     testimonial:

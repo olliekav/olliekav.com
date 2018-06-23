@@ -154,7 +154,7 @@ a {
   font-size: 1em;
   font-weight: 300;
   margin: 0 auto;
-  padding:0.8em 1em 0.6em;
+  padding:0.8em 1em;
   text-align: center;
   text-transform: uppercase;
   @include box-sizing(border-box);
@@ -582,7 +582,8 @@ a {
       margin: 0;
       a {
         display: inline-block;
-        padding: 0.2em 0.5em 0.2em;
+        line-height: 1;
+        padding: 0.2em 0.5em .4em;
       }
       span {
         display: inline-block;

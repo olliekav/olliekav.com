@@ -28,7 +28,9 @@ work_item: true
             <li><%= item %></li>
           <% end %>
         </ul>
-        <%= link_to("Live project", client.link, class: "button", target: "_blank") %>
+        <% if client.link %>
+          <%= link_to("Live project", client.link, class: "button", target: "_blank") %>
+        <% end %>
       </div>
     <% end %>
   </div>

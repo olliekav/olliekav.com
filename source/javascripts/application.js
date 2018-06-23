@@ -26,6 +26,8 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
   var ready;
   ready = function() {
 
+    console.log('what!');
+
     body = document.querySelector('body'),
     html = document.querySelector('html'),
     wrapper = document.getElementById("wrapper"),
@@ -44,7 +46,6 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     window.addEventListener('scroll', function() {
       if(window.pageYOffset >= 50 && fired === false) {
         addClass(body, 'scrolling');
-        //fired = true;
       }
       else {
         removeClass(body, 'scrolling');
@@ -74,9 +75,8 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
   }
 
   document.addEventListener("turbolinks:load", function() {
-    ready();
     window.addEventListener("click", respNav);
-    window.scrollTo(0,0);
+    ready();
   }, false);
 
 }
