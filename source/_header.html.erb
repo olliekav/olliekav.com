@@ -8,10 +8,11 @@
     </ul>
   </nav>
   <ul class="social-icons">
-    <li><%= link_to("<span>Dribbble</span>", "https://dribbble.com/olliekav", class: "icon-dribbble") %></li>
-    <li><%= link_to("<span>Twitter</span>", "https://twitter.com/olliekav", class: "icon-twitter") %></li>
-    <li><%= link_to("<span>Github</span>", "https://github.com/olliekav", class: "icon-github-circled") %></li>
-    <li><%= link_to("<span>Soundcloud</span>", "https://soundcloud.com/olliekav", class: "icon-soundcloud") %></li>
+    <li><%= link_to("<span>Dribbble</span>#{svg('icons/dribbble')}".html_safe, "https://dribbble.com/olliekav", target: "_blank") %></li>
+    <li><%= link_to("<span>Twitter</span>#{svg('icons/twitter')}".html_safe, "https://twitter.com/olliekav", target: "_blank") %></li>
+    <li><%= link_to("<span>Github</span>#{svg('icons/github')}".html_safe, "https://github.com/olliekav", target: "_blank") %></li>
+    <li><%= link_to("<span>Soundcloud</span>#{svg('icons/soundcloud')}".html_safe, "https://soundcloud.com/olliekav", target: "_blank") %></li>
+    <li><%= link_to("<span>Mixcloud</span>#{svg('icons/mixcloud')}".html_safe, "https://mixcloud.com/olliekav", target: "_blank") %></li>
   </ul> 
   <p class="copy">© <%= Time.now.year %></p>
 </header>

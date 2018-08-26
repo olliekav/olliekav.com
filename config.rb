@@ -47,7 +47,7 @@ helpers do
     if content_for?(:description)
       "#{yield_content(:description)}"
     else
-      "Hi, I'm Ollie, a designer and front end developer currently residing in Ottawa, Canada."
+      "Hi, I'm Ollie, a creative designer and front end developer currently residing in Ottawa, Canada."
     end
   end
   # Active nav items
@@ -82,6 +82,12 @@ helpers do
       content = content.join('') if content.respond_to?(:each)
       super(name, content, options, &block)
     end
+  end
+  def svg(name)
+    root = Middleman::Application.root
+    file_path = "#{root}/source/images/#{name}.svg"
+    return File.read(file_path) if File.exists?(file_path)
+    '(not found)'
   end
 end
 

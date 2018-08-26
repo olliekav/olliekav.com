@@ -1,10 +1,104 @@
 clients:
+  - name: GovGuide
+    page_title: Essential<br> Resource
+    featured: true
+    weight: 1
+    url: gov-guide
+    link: https://govguide.ca/greenchamber/ahmed-d-hussen/
+    intro: "GovGuide is a searchable & filterable database of all Canadian MPs & Sentors. I led the Design & Development on this project with an extensive knowledge of wordpress to create a full faceted search with custom fields that could be easily customised and extended. The design had to be flexible enough to support both the Green & Red Chambers but all contained within one Wordpress install for easily switching between Senators & MPS."
+    home_intro: "The essential resource for Parliament Hill"
+    testimonial:
+    cite:
+    services: 
+      - UX design
+      - Web design
+      - Responsively build
+      - WordPress CMS Multi-Site
+      - Faceted Search & Filtering
+    logo: gov-guide-logo.svg
+    device_image: 
+    images: 
+      - image: 
+          name: gov-guide-site-1.jpg
+          css_class: full screen
+      - image: 
+          name: gov-guide-mobile.png
+          css_class: full
+      - image: 
+          name: gov-guide-site-2.jpg
+          css_class: full screen
+      - image: 
+          name: gov-guide-site-3.jpg
+          css_class: full screen
+  - name: MVL Architects
+    page_title: Acclaimed<br> Design
+    featured: true
+    weight: 2
+    url: mvl-architects
+    link: https://www.mvl-architects.co.uk/
+    intro: "Chris from MVL contacted Capra in need of help refreshing their website. Adding new projects had become a real pain and the current website didn't reflect the dynamic, professional approach to projects. I came up with a bold, photo-led design that really showed off the companies acclaimed design skills on a broad range of projects. The Wordpress build enables Chris and his team to easily add new work and assign these into categories for prospective clients to sort under."
+    home_intro: "Acclaimed architectural design"
+    testimonial:
+    cite:
+    services: 
+      - UX design
+      - Web design
+      - Responsively build
+      - WordPress CMS Multi-Site
+      - 'Agency: <a href="https://thisiscapra.com" target="_blank">Capra Design</a>'
+    logo: mvl-logo.svg
+    device_image: 
+    images: 
+      - image: 
+          name: mvl-site-1.jpg
+          css_class: full screen
+      - image: 
+          name: mvl-mobile.png
+          css_class: full
+      - image: 
+          name: mvl-site-2.jpg
+          css_class: full screen
+      - image: 
+          name: mvl-site-3.jpg
+          css_class: full screen
+  - name: Glowfair Festival
+    page_title: Ottawa<br> Block Party
+    featured: true
+    weight: 3
+    url: glowfair-festival
+    link: http://glowfair.thisiscapra.com
+    intro: "GlowFair is a festival based in Ottawa that takes over 10 blocks with a magical world of music+light+art. They approached Capra to refresh their online identity and re-build the wordpress site into a multi-site capable of supporting future events and archiving the past ones. The design had to convey the expressive feel of the festival whilst providing an easy, accessible information hub for people attending the event."
+    home_intro: "A block party unlike anything you've ever experienced!"
+    testimonial:
+    cite:
+    services: 
+      - Icon design
+      - UX design
+      - Web design
+      - Responsively build
+      - WordPress CMS Multi-Site
+      - 'Agency: <a href="https://thisiscapra.com" target="_blank">Capra Design</a>'
+    logo: glowfair-logo.svg
+    device_image: 
+    images: 
+      - image: 
+          name: glowfair-festival-site-1.jpg
+          css_class: full screen
+      - image: 
+          name: glowfair-festival-mobile.png
+          css_class: full
+      - image: 
+          name: glowfair-festival-site-2.jpg
+          css_class: full screen
+      - image: 
+          name: glowfair-festival-site-3.jpg
+          css_class: full screen
   - name: Alfred App
     page_title: Increased<br> Productivity
     featured: true
-    weight: 1
+    weight: 4
     url: alfred-app
-    link: http://alfredapp.com
+    link: https://alfredapp.com
     intro: "Alfred App has become one of the most popular productivity tools on OSX with thousands of users worldwide and awards from all the top industry publications. I've worked with Andrew and Vero from initial conception of the app looking after branding, web design, iconography and application UI. The latest design work has been the launch of Alfred Remote for iOS."
     home_intro: "Designing the most popular productivity tool on OSX."
     testimonial:
@@ -43,7 +137,7 @@ clients:
   - name: 'Rebellion Games'
     page_title: 'Join the<br> Rebellion'
     featured: true
-    weight: 2
+    weight: 5
     url: rebellion-games
     link: http://www.rebellion.co.uk/
     intro: "Rebellion came to <a href='http://kyan.com'>Kyan</a> looking for a fresh new design that reflected them as a company. They also wanted a highly customisable CMS system so they could roll out new game releases. As Senior creative on this project I looked after UI and design for both the main website and the CMS. The website has been a great success and given Rebellion the flexibility they need to expand globally."
@@ -53,7 +147,7 @@ clients:
     services: 
       - Web design
       - Art Direction
-      - 'Agency: <a href="http://kyan.com">Kyan</a>'
+      - 'Agency: <a href="https://kyan.com" target="_blank">Kyan</a>'
     logo: rebellion-logo.svg
     device_image: rebellion-device.jpg
     images: 
@@ -75,7 +169,7 @@ clients:
   - name: Alton Convent School
     page_title: Beautifully<br> Educated
     featured: true
-    weight: 3
+    weight: 6
     url: alton-convent-school
     intro: "Alton Convent is one of the top independent schools in the UK and needed a new web presence to reflect this. Using Wordpress as a foundation I built them a flexible CMS sitting behind a beautiful photo-led design and a fully responsive front-end build. The Convent’s design is now a benchmark for other premium schools and has received compliments from both staff and parents."
     home_intro: "A design benchmark for independent schools in the UK."
@@ -110,7 +204,7 @@ clients:
   - name: Become Recruitment
     page_title: Become<br> Inspired
     featured: true
-    weight: 4
+    weight: 7
     url: become-recruitment
     link: http://becomerecruitment.com/
     intro: "Established in 1997, Become is a leading creative recruitment agency and digital recruitment agency with offices in the UK, Australia and Hong Kong. They needed a design that would reflect their standing in the industry and attract new clients. Using strong brand guidelines, we created a design that stands out from other recruitment agencies."
@@ -120,7 +214,7 @@ clients:
     services: 
       - Web Design
       - Application design
-      - 'Agency: <a href="http://kyan.com">Kyan</a>'
+      - 'Agency: <a href="https://kyan.com" target="_blank">Kyan</a>'
     logo: become-logo.svg
     device_image: become-device.jpg
     images: 
@@ -141,7 +235,7 @@ clients:
           css_class: col-2-2 screen
   - name: Mumbu
     page_title: Changing<br> Business
-    weight: 5
+    weight: 8
     url: mumbu-app
     link: http://mumbu.com
     intro: "Mumbu wants to change how businesses and people find each other. As Senior Creative on this project I led the UI/UX and design team to create an innovative Application UI where recruiters could  find candidates. The product has been well received by both job seekers and businesses and continues to expand into new sectors."
@@ -153,7 +247,7 @@ clients:
       - Responsive build
       - Marketing materials
       - Iconography
-      - 'Agency: <a href="http://kyan.com">Kyan</a>'
+      - 'Agency: <a href="https://kyan.com" target="_blank">Kyan</a>'
     logo: mumbu-logo.svg
     images: 
       - image: 
@@ -173,7 +267,7 @@ clients:
           css_class: col-2-2 screen
   - name: Workplace Concepts
     page_title: Project<br> Managed
-    weight: 6
+    weight: 9
     url: workplace-concepts
     link: http://www.workplaceconcepts.co.uk/
     intro: "Arie at Workplace Concepts approached <a href='http://kyan.com'>Kyan</a> looking for complete overhaul of his online presence using his new branding. Using the strong photography from his projects I designed and built a simple but powerful design that would better reflect his approach to office refurbishment project management."
@@ -184,7 +278,7 @@ clients:
       - Art Direction
       - Responsive build
       - Rails back-end
-      - 'Agency: <a href="http://kyan.com">Kyan</a>'
+      - 'Agency: <a href="https://kyan.com" target="_blank">Kyan</a>'
     logo: workplace-logo.svg
     images: 
       - image: 
@@ -204,10 +298,10 @@ clients:
           css_class: col-2-2 screen
   - name: Inventences
     page_title: Glorious<br> Sentences
-    weight: 7
+    weight: 10
     url: babble-ink
     link: http://inventences.com/
-    intro: "BabbleINK is a games company that is the brainchild of artist Joshua Wiskey. He came to <a href='http://kyan.com'>Kyan</a> with some rough ideas for two cryptic word games based on the same board game. We took his existing branding and created a fun, colourful interface while solving a lot of complex UI issues around game mechanics."
+    intro: "BabbleINK is a games company that is the brainchild of artist Joshua Wiskey. He came to <a href='https://kyan.com' target='_blank'>Kyan</a> with some rough ideas for two cryptic word games based on the same board game. We took his existing branding and created a fun, colourful interface while solving a lot of complex UI issues around game mechanics."
     testimonial:
     cite:
     services: 
@@ -215,6 +309,7 @@ clients:
       - Web design
       - Responsive build
       - Project management
+      - 'Agency: <a href="https://kyan.com" target="_blank">Kyan</a>'
     logo: babbleink-logo.svg
     images: 
       - image: 
@@ -237,7 +332,7 @@ clients:
           css_class: col-2-2 screen
   - name: On-Target Recruitment
     page_title: Leading<br> Recruiter
-    weight: 8
+    weight: 11
     url: on-target-recruitment
     link: http://www.otrsales.co.uk/
     intro: "The recruitment industry can be quite a stale place design-wise but On-Target wanted to change this. They needed to convey a lot of information and thousands of job listings in a simple but impactful way. I created a clean user interface that solved the navigation problems they had with the old site. Backed by a powerful CMS On-Target have been able to expand rapidly using the new website as a platform."
@@ -246,7 +341,7 @@ clients:
     services: 
       - Web design
       - Art Direction
-      - 'Agency: <a href="http://kyan.com">Kyan</a>'
+      - 'Agency: <a href="https://kyan.com" target="_blank">Kyan</a>'
     logo: ontarget-logo.svg
     images: 
       - image: 
@@ -287,9 +382,9 @@ clients:
   #         css_class: col-3 screen
   - name: Hip-Hop Quoted
     page_title: Hip-Hop<br> Quoted
-    weight: 9
+    weight: 12
     url: hip-hop-quoted
-    link: http://hiphopquoted.com
+    link: https://hiphopquoted.com
     intro: "Hip-Hop Quoted is a personal project to explore the intersection between web layouts, typography and art-direction using some of my favourite Hip-Hop quotes. It has been featured on numerous CSS award galleries and well-received amongst the design community. I still actively look it after recently rebuilding it to be fully responsive and refactoring all the HTML and CSS."
     testimonial:
     cite:

@@ -112,7 +112,7 @@ h1 {
   @media screen and (max-width: 1000px) {
     font-size: 13vw;
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     font-size: 16vw;
   }
 }
@@ -151,10 +151,12 @@ a {
   color: $white;
   display: inline-block;
   font-family: $ff-din-round;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 300;
+  height: 3em;
+  line-height: 3em;
   margin: 0 auto;
-  padding:0.8em 1em;
+  padding: 0 2em;
   text-align: center;
   text-transform: uppercase;
   @include box-sizing(border-box);
@@ -165,17 +167,7 @@ a {
     //background-color: darken($dark-grey, 10%);
     color: #fff;
   }
-  @media screen and (max-width: 1175px) {
-    font-size: 0.9em;
-  }
-  @media screen and (max-width: 1075px) {
-    font-size: 0.8em;
-  }
-  @media screen and (max-width: 800px) {
-    font-size: 1.2em;
-  }
   @media screen and (max-width: 400px) {
-    font-size: 1em;
     display: block;
     width: 100%;
   }
@@ -246,9 +238,15 @@ a {
       fill: $mid-grey;
     }
   }
+  @media screen and (max-height: 600px) {
+    padding-bottom: 80%;
+    width: 120px;
+  }
   @media screen and (max-width: 800px) {
     margin: 0 auto;
     max-width: 200px;
+    padding-bottom: 80%;
+    width: 80%;
   }
 }
 .scrolling {
@@ -263,9 +261,15 @@ a {
   ul {
     margin: 1.5em 0 0;
     padding: 0;
+    @media screen and (max-height: 600px) {
+      margin-top: .5em;
+    }
     > li {
       list-style: none;
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 600px) {
+        margin-bottom: 0.2em;
+      }
+      @media screen and (max-height: 600px) {
         margin-bottom: 0.2em;
       }
     }
@@ -292,7 +296,7 @@ a {
   position: absolute;
   right: 0;
   text-align: center;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     margin-top: 1em;
     position: static;
   }
@@ -331,37 +335,27 @@ a {
 // Social
 
 .social-icons {
+  margin: 1.5em 0 0;
+  padding: 0;
+
+  @media screen and (max-height: 600px) {
+    margin-top: .5em;
+  }
+
   span {
     display: none;
   }
-  margin: 1.5em 0 0;
-  padding: 0;
+  svg {
+    fill: $white;
+    height: 24px;
+    width: 24px;
+  }
   li {
     list-style: none;
-    font-size: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.3em;
     text-align: center;
     &:last-child {
       margin: 0;
-    }
-    a {
-      border-radius: 30px;
-      padding: 0.6em;
-    }
-  }
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    font-size: 1.2em;
-  }
-  @media screen and (max-width: 500px) {
-    margin: 1em 0 0;
-    li {
-      margin-bottom: 0.2em;
-    }
-  }
-  @media screen and (max-device-width: 680px) and (orientation: landscape) { 
-    margin: 0.6em 0 0;
-    li {
-      margin-bottom: 0.2em;
     }
   }
 }
@@ -393,31 +387,36 @@ a {
   flex-flow: row wrap;
   height: 100%;
   min-height: 100%;
-  overflow: hidden;
   justify-content: center;
   padding: 0;
   @media screen and (max-width: 700px) {
     overflow: auto;
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     display: block;
     height: auto;
     min-height: auto;
+  }
+  img {
+    width:L 100%;
   }
   article {
     background-color: $dark-grey;
     height: 33.333333333%;
     @include flex(0 0 33.33333333%);
-    flex-direction: column;
-    -ms-flex-direction: column;
+    flex-direction: row wrap;
+    -ms-flex-direction: row wrap;
     text-align: center;
+    @media screen and (max-height: 600px) {
+      height: 50%;
+    }
     @media screen and (max-width: 700px) {
-      flex: 0 0 50%;
+      @include flex(0 0 50%);
       &:last-child {
         display: none;
       }
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       display: block;
       width: 100%;
       &:last-child {
@@ -431,10 +430,10 @@ a {
       display: block;
       height: 100%;
       @include transition(background-color 0.1s linear);
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 600px) {
         display: block;
         height: 220px;
-        padding: 2em 0;
+        padding: 2em;
       }
       img {
         margin: 0 auto;
@@ -473,6 +472,15 @@ a {
       &.wi-babble-ink {
         @include work-item($babbleink-color, 27%);
       }
+      &.wi-gov-guide {
+        @include work-item($gov-guide-color, 40%);
+      }
+      &.wi-mvl-architects {
+        @include work-item($mvl-color, 40%);
+      }
+      &.wi-glowfair-festival {
+        @include work-item($glowfair-color, 40%);
+      }
     }
   }
 }
@@ -480,37 +488,31 @@ a {
 // Work template
 
 .work-item {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     padding-top: 150px;
   }
 }
 .project {
-  @include gs-span(o,3,4,(2,5));
-  @media screen and (max-width: 800px) {
-    @include gs-span(o,2,3,(2,5));
-  } 
-  @media screen and (max-width: 500px) {
+  @include gs-span(o,2,3,(2,5));
+  @media screen and (max-width: 600px) {
     float: none;
     margin: 0;
     width: 100%;
   }
   p {
     font-size: 0.9em;
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       font-size: 1em;
     }
   }
 }
 .services {
   margin-top: -1.35%;
-  @include gs-span(o,5,false,(2,5));
+  @include gs-span(o,4,5,(2,5));
   ul {
     font-size: 0.8em;
   }
-  @media screen and (max-width: 800px) {
-    @include gs-span(o,4,5,(2,5));
-  } 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     float: none;
     margin: 0;
     padding-top: 50px;
@@ -519,13 +521,19 @@ a {
       font-size: 1em;
     }
   }
+  .button {
+    display: inline-block;
+    width: auto;
+
+    @media screen and (max-width: 600px) {
+      display: block;
+      width: 100%;
+    }
+  }
 }
 .gallery {
-  margin-top: 3em;
+  margin-top: 2em;
   max-width: 1000px;
-  @media screen and (max-width: 500px) {
-    margin-top: 2em;
-  }
 }
 .image {
   margin-top: 5em;
@@ -549,7 +557,7 @@ a {
     margin: 0 auto;
     width: 100%;
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     &.col-1, &.col-3, &.col-2-1, &.col-2-2 {
       display: block;
       float: none;
@@ -661,6 +669,15 @@ a {
 .babble-ink {
   @include colour-scheme($babbleink-color, 2%);
 }
+.gov-guide {
+  @include colour-scheme($gov-guide-color, 2%);
+}
+.mvl-architects {
+  @include colour-scheme($mvl-color, 10%);
+}
+.glowfair-festival {
+  @include colour-scheme($glowfair-color, 10%);
+}
 
 // About page
 
@@ -668,7 +685,7 @@ a {
   .about-me {
     @extend %clearfix;
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .about-me {
       padding-top: 150px;
     }
@@ -679,7 +696,7 @@ a {
   .col-2 {
     @include gs-span(o,4,5,(2,5));
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .col-1 {
       @include gs-span(o,1,5,(2,5));
       float: none;
@@ -700,13 +717,12 @@ a {
     margin-bottom: 4em;
   }
   .col-1 {
-    @include gs-span(o,3,4,(2,5));
+    @include gs-span(o,2,3,(2,5));
   }
   .col-2 {
-    @include gs-span(o,5,false,(2,5));
+    @include gs-span(o,4,5,(2,5));
   }
-  @media screen and (max-width: 500px) {
-    padding-top: 100px;
+  @media screen and (max-width: 600px) {
     .col-1 {
       @include gs-span(o,1,5,(2,5));
       float: none;
@@ -751,7 +767,7 @@ a {
           display: none;
         }
       }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 600px) {
         display: block;
         float: none;
         width: 100%;
