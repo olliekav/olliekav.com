@@ -481,6 +481,9 @@ a {
       &.wi-glowfair-festival {
         @include work-item($glowfair-color, 40%);
       }
+      &.wi-water-rangers {
+        @include work-item($water-rangers-color, 40%);
+      }
     }
   }
 }
@@ -677,6 +680,9 @@ a {
 }
 .glowfair-festival {
   @include colour-scheme($glowfair-color, 10%);
+}
+.water-rangers {
+  @include colour-scheme($water-rangers-color, 10%);
 }
 
 // About page

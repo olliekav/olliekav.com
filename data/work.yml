@@ -99,7 +99,7 @@ clients:
     weight: 4
     url: alfred-app
     link: https://alfredapp.com
-    intro: "Alfred App has become one of the most popular productivity tools on OSX with thousands of users worldwide and awards from all the top industry publications. I've worked with Andrew and Vero from initial conception of the app looking after branding, web design, iconography and application UI. The latest design work has been the launch of Alfred Remote for iOS."
+    intro: "Alfred App has become one of the most popular productivity tools on OSX with thousands of users worldwide and awards from all the top industry publications. I've worked with Andrew and Vero from initial conception of the app looking after branding, web design, iconography and application UI. The site has recently had a redesign in house but the v2 design is as below."
     home_intro: "Designing the most popular productivity tool on OSX."
     testimonial:
     cite:
@@ -114,7 +114,10 @@ clients:
     device_image: alfred-device.jpg
     images: 
       - image: 
-          name: alfred-logos.png
+          name: alfred-logos-main.png
+          css_class: full
+      - image: 
+          name: alfred-logos-pref.png
           css_class: full
       - image: 
           name: alfred-site-1.jpg
@@ -122,9 +125,6 @@ clients:
       - image: 
           name: alfred-site-1-small.jpg
           css_class: col-1 screen
-      - image: 
-          name: alfred-icons.png
-          css_class: full
       - image: 
           name: alfred-mobile.png
           css_class: full
@@ -134,6 +134,35 @@ clients:
       - image: 
           name: alfred-remote-1-small.jpg
           css_class: col-1 screen
+  - name: 'Water Rangers'
+    page_title: 'Explore<br> Water'
+    featured: true
+    weight: 5
+    url: water-rangers
+    link: https://www.waterrangers.ca/
+    intro: "Water Rangers was born from taking part in Aquahacking, an event to create apps for the Ottawa River. It was presented during Ottawa's Water Summit, where decision-makers got together to try and create solutions for the river, we received joint first place for our project. I look after the web design and native apps and I'm currently in the process of a large scale re-design and front-end re-build."
+    home_intro: "Citizen science for Rivers & Lakes."
+    testimonial:
+    cite:
+    services: 
+      - Web design
+      - Native App Design
+      - Ruby on Rails build
+      - Responsive build
+      - UI/UX
+      - User Testing
+    logo: water-rangers-logo.svg
+    device_image:
+    images: 
+      - image: 
+          name: water-rangers-site-1.jpg
+          css_class: full screen
+      - image: 
+          name: water-rangers-mobile.png
+          css_class: full
+      - image: 
+          name: water-rangers-site-2.jpg
+          css_class: full screen
   - name: 'Rebellion Games'
     page_title: 'Join the<br> Rebellion'
     featured: true
@@ -166,41 +195,41 @@ clients:
       - image: 
           name: rebellion-site-2-small.jpg
           css_class: col-2-2 screen
-  - name: Alton Convent School
-    page_title: Beautifully<br> Educated
-    featured: true
-    weight: 6
-    url: alton-convent-school
-    intro: "Alton Convent is one of the top independent schools in the UK and needed a new web presence to reflect this. Using Wordpress as a foundation I built them a flexible CMS sitting behind a beautiful photo-led design and a fully responsive front-end build. The Convent’s design is now a benchmark for other premium schools and has received compliments from both staff and parents."
-    home_intro: "A design benchmark for independent schools in the UK."
-    testimonial:
-    cite:
-    services: 
-      - Web design
-      - Responsive build
-      - Marketing materials
-      - Wordpress back-end
-    logo: alton-convent-logo.svg
-    device_image: alton-convent-device.jpg
-    images: 
-      - image: 
-          name: alton-convent-site-1.jpg
-          css_class: full screen
-      - image: 
-          name: alton-convent-site-2.jpg
-          css_class: col-2-1 screen
-      - image: 
-          name: alton-convent-site-3.jpg
-          css_class: col-2-2 screen
-      - image: 
-          name: alton-convent-mobile.png
-          css_class: full
-      - image: 
-          name: alton-convent-site-4.jpg
-          css_class: col-3 screen
-      - image: 
-          name: alton-convent-site-5.jpg
-          css_class: col-1 screen
+  # - name: Alton Convent School
+  #   page_title: Beautifully<br> Educated
+  #   featured: true
+  #   weight: 6
+  #   url: alton-convent-school
+  #   intro: "Alton Convent is one of the top independent schools in the UK and needed a new web presence to reflect this. Using Wordpress as a foundation I built them a flexible CMS sitting behind a beautiful photo-led design and a fully responsive front-end build. The Convent’s design is now a benchmark for other premium schools and has received compliments from both staff and parents."
+  #   home_intro: "A design benchmark for independent schools in the UK."
+  #   testimonial:
+  #   cite:
+  #   services: 
+  #     - Web design
+  #     - Responsive build
+  #     - Marketing materials
+  #     - Wordpress back-end
+  #   logo: alton-convent-logo.svg
+  #   device_image: alton-convent-device.jpg
+  #   images: 
+  #     - image: 
+  #         name: alton-convent-site-1.jpg
+  #         css_class: full screen
+  #     - image: 
+  #         name: alton-convent-site-2.jpg
+  #         css_class: col-2-1 screen
+  #     - image: 
+  #         name: alton-convent-site-3.jpg
+  #         css_class: col-2-2 screen
+  #     - image: 
+  #         name: alton-convent-mobile.png
+  #         css_class: full
+  #     - image: 
+  #         name: alton-convent-site-4.jpg
+  #         css_class: col-3 screen
+  #     - image: 
+  #         name: alton-convent-site-5.jpg
+  #         css_class: col-1 screen
   - name: Become Recruitment
     page_title: Become<br> Inspired
     featured: true
