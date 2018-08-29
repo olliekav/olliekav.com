@@ -5,7 +5,7 @@ clients:
     weight: 1
     url: gov-guide
     link: https://govguide.ca/greenchamber/ahmed-d-hussen/
-    intro: "GovGuide is a searchable & filterable database of all Canadian MPs & Sentors. I led the Design & Development on this project with an extensive knowledge of wordpress to create a full faceted search with custom fields that could be easily customised and extended. The design had to be flexible enough to support both the Green & Red Chambers but all contained within one Wordpress install for easily switching between Senators & MPS."
+    intro: "GovGuide is a searchable & filterable database of all Canadian MPs & Sentors. I led the Design & Development on this project with an extensive knowledge of wordpress to create a full faceted search with custom fields that could be easily customised and extended. The design had to be flexible enough to support both the Green & Red Chambers, but all contained within one Wordpress install for easily switching between Senators & MPS."
     home_intro: "The essential resource for Parliament Hill"
     testimonial:
     cite:
@@ -140,7 +140,7 @@ clients:
     weight: 5
     url: water-rangers
     link: https://www.waterrangers.ca/
-    intro: "Water Rangers was born from taking part in Aquahacking, an event to create apps for the Ottawa River. It was presented during Ottawa's Water Summit, where decision-makers got together to try and create solutions for the river, we received joint first place for our project. I look after the web design and native apps and I'm currently in the process of a large scale re-design and front-end re-build."
+    intro: "Water Rangers was born from taking part in Aquahacking, an event to create apps for the Ottawa River. It was presented during Ottawa's Water Summit, where decision-makers got together to try and create solutions for the river and we received joint first place for our project. I look after the web design and native apps and I'm currently in the process of a large scale re-design and front-end re-build as shown below."
     home_intro: "Citizen science for Rivers & Lakes."
     testimonial:
     cite:
