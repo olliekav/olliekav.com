@@ -10,8 +10,7 @@ clients:
     testimonial:
     cite:
     services: 
-      - UX design
-      - Web design
+      - UX/UI design
       - Responsively build
       - WordPress CMS Multi-Site
       - Faceted Search & Filtering
@@ -41,8 +40,7 @@ clients:
     testimonial:
     cite:
     services: 
-      - UX design
-      - Web design
+      - UX/UI design
       - Responsive build
       - WordPress CMS Multi-Site
       - 'Agency: <a href="https://thisiscapra.com" target="_blank">Capra Design</a>'
@@ -72,9 +70,8 @@ clients:
     testimonial:
     cite:
     services: 
+      - UX/UI design
       - Icon design
-      - UX design
-      - Web design
       - Responsive build
       - WordPress CMS Multi-Site
       - 'Agency: <a href="https://thisiscapra.com" target="_blank">Capra Design</a>'
@@ -105,7 +102,7 @@ clients:
     cite:
     services: 
       - 'Branding & logo design'
-      - Web design
+      - UX/UI design
       - Responsive build
       - Marketing materials
       - Iconography
@@ -145,7 +142,7 @@ clients:
     testimonial:
     cite:
     services: 
-      - Web design
+      - UX/UI design
       - Native App Design
       - Ruby on Rails build
       - Responsive build
@@ -174,7 +171,7 @@ clients:
     testimonial:
     cite:
     services: 
-      - Web design
+      - UX/UI design
       - Art Direction
       - 'Agency: <a href="https://kyan.com" target="_blank">Kyan</a>'
     logo: rebellion-logo.svg
@@ -241,7 +238,7 @@ clients:
     testimonial:
     cite:
     services: 
-      - Web Design
+      - UX/UI design
       - Application design
       - 'Agency: <a href="https://kyan.com" target="_blank">Kyan</a>'
     logo: become-logo.svg
@@ -271,7 +268,7 @@ clients:
     testimonial:
     cite:
     services: 
-      - Web design
+      - UX/UI design
       - Application design
       - Responsive build
       - Marketing materials
@@ -303,7 +300,7 @@ clients:
     testimonial:
     cite:
     services: 
-      - Web design
+      - UX/UI design
       - Art Direction
       - Responsive build
       - Rails back-end
@@ -368,7 +365,7 @@ clients:
     testimonial:
     cite:
     services: 
-      - Web design
+      - UX/UI design
       - Art Direction
       - 'Agency: <a href="https://kyan.com" target="_blank">Kyan</a>'
     logo: ontarget-logo.svg
@@ -419,7 +416,7 @@ clients:
     cite:
     services: 
       - 'Branding & logo design'
-      - Web design
+      - UI design
       - Art direction
       - Responsive build
       - Graphic Design
