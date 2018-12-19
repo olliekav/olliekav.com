@@ -37,7 +37,7 @@ helpers do
   # Set the page title
   def page_title
     if content_for?(:title)
-      "#{strip_tags(yield_content(:title))} - OK Design"
+      "#{strip_tags(yield_content(:title))}"
     else
       "OK Design"
     end

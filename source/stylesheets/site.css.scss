@@ -65,7 +65,7 @@ main {
 section {
   @include box-sizing(border-box);
   opacity: 1;
-  padding: 25% 0;
+  padding: 20% 0;
   width: 100%;
   @include transition(opacity 0.5s ease-in-out);
   .animate-out & {
@@ -106,7 +106,7 @@ h1 {
   font-size: 10vw;
   letter-spacing: -2px;
   line-height: 1.1;
-  margin: 0 0 1em 0;
+  margin: 0 0 .3em 0;
   opacity: 1;
   z-index: -1;
   @media screen and (max-width: 1000px) {
@@ -362,7 +362,7 @@ a {
 
 // Homepage & Work list
 
-.page-index {
+.page-work.work_index {
   height: 100%;
   main {
     height: 100%;
@@ -687,7 +687,7 @@ a {
 
 // About page
 
-.page-about {
+.page-index {
   .about-me {
     @extend %clearfix;
   }
