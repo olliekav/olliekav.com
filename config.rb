@@ -51,8 +51,8 @@ helpers do
     end
   end
   # Active nav items
-  def nav_active(page)
-    current_page.url.start_with?(page) ? {:class => 'active'} : {}
+  def nav_active(path)
+    current_page.path === path ? { class: 'active' } : {}
   end
   # Custom page classes
   def custom_page_classes
@@ -72,10 +72,6 @@ helpers do
   def pretty_date(date)
     date.strftime('%B %d, %Y')
   end
-  # Check if page
-  def page(path)
-    current_page.path == path
-  end
   # Content tag blocks breaking
   def FixedContentHelper
     def content_tag(name, content, options, &block)
@@ -83,6 +79,7 @@ helpers do
       super(name, content, options, &block)
     end
   end
+  # Inline SVGs
   def svg(name)
     root = Middleman::Application.root
     file_path = "#{root}/source/images/#{name}.svg"

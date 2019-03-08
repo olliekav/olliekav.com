@@ -1,0 +1,10 @@
+.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5%;
+  max-width: 120rem;
+}
+
+.grid-row-column {
+
+}
