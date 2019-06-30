@@ -1,12 +1,7 @@
-# If you do not have OpenSSL installed, update
-# the following line to use "http://" instead
 source 'https://rubygems.org'
 
-gem "middleman"
-gem 'middleman-sprockets', github: 'middleman/middleman-sprockets', branch: 'master'
+gem 'middleman', '~> 4.2'
+gem 'middleman-autoprefixer', '~> 2.7'
+gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
+gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 gem "turbolinks", require: false
-gem 'middleman-livereload'
-gem "nokogiri"
-gem "redcarpet"
-gem 'therubyracer'
-gem 'oj'

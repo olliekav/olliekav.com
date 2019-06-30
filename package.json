@@ -1,0 +1,35 @@
+{
+  "name": "olliekav.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development webpack -d --watch --config ./webpack.config.js --color --display-error-details",
+    "build": "NODE_ENV=production webpack -p --config ./webpack.config.js --progress --color --display-error-details --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olliekav/olliekav.com.git"
+  },
+  "author": "Ollie Kavanagh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olliekav/olliekav.com/issues"
+  },
+  "homepage": "https://github.com/olliekav/olliekav.com#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.6.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.1.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5"
+  }
+}

@@ -1,25 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
-    <title><%= page_title %></title>
-    <meta name="description" content="<%= page_description %>"/>
-    <meta name="keywords" content="design, web design, HTML5, CSS3, typography, layout, grids, javascript, ruby, ruby on rails, wordpress, php, middleman app, games, web applications, ottawa"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/images/favicon.ico"></link>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://use.typekit.net/gmc4yrr.css">
-    <%= stylesheet_link_tag "site", data: { turbolinks_track: true }  %>
-    <%= javascript_include_tag "application", data: { turbolinks_track: true } %>
-    <%= yield_content :javascript %>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
   </head>
-  <body id="olliekav">
-    <div class="page-wrapper"<%= custom_page_classes %>>
-      <%= partial "header" unless current_page.data.cv === true %>
-      <main id="main" role="main">
-        <%= yield %>
-      </main>
-      <%= partial "work_navigation" if current_page.data.work_item == true %>
-    </div>
+  <body>
+    <%= partial "header" %>
+    <%= yield %>
+    <%= partial "footer" %>
   </body>
 </html>

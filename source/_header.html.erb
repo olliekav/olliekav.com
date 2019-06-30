@@ -1,21 +1,7 @@
 <header class="site-header">
-  <%= partial "logo" %>
-  <nav class="site-navigation">
+  <nav>
     <ul>
-      <li><%= link_to("Home", "/", nav_active("index.html")) %></li>
-      <li><%= link_to("Work", "/work/", nav_active("work.html")) %></li>
-      <li><%= link_to("Lab", "/lab/", nav_active("lab.html")) %></li>
-      <li><%= link_to("Music", "/music/", nav_active("music.html")) %></li>
+      <li><%= link_to "", "/" %></li>
     </ul>
   </nav>
-  <ul class="social-icons">
-    <li><%= link_to("#{svg('icons/dribbble')}".html_safe, "https://dribbble.com/olliekav", target: "_blank") %></li>
-    <li><%= link_to("#{svg('icons/twitter')}".html_safe, "https://twitter.com/olliekav", target: "_blank") %></li>
-    <li><%= link_to("#{svg('icons/github')}".html_safe, "https://github.com/olliekav", target: "_blank") %></li>
-    <li><%= link_to("#{svg('icons/soundcloud')}".html_safe, "https://soundcloud.com/olliekav", target: "_blank") %></li>
-    <li><%= link_to("#{svg('icons/mixcloud')}".html_safe, "https://mixcloud.com/olliekav", target: "_blank") %></li>
-  </ul> 
-  <p class="site-copy">© <%= Time.now.year %></p>
 </header>
-
-<%= link_to("Menu", "#", class: 'resp-nav', data: { no_turbolink: true }) %>
